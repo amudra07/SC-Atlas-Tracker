@@ -1,0 +1,53 @@
+{
+  "_comment": "Hand-maintained context that doesn't come from either spreadsheet: our own internal target platforms and the marketed reference product used as a benchmark. Edit this file directly when these change (e.g. a target concentration is revised) -- it feeds into dashboard_data.json the same way the two xlsx files do. 'deal_id_aliases' lets a deal row in Deals_News_Feed_source.xlsx (matched by its Technology ID) attach to an internal target instead of being treated as an external technology -- used here because 'thermicra_unconfirmed' was an early tracker entry later corrected to be internal-only.",
+
+  "internal_targets": [
+    {
+      "id": "hyperion",
+      "name": "Hyperion",
+      "company": "Our internal platform",
+      "stage_raw": "Preclinical / Internal",
+      "stage_bucket": "Preclinical",
+      "type": "Suspension/particle",
+      "concentration_text": "700+ mg/mL — internal program target concentration.",
+      "concentration_numeric": 700,
+      "concentration_bucket": "600+ mg/mL",
+      "needle_size": "Not disclosed",
+      "mechanism": "Internal high-concentration reformulation program. Shown here as our own benchmark target against the external competitive landscape, not a third-party licensable technology.",
+      "source_label": "Internal",
+      "deal_id_aliases": []
+    },
+    {
+      "id": "thermicra",
+      "name": "Thermicra",
+      "company": "Our internal platform",
+      "stage_raw": "Preclinical / Internal",
+      "stage_bucket": "Preclinical",
+      "type": "Suspension/particle",
+      "concentration_text": "~380 mg/mL — internal program target concentration (approximate).",
+      "concentration_numeric": 380,
+      "concentration_bucket": "300–450 mg/mL",
+      "needle_size": "Not disclosed",
+      "mechanism": "Second internal high-concentration reformulation target, tracked alongside Hyperion as a benchmark against external platforms.",
+      "source_label": "Internal",
+      "deal_id_aliases": ["thermicra_unconfirmed"]
+    }
+  ],
+
+  "reference_products": [
+    {
+      "id": "dupixent",
+      "name": "Dupixent (reference product)",
+      "company": "Sanofi / Regeneron",
+      "stage_raw": "Commercial",
+      "stage_bucket": "Approved / Marketed",
+      "type": "Other",
+      "concentration_text": "150 mg/mL (300 mg/2 mL prefilled syringe/pen, commercial presentation)",
+      "concentration_numeric": 150,
+      "concentration_bucket": "< 300 mg/mL",
+      "needle_size": "29 gauge (commercial autoinjector/pen)",
+      "mechanism": "Current marketed dupilumab formulation — a conventional liquid + excipient formulation with no concentration-enabling delivery technology. Included as the benchmark comparator for this landscape.",
+      "source_label": "Public prescribing information"
+    }
+  ]
+}
