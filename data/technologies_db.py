@@ -311,4 +311,17 @@ TECHNOLOGIES = [
         'date_added': '2026-08-19',
         'last_reviewed': '2026-08-19',
     },
+    {
+        'id': 'eisai_biogen_leqembi_iqlik_sc',
+        'name': 'LEQEMBI IQLIK (lecanemab-irmb SC autoinjector)',
+        'company': 'Eisai Co., Ltd. / Biogen Inc.',
+        'stage_raw': 'Approved (commercially available in the U.S.; initiation-dose sBLA approved 2026-07-13; SC maintenance-dose formulation approved August 2025)',
+        'type': 'Other',
+        'concentration_text': '200 mg/mL SC formulation (vs. 100 mg/mL IV formulation); 500 mg total initiation dose given as two consecutive 250 mg/1.25 mL injections, ~15 seconds each',
+        'concentration_numeric': 200.0,
+        'needle_size': 'Not disclosed',
+        'mechanism': "Higher-concentration liquid reformulation of lecanemab-irmb (vs. the IV formulation) enabling at-home SC autoinjector administration for initiation therapy in early Alzheimer's disease; patients may switch between IV and SC at any point in treatment. No particle/enzyme/crystalline delivery-enabling technology disclosed -- a conventional liquid + excipient high-concentration reformulation, included as a cross-indication (Alzheimer's, not oncology/immunology) benchmark for a commercially-validated high-concentration mAb SC autoinjector.",
+        'date_added': '2026-08-27',
+        'last_reviewed': '2026-08-27',
+    },
 ]
