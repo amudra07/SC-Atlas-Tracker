@@ -1,1488 +1,264 @@
-{
-  "generated_at": "2026-08-28T01:48:13+00:00",
-  "generated_from": {
-    "technologies": "technologies_db.py",
-    "deals": "deals_db.py"
-  },
-  "last_updated": "2026-08-27",
-  "stage_order": [
-    "Research / Academic",
-    "Preclinical",
-    "Platform / Feasibility",
-    "Pre-registration / Late-stage",
-    "Approved / Marketed",
-    "Varies by Program"
-  ],
-  "type_order": [
-    "Suspension/particle",
-    "Other",
-    "Enzyme-assisted",
-    "Co-formulation",
-    "Crystalline"
-  ],
-  "company_order": [
-    "Academic (MIT - Doyle Lab, Dept. of Chemical Engineering; not a commercial platform)",
-    "Academic / multiple (not a single company asset)",
-    "Alphamab Oncology (Jiangsu/Suzhou Alphamab Biopharmaceuticals; Â∫∑ÂÆÅÊù∞ÁëûÂà∂ËçØ)",
-    "Alteogen",
-    "Althea Technologies (now part of Ajinomoto Bio-Pharma Services)",
-    "Bhami's Research Laboratory (licensed to Ipca Laboratories)",
-    "Celltrion",
-    "Chengdu Rongsheng Pharmaceutical (China National Pharmaceutical Group / Sinopharm)",
-    "Eisai / Biogen",
-    "G2G Bio (ÏßÄÌà¨ÏßÄÎ∞îÏù¥Ïò§)",
-    "Genentech / Roche",
-    "Halozyme Therapeutics",
-    "Halozyme Therapeutics (via Elektrofi acquisition)",
-    "InventageLab",
-    "Lindy Biosciences",
-    "Nanoform Finland Oyj",
-    "Prestige Biopharma IDC",
-    "Samsung Bioepis",
-    "Samsung Biologics",
-    "Sanofi",
-    "Surf Bio (acquired by Halozyme Therapeutics, Dec 2025)",
-    "WuXi Biologics",
-    "Xeris Biopharma"
-  ],
-  "concentration_order": [
-    "< 300 mg/mL",
-    "300‚Äì450 mg/mL",
-    "450‚Äì600 mg/mL",
-    "600+ mg/mL",
-    "Not disclosed"
-  ],
-  "counts": {
-    "tracked": 25,
-    "comparable": 15,
-    "commercial": 8,
-    "deals_tracked": 44,
-    "flagged_deals": 5
-  },
-  "internal_targets": [
-    {
-      "id": "hyperion",
-      "name": "Hyperion",
-      "company": "Our internal platform",
-      "stage_raw": "Preclinical / Internal",
-      "stage_bucket": "Preclinical",
-      "type": "Suspension/particle",
-      "concentration_text": "700+ mg/mL ‚Äî internal program target concentration.",
-      "concentration_numeric": 700,
-      "concentration_bucket": "600+ mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Internal high-concentration reformulation program. Shown here as our own benchmark target against the external competitive landscape, not a third-party licensable technology.",
-      "source_label": "Internal",
-      "notes": [],
-      "is_internal": true,
-      "is_reference": false
-    },
-    {
-      "id": "thermicra",
-      "name": "Thermicra",
-      "company": "Our internal platform",
-      "stage_raw": "Preclinical / Internal",
-      "stage_bucket": "Preclinical",
-      "type": "Suspension/particle",
-      "concentration_text": "~380 mg/mL ‚Äî internal program target concentration (approximate).",
-      "concentration_numeric": 380,
-      "concentration_bucket": "300‚Äì450 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Second internal high-concentration reformulation target, tracked alongside Hyperion as a benchmark against external platforms.",
-      "source_label": "Internal",
-      "notes": [
-        {
-          "deal_id": "thermicra_internal_2026-07",
-          "partner": "N/A (internal correction)",
-          "deal_type": "Flag / Correction",
-          "date": "2026-07-13",
-          "date_sort_key": 20260713,
-          "summary": "CORRECTED: confirmed with tracker owner that 'Thermicra' is an internal target platform, tracked alongside Hyperion as our own benchmark - not an external company. Previously logged as an unverified external search result; that classification was wrong. Now shown only on the internal/public dashboard, not as a tracked competitor.",
-          "molecule": "N/A",
-          "source_name": "Internal confirmation",
-          "source_url": null,
-          "relevance": "N/A",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": true,
-      "is_reference": false
-    }
-  ],
-  "reference_products": [
-    {
-      "id": "dupixent",
-      "name": "Dupixent (reference product)",
-      "company": "Sanofi / Regeneron",
-      "stage_raw": "Commercial",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Other",
-      "concentration_text": "150 mg/mL (300 mg/2 mL prefilled syringe/pen, commercial presentation)",
-      "concentration_numeric": 150,
-      "concentration_bucket": "< 300 mg/mL",
-      "needle_size": "29 gauge (commercial autoinjector/pen)",
-      "mechanism": "Current marketed dupilumab formulation ‚Äî a conventional liquid + excipient formulation with no concentration-enabling delivery technology. Included as the benchmark comparator for this landscape.",
-      "source_label": "Public prescribing information",
-      "is_internal": false,
-      "is_reference": true
-    }
-  ],
-  "technologies": [
-    {
-      "id": "xeriject",
-      "name": "XeriJect",
-      "company": "Xeris Biopharma",
-      "stage_raw": "Preclinical",
-      "stage_bucket": "Preclinical",
-      "type": "Suspension/particle",
-      "concentration_text": "432 mg/mL demonstrated (trastuzumab biosimilar); platform range ~400-450+ mg/mL",
-      "concentration_numeric": 432.0,
-      "concentration_bucket": "300‚Äì450 mg/mL",
-      "needle_size": "20-31 gauge, 0.5-2 in, 133-604 micron ID (formulation-dependent)",
-      "mechanism": "Ready-to-use, non-aqueous viscoelastic suspensions of spray-processed antibody particles that shear-thin under injection force. Compatible with standard prefilled syringes.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "xeriject_regeneron_2023-03",
-          "partner": "Regeneron",
-          "deal_type": "Research Evaluation + Option",
-          "date": "2023-03-01",
-          "date_sort_key": 20230301,
-          "summary": "Research evaluation collaboration + option agreement for 2 undisclosed mAbs developed by Regeneron.",
-          "molecule": "Undisclosed (2 mAbs)",
-          "source_name": "Xeris Biopharma / BusinessWire",
-          "source_url": "https://xerispharma.com/news-releases/news-release-details/xeris-biopharma-announces-research-evaluation-collaboration-and",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "xeriject_horizon-amgen_2022-11",
-          "partner": "Horizon Therapeutics (later Amgen)",
-          "deal_type": "Option -> Exclusive License",
-          "date": "2022-11 (option); converted to exclusive worldwide license",
-          "date_sort_key": 20221101,
-          "summary": "Research collaboration & option for teprotumumab (Tepezza) SC reformulation, converted to exclusive worldwide license. Up to $75M dev/regulatory milestones + sales milestones + royalties.",
-          "molecule": "Teprotumumab (Tepezza)",
-          "source_name": "Xeris Biopharma",
-          "source_url": "https://www.xerispharma.com/news-releases/news-release-details/xeris-biopharma-enters-exclusive-worldwide-license-agreement",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "xeriject_merck_2021-10",
-          "partner": "Merck",
-          "deal_type": "Option/Collaboration",
-          "date": "2021-10-01",
-          "date_sort_key": 20211001,
-          "summary": "Option/collaboration for ultra-high concentration, ready-to-use formulations of undisclosed mAbs. Terms not disclosed.",
-          "molecule": "Undisclosed mAbs",
-          "source_name": "Xeris Biopharma IR",
-          "source_url": "https://ir.xerispharma.com/news-releases/news-release-details/xeris-pharmaceuticals-enters-collaboration-agreement-merck",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "microglassification",
-      "name": "Microglassification",
-      "company": "Lindy Biosciences",
-      "stage_raw": "Preclinical",
-      "stage_bucket": "Preclinical",
-      "type": "Suspension/particle",
-      "concentration_text": ">400 mg/mL (platform claim, per company materials)",
-      "concentration_numeric": 400.0,
-      "concentration_bucket": "300‚Äì450 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Dense, spherical, stable microbeads of the therapeutic protein via fast solvent-based water removal (glassification), then suspended for SC injection. Originated at Duke University.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "lindy_lifecore_2024-10",
-          "partner": "Lifecore Biomedical",
-          "deal_type": "Manufacturing/CDMO",
-          "date": "2024-10-01",
-          "date_sort_key": 20241001,
-          "summary": "Selected as CDMO/process-development partner for commercial scale-up of microglassification formulation.",
-          "molecule": "N/A",
-          "source_name": "GlobeNewswire",
-          "source_url": "https://www.globenewswire.com/news-release/2024/10/01/2955961/0/en/Lifecore-Biomedical-Selected-by-Lindy-Biosciences-to-Support-Process-Development-and-Commercial-Scale-Up-for-Innovative-Microglassification-Formulation-Technology.html",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "lindy_novartis_2024-08",
-          "partner": "Novartis",
-          "deal_type": "Licensing/Collaboration",
-          "date": "2024-08-01",
-          "date_sort_key": 20240801,
-          "summary": "Exclusive global license & collaboration. $20M upfront + up to $934M in milestones (deal value up to ~$954M) + tiered single-digit royalties. Multi-target biologics for self-administration.",
-          "molecule": "Undisclosed (multiple targets)",
-          "source_name": "BusinessWire",
-          "source_url": "https://www.businesswire.com/news/home/20240827920051/en/Lindy-Biosciences-Enters-Licensing-and-Collaboration-Agreement-With-Novartis-for-Multi-target-Drug-Delivery-Innovation",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "enhanze",
-      "name": "ENHANZE (rHuPH20)",
-      "company": "Halozyme Therapeutics",
-      "stage_raw": "Approved",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Enzyme-assisted",
-      "concentration_text": "N/A - enables >2 mL SC volumes at existing formulation concentrations, not a concentration technology itself",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed (set by partner's final product)",
-      "mechanism": "Recombinant human hyaluronidase temporarily depolymerizes hyaluronan in the interstitial space, lowering the barrier to bulk fluid flow for large-volume/high-dose SC administration.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "halozyme_incyte_2026-07",
-          "partner": "Incyte",
-          "deal_type": "Licensing/Collaboration",
-          "date": "2026-07-20",
-          "date_sort_key": 20260720,
-          "summary": "Global collaboration & license agreement applying ENHANZE (rHuPH20) to subcutaneous formulations of INCA033989, Incyte's first-in-class anti-mutant-calreticulin (mutCALR) monoclonal antibody for myeloproliferative neoplasms (MPNs). Incyte also receives an option to nominate up to two additional ENHANZE targets. Halozyme to receive an upfront payment (amount undisclosed) plus development/regulatory milestone payments and royalties on net sales of any commercialized ENHANZE-enabled medicines.",
-          "molecule": "INCA033989",
-          "source_name": "PR Newswire (Halozyme)",
-          "source_url": "https://www.prnewswire.com/news-releases/halozyme-announces-global-collaboration-and-license-agreement-with-incyte-to-support-the-development-of-subcutaneous-formulations-of-inca033989-using-its-enhanze-technology-302829283.html",
-          "relevance": "High",
-          "confidence": "Primary",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "halozyme_gsk_2026-05",
-          "partner": "GSK",
-          "deal_type": "Licensing/Collaboration",
-          "date": "2026-05-01",
-          "date_sort_key": 20260501,
-          "summary": "Global collaboration & license for SC delivery of multiple oncology targets incl. antibody-drug conjugates (ADCs). First clinical trial expected 2026.",
-          "molecule": "Undisclosed (multiple ADC/oncology targets)",
-          "source_name": "PR Newswire / StockTitan",
-          "source_url": "https://www.stocktitan.net/news/HALO/halozyme-announces-global-collaboration-and-license-agreement-with-bs56otbp3obt.html",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "hypercon",
-      "name": "Hypercon (ex-Elektrofi)",
-      "company": "Halozyme Therapeutics (via Elektrofi acquisition)",
-      "stage_raw": "Preclinical",
-      "stage_bucket": "Preclinical",
-      "type": "Suspension/particle",
-      "concentration_text": "Up to 500 mg/mL",
-      "concentration_numeric": 500.0,
-      "concentration_bucket": "450‚Äì600 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Water is extracted from antibody-solution droplets, precipitating the protein into smooth, dense microparticles which are then suspended in a non-aqueous carrier. Removing water from the particle core, rather than diluting the protein in more liquid, is what allows concentration well beyond what a liquid formulation can hold. Demonstrated injectable in ~20 seconds at <20 N glide force through standard SC needles.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "halozyme_oruka_2026-05",
-          "partner": "Oruka Therapeutics",
-          "deal_type": "Licensing/Collaboration",
-          "date": "2026-05-06",
-          "date_sort_key": 20260506,
-          "summary": "Global exclusive collaboration & license agreement granting Oruka rights to Halozyme's Hypercon microparticle technology for ORKA-001 (in development for psoriasis and related inflammatory disease) plus an option for one additional target. Oruka to pay an upfront fee and potential milestone payments; Halozyme eligible for mid-single-digit royalties on net sales. Specific financial terms not disclosed.",
-          "molecule": "ORKA-001 (undisclosed antibody target)",
-          "source_name": "PR Newswire / Contract Pharma",
-          "source_url": "https://www.prnewswire.com/news-releases/halozyme-and-oruka-announce-global-collaboration-and-license-agreement-to-develop-orka-001-with-hypercon-technology-302763746.html",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "halozyme_vertex_2026-04",
-          "partner": "Vertex Pharmaceuticals",
-          "deal_type": "Licensing/Collaboration",
-          "date": "2026-04-01",
-          "date_sort_key": 20260401,
-          "summary": "Global exclusive license, up to 3 drug targets. $15M upfront + milestones/royalties.",
-          "molecule": "Undisclosed (up to 3 targets)",
-          "source_name": "PR Newswire",
-          "source_url": "https://www.prnewswire.com/news-releases/halozyme-announces-global-collaboration-and-license-agreement-with-vertex-pharmaceuticals-for-hypercon-technology-302735490.html",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "halozyme_elektrofi_2026",
-          "partner": "Halozyme Therapeutics",
-          "deal_type": "Acquisition",
-          "date": "2025-11-18 (deal completion; originally announced 2025)",
-          "date_sort_key": 20251118,
-          "summary": "CORRECTED 2026-07-13: acquisition completed Nov 18, 2025. Confirmed structure: $750M upfront (subject to customary purchase price adjustments) + up to three $50M milestone payments tied to three separate product regulatory approvals = up to $900M total consideration at approvals. Underlying Elektrofi/Hypercon platform acquisition that the April 2026 Vertex license was built on top of.",
-          "molecule": "N/A (platform acquisition)",
-          "source_name": "PR Newswire (Halozyme) / Fierce Biotech / Contract Pharma",
-          "source_url": "https://www.prnewswire.com/news-releases/halozyme-completes-acquisition-of-elektrofi-expanding-breadth-of-offerings-in-drug-delivery-302618579.html",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "elektrofi_partners_detail_2026-07-15",
-          "partner": "Eli Lilly; Johnson & Johnson (Janssen); argenx (individually itemized, still not individually confirmed via primary source)",
-          "deal_type": "Unverified / Flagged",
-          "date": "2023-10 (Lilly deal); dates for J&J/argenx not confirmed - flagged",
-          "date_sort_key": 20231001,
-          "summary": "FLAGGED - additional secondary-source detail found but still not confirmed via a primary source naming each counterparty individually (same underlying ambiguity as elektrofi_partners_flagged_2026-07, logged 2026-07-13). Fierce Pharma / Pharmaceutical Technology trade coverage of Halozyme's $900M Elektrofi acquisition reports pre-acquisition Elektrofi had signed: (1) an Eli Lilly deal worth up to $470M (Oct 2023) for exclusive rights to 3 undisclosed targets; (2) a 5-program Johnson & Johnson (Janssen) licensing deal worth nearly $800M including milestones. argenx is also named as a Hypercon partner in this secondary coverage, without a specific deal-value breakdown. No Halozyme, Lilly, J&J, or argenx primary press release or SEC filing naming individual deal terms per counterparty has been found; this remains secondary trade-press aggregation, not primary confirmation. A primary source (company press release or SEC filing) naming each counterparty individually with terms would be needed to resolve this flag.",
-          "molecule": "Undisclosed (multiple targets per partner)",
-          "source_name": "Fierce Pharma / Pharmaceutical Technology",
-          "source_url": "https://www.fiercepharma.com/pharma/halozymes-900m-elektrofi-buyout-brings-two-big-pharma-partners-together",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": true,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "elektrofi_partners_flagged_2026-07",
-          "partner": "argenx, Eli Lilly, Johnson & Johnson (status unconfirmed)",
-          "deal_type": "Unverified / Flagged",
-          "date": "Date not confirmed - flagged",
-          "date_sort_key": -1,
-          "summary": "FLAGGED - sources conflict on deal status. One source (Yahoo Finance/Halozyme guidance commentary) states Elektrofi 'has signed licensing agreements' with argenx, Johnson & Johnson, and Eli Lilly. Another source (BioSpace) describes these three companies only as having shown 'interest' in Hypercon before Halozyme's acquisition, without confirming signed agreements for all three. Only the Vertex license (April 2026, already tracked separately) is confirmed via primary-source press release. Do not treat as 3 additional signed deals until a primary source (company press release or SEC filing) is found naming each counterparty individually.",
-          "molecule": "Undisclosed",
-          "source_name": "Yahoo Finance / BioSpace (secondary, conflicting)",
-          "source_url": "https://www.biospace.com/business/halozymes-900m-elektrofi-buyout-brings-two-big-pharma-partners-together",
-          "relevance": "Low",
-          "confidence": "Not assessed",
-          "flagged": true,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "alt-b4_hybrozyme",
-      "name": "ALT-B4 / Hybrozyme (berahyaluronidase alfa)",
-      "company": "Alteogen",
-      "stage_raw": "Varies by partner program",
-      "stage_bucket": "Varies by Program",
-      "type": "Enzyme-assisted",
-      "concentration_text": "Not disclosed for any 2026 partner program",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "Recombinant human hyaluronidase that temporarily hydrolyzes hyaluronan in the extracellular matrix, permitting large-volume IV-to-SC conversion of existing biologics.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "alteogen_undisclosed-pharma_2026-08",
-          "partner": "Undisclosed global pharmaceutical company",
-          "deal_type": "Exclusive License",
-          "date": "2026-08-05",
-          "date_sort_key": 20260805,
-          "summary": "Exclusive worldwide license for an undisclosed global pharmaceutical company to develop and commercialize a Hybrozyme(TM)-enabled subcutaneous formulation of a biologic product using ALT-B4 (berahyaluronidase alfa). Total deal value up to $365M (~KRW 521.9B): upfront payment (amount undisclosed) plus development, regulatory, and sales milestones, plus royalties on net sales post-commercialization; Korean press reports upfront due within 30 days of signing. This is Alteogen's third ALT-B4/Hybrozyme licensing deal disclosed in 2026 (after AstraZeneca and GSK/Tesaro, both already tracked); Korean press reports Alteogen's cumulative technology-export total now exceeds KRW 12 trillion.",
-          "molecule": "Undisclosed",
-          "source_name": "Alteogen (IR press release) / PR Newswire / Edaily",
-          "source_url": "http://www.alteogen.com/en/sub/ir/news.php?mode=view&bid=13&idx=340&page=1",
-          "relevance": "High",
-          "confidence": "Primary",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "alteogen_sanofi_2026-06",
-          "partner": "Sanofi",
-          "deal_type": "Non-exclusive License (reconfirmed)",
-          "date": "2019 (original); reconfirmed 2026-06",
-          "date_sort_key": 20260601,
-          "summary": "Non-exclusive license (originally signed 2019) for high-dose SC formulation of dupilumab (Dupixent), development reconfirmed as ongoing.",
-          "molecule": "Dupilumab (Dupixent)",
-          "source_name": "Pearce IP",
-          "source_url": "https://www.pearceip.law/2026/06/18/sanofi-alteogen-confirm-development-of-subcutaneous-dupilumab/",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "alteogen_biogen_2026-03",
-          "partner": "Biogen",
-          "deal_type": "Licensing",
-          "date": "2026-03-01",
-          "date_sort_key": 20260301,
-          "summary": "UPDATED 2026-07-12: License agreement for 2 undisclosed biologic products using ALT-B4. Total deal value ~$579M: $20M upfront (+$10M more if 2nd product selected) + up to $549M in clinical/regulatory/commercial milestones (~KRW 800 billion scale). Figures confirmed via Korean financial press.",
-          "molecule": "Undisclosed (2 biologics)",
-          "source_name": "PR Newswire / Korea Pharmaceutical Newspaper (ÏïΩÏÇ¨Í≥µÎ°†)",
-          "source_url": "https://www.kpanews.co.kr/news/articleView.html?idxno=531706",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "alteogen_gsk-tesaro_2026-01",
-          "partner": "GSK / Tesaro",
-          "deal_type": "Exclusive License",
-          "date": "2026-01-01",
-          "date_sort_key": 20260101,
-          "summary": "Exclusive license for SC formulation of dostarlimab. $20M upfront + up to $265M milestones ($285M total confirmed via Korean press).",
-          "molecule": "Dostarlimab",
-          "source_name": "PR Newswire / ÏïΩÏÇ¨Í≥µÎ°†",
-          "source_url": "https://www.prnewswire.com/news-releases/alteogen-announces-exclusive-license-agreement-with-tesaro-a-subsidiary-of-gsk-for-the-development-of-a-subcutaneous-formulation-of-dostarlimab-enabled-by-hybrozyme-technology-302665173.html",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "alteogen_astrazeneca_2026",
-          "partner": "AstraZeneca",
-          "deal_type": "Licensing (2 agreements)",
-          "date": "2025-03-17",
-          "date_sort_key": 20250317,
-          "summary": "CORRECTED 2026-07-22: Primary source (AstraZeneca press release, published 17 March 2025) confirms the exact deal date as 2025-03-17 - previously logged with an unconfirmed placeholder date of '2026'. FiercePharma's same-day reporting (2025-03-17, same URL already cited below) corroborates: 2 agreements, ~$1.35B combined value, $45M combined upfront (per Alteogen's KRX filings, per FiercePharma's translation: one deal with $25M upfront/up to $725M milestones, one with $20M upfront/up to $580M milestones). AstraZeneca's own release describes rights to develop/commercialize SC formulations of 'several oncology assets' (does not itself confirm the '3 assets' figure or disclose financials; those figures come from FiercePharma's reporting of Alteogen's KRX filings).",
-          "molecule": "Undisclosed (3 oncology assets, per secondary sourcing)",
-          "source_name": "AstraZeneca (press release) / FiercePharma",
-          "source_url": "https://www.astrazeneca.com/media-centre/press-releases/2025/astrazeneca-enters-license-agreement-with-alteogen-for-subcutaneous-formulations-of-multiple-oncology-assets.html",
-          "relevance": "High",
-          "confidence": "Primary",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "genentech_unbranded_sc",
-      "name": "Proprietary SC reformulations (unbranded)",
-      "company": "Genentech / Roche",
-      "stage_raw": "Approved / Regulatory review (varies by asset)",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Other",
-      "concentration_text": "Not disclosed in current press releases",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "Standard high-concentration liquid SC reformulations of existing IV biologics; no distinct branded delivery technology disclosed.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "genentech_lunsumio_2026-06",
-          "partner": "FDA (regulatory)",
-          "deal_type": "Regulatory filing",
-          "date": "2026-06-01",
-          "date_sort_key": 20260601,
-          "summary": "sBLA accepted for Lunsumio VELO (SC mosunetuzumab) + Polivy combination, R/R large B-cell lymphoma. FDA decision expected ~Feb 2027.",
-          "molecule": "Mosunetuzumab",
-          "source_name": "Genentech Press Releases",
-          "source_url": "https://www.gene.com/media/press-releases/15117/2026-06-17/fda-accepts-supplemental-biologics-licen",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "genentech_enspryng_2026-06",
-          "partner": "FDA (regulatory)",
-          "deal_type": "Regulatory filing",
-          "date": "2026-06-01",
-          "date_sort_key": 20260601,
-          "summary": "Priority review granted for Enspryng (SC satralizumab) in thyroid eye disease. FDA decision expected ~Oct 2026.",
-          "molecule": "Satralizumab",
-          "source_name": "Genentech Press Releases",
-          "source_url": "https://www.gene.com/media/press-releases/15118/2026-06-29/fda-grants-priority-review-to-genentechs",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "academic_spray_dried",
-      "name": "Spray-dried mAb suspension (non-aqueous vehicle)",
-      "company": "Academic / multiple (not a single company asset)",
-      "stage_raw": "Preclinical / Research",
-      "stage_bucket": "Research / Academic",
-      "type": "Suspension/particle",
-      "concentration_text": "Protein concentrations 'far exceeding 200 mg/mL' reported",
-      "concentration_numeric": 200.0,
-      "concentration_bucket": "< 300 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "mAb solution spray-dried into powder, then suspended in a non-aqueous vehicle to reduce viscosity - same approach category as XeriJect, from independent academic literature rather than a named commercial platform.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "academic_aaps_2026",
-          "partner": "N/A (research)",
-          "deal_type": "Research publication",
-          "date": "2026",
-          "date_sort_key": 20260101,
-          "summary": "AAPS Open perspective article on spray-dried mAb suspensions for SC delivery; not a company/deal item.",
-          "molecule": "N/A",
-          "source_name": "AAPS Open (Springer Nature)",
-          "source_url": "https://link.springer.com/article/10.1186/s41120-026-00160-8",
-          "relevance": "Low",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "celltrion_herzuma_sc",
-      "name": "Herzuma SC (proprietary hyaluronidase SC platform, CT-P6 SC)",
-      "company": "Celltrion",
-      "stage_raw": "Pre-registration (pivotal trial complete, EU filing submitted, KR filing pending)",
-      "stage_bucket": "Pre-registration / Late-stage",
-      "type": "Enzyme-assisted",
-      "concentration_text": "Not disclosed (specific mg/mL not published); trastuzumab biosimilar SC conversion",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "Proprietary in-house (not licensed) hyaluronidase-based SC conversion technology; temporarily degrades subcutaneous hyaluronic acid to ease drug diffusion, which naturally regenerates over time. Cuts infusion time from 30-90 min (IV) to under 5 min (SC). Would be first-to-market SC trastuzumab biosimilar if approved, since no approved SC trastuzumab biosimilar currently exists.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "celltrion_mfds-filing_2026-05",
-          "partner": "Korea MFDS (regulatory)",
-          "deal_type": "Regulatory filing",
-          "date": "2026-05-28",
-          "date_sort_key": 20260528,
-          "summary": "Celltrion filed an application with Korea's Ministry of Food and Drug Safety for approval of Herzuma SC/CT-P6 SC, covering all Herceptin SC indications (early breast cancer, metastatic breast cancer, metastatic gastric cancer). Follows the April 30, 2026 EMA filing (already tracked separately). Celltrion states no biosimilar SC formulation of trastuzumab is currently on the market and positions itself for first-mover advantage; plans further regulatory submissions in other major markets.",
-          "molecule": "Trastuzumab (Herceptin biosimilar)",
-          "source_name": "Pearce IP / Seoul Economic Daily",
-          "source_url": "https://www.pearceip.law/2026/05/28/celltrion-submits-korean-application-for-biosimilar-trastuzumab-sc/",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "celltrion_ema-filing_2026-04",
-          "partner": "EMA (regulatory)",
-          "deal_type": "Regulatory filing",
-          "date": "2026-04-30",
-          "date_sort_key": 20260430,
-          "summary": "Completed EMA filing for Herzuma SC formulation addition (Type II variation).",
-          "molecule": "Trastuzumab (Herceptin biosimilar)",
-          "source_name": "Fintech Times Korea / Celltrion press release",
-          "source_url": "https://www.fintechtimes.co.kr/news/article.html?no=55948",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "celltrion_pivotal-trial_2026-02",
-          "partner": "N/A (internal R&D milestone)",
-          "deal_type": "Clinical/Regulatory milestone",
-          "date": "2026-02-02",
-          "date_sort_key": 20260202,
-          "summary": "Completed pivotal PK-equivalence clinical trial for Herzuma SC vs IV Herceptin (originator); demonstrated PK equivalence and comparable safety/immunogenicity.",
-          "molecule": "Trastuzumab (Herceptin biosimilar)",
-          "source_name": "TheBioNews / KPAnews / EBN (Korean press)",
-          "source_url": "https://www.thebionews.net/news/articleView.html?idxno=21919",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "prestige_biopharma_idc224",
-      "name": "IDC224 (in-situ thermogel SC platform)",
-      "company": "Prestige Biopharma IDC",
-      "stage_raw": "Preclinical (Korea patent filed)",
-      "stage_bucket": "Preclinical",
-      "type": "Co-formulation",
-      "concentration_text": "Not disclosed numerically; described as enabling uniform high-concentration antibody loading",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "Injected as a liquid, gels in vivo via body temperature to form a sustained-release depot, extending duration of action and reducing dosing frequency. Uses biodegradable materials. Positioned as a next-generation SC platform distinct from hyaluronidase-based approaches.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "prestige_idc224_patent_2026-04",
-          "partner": "Korean Intellectual Property Office",
-          "deal_type": "Patent filing",
-          "date": "2026-04-21",
-          "date_sort_key": 20260421,
-          "summary": "Domestic (Korea) patent filed for IDC224 in-situ thermogel SC platform.",
-          "molecule": "N/A (platform patent)",
-          "source_name": "TheBioNews / Newspim / MDToday (Korean press)",
-          "source_url": "https://www.thebionews.net/news/articleView.html?idxno=23849",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "inventagelab_ivl_biofluidic",
-      "name": "IVL-BioFluidic (microfluidic/microsphere-based SC platform)",
-      "company": "InventageLab",
-      "stage_raw": "Preclinical",
-      "stage_bucket": "Preclinical",
-      "type": "Suspension/particle",
-      "concentration_text": "750 mg/mL demonstrated, injected in 1-2 minutes",
-      "concentration_numeric": 750.0,
-      "concentration_bucket": "600+ mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Microfluidics-derived microsphere/microparticle drug delivery platform that enables ultra-high-concentration SC dosing without a co-formulated hyaluronidase enzyme. Targeted at monoclonal antibodies, antibody-drug conjugates (ADCs), and bispecific/fusion proteins.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "inventagelab_bio-usa_2026-06",
-          "partner": "N/A (conference disclosure)",
-          "deal_type": "Platform disclosure / partnering",
-          "date": "2026-06-01",
-          "date_sort_key": 20260601,
-          "summary": "First public disclosure of IVL-BioFluidic platform at BIO USA 2026; company reports 750 mg/mL achievable in a 1-2 minute injection without hyaluronidase.",
-          "molecule": "N/A (platform-level)",
-          "source_name": "TheBioNews / Hankyung (Korean press)",
-          "source_url": "https://www.thebionews.net/news/articleView.html?idxno=25838",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "inventagelab_funding_2026-03",
-          "partner": "Institutional investors (funding round)",
-          "deal_type": "Funding/Investment",
-          "date": "2026-03-08",
-          "date_sort_key": 20260308,
-          "summary": "Inventage Lab raised KRW 98.5 billion (~$69M), exceeding its KRW 80B target by 23%, with strong re-participation from existing mezzanine/pre-IPO investors. CEO Kim Ju-hee stated funds will accelerate advancement of the company's DDS platforms (including IVL-BioFluidic) and build out GMP production infrastructure.",
-          "molecule": "N/A (platform-level funding)",
-          "source_name": "Seoul Economic Daily",
-          "source_url": "https://en.sedaily.com/finance/2026/03/08/inventage-lab-raises-69m-exceeding-target-by-23-percent",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "samsungbio_s-hicon",
-      "name": "S-HiCon (CDMO high-concentration formulation development platform)",
-      "company": "Samsung Biologics",
-      "stage_raw": "Approved / Commercially available (CDMO service)",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Other",
-      "concentration_text": "Supports stable liquid formulations >200 mg/mL for SC administration",
-      "concentration_numeric": 200.0,
-      "concentration_bucket": "< 300 mg/mL",
-      "needle_size": "N/A (formulation-development service, not a drug technology)",
-      "mechanism": "CDMO formulation-development platform combining pH/buffer/excipient optimization with a proprietary 'Concentration Gate Check' screening process to reduce viscosity and improve stability of high-concentration liquid biologic formulations. Offered as a service to Samsung Biologics' pharma clients rather than a specific drug asset.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-23",
-      "deals": [
-        {
-          "deal_id": "samsungbio_astrazeneca_saphnelo_2026-07",
-          "partner": "AstraZeneca",
-          "deal_type": "Manufacturing/CDMO",
-          "date": "2026-07 (reported 2026-07-06)",
-          "date_sort_key": 20260706,
-          "summary": "Samsung Biologics selected to produce drug substance for AstraZeneca's Saphnelo (anifrolumab) subcutaneous injection for systemic lupus erythematosus. Second known SC-formulation CDMO win for Samsung Biologics after J&J's Rybrevant SC. Saphnelo SC formulation itself already FDA/EU approved (self-administration pre-filled pen/autoinjector); this deal covers drug-substance manufacturing via S-HiCon. Specific volume/terms not disclosed.",
-          "molecule": "Anifrolumab (Saphnelo)",
-          "source_name": "Seoul Economic Daily",
-          "source_url": "https://en.sedaily.com/finance/2026/07/06/samsung-biologics-wins-subcutaneous-drug-deals-eyes-new",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "samsungbio_launch_2024-10",
-          "partner": "N/A (platform launch)",
-          "deal_type": "Platform launch",
-          "date": "2024-10-14",
-          "date_sort_key": 20241014,
-          "summary": "Samsung Biologics launched S-HiCon CDMO formulation-development platform for high-concentration (>200 mg/mL) biologics.",
-          "molecule": "N/A (platform-level)",
-          "source_name": "PR Newswire / BioSpace / Samsung Biologics",
-          "source_url": "https://samsungbiologics.com/media/company-news/samsung-biologics-launches-high-concentration-formulation-platform-accelerate-high-dose-drug-develop",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "wuxibio_wuxihigh2",
-      "name": "WuXiHigh 2.0 (CDMO viscosity-reduction excipient platform)",
-      "company": "WuXi Biologics",
-      "stage_raw": "Approved / Commercially available (CDMO service)",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Co-formulation",
-      "concentration_text": "Up to 230 mg/mL protein concentration confirmed via primary source (WuXi Biologics press release, 2025-06-30); ~90% viscosity reduction (also confirmed in the same primary release). The '24 proprietary excipient combinations' detail originates from a secondary source (ByDrug/PharmCube, 2026 coverage) and is not itself confirmed or contradicted by the primary release.",
-      "concentration_numeric": 230.0,
-      "concentration_bucket": "< 300 mg/mL",
-      "needle_size": "N/A (formulation-development service)",
-      "mechanism": "Proprietary excipient toolkit (24 combinations) that reduces high-concentration formulation viscosity by up to ~90% while inhibiting protein aggregation, enabling higher-concentration SC-ready liquid formulations. CDMO service platform, not a specific drug asset.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-23",
-      "deals": [
-        {
-          "deal_id": "wuxibio_coverage_2026",
-          "partner": "N/A (platform coverage)",
-          "deal_type": "Platform coverage",
-          "date": "2025-06-30",
-          "date_sort_key": 20250630,
-          "summary": "CORRECTED 2026-07-23: Primary source (WuXi Biologics / PRNewswire press release, published 2025-06-30) confirms the exact platform launch date as 2025-06-30 - previously logged with an unconfirmed placeholder date of '2026'. The primary release confirms protein concentrations reaching up to 230 mg/mL and viscosity reduction of up to ~90%. The '24 proprietary excipient combinations' detail from the original secondary source (ByDrug/PharmCube, Chinese industry press, 2026 coverage) is retained as unconfirmed by the primary release but not contradicted by it.",
-          "molecule": "N/A (platform-level)",
-          "source_name": "WuXi Biologics (press release) / PRNewswire (primary); ByDrug / PharmCube (secondary, original)",
-          "source_url": "https://www.prnewswire.com/news-releases/wuxi-biologics-launches-next-generation-platform-wuxihigh2-0-for-high-concentration-biologics-with-protein-concentration-reaching-230-mgml-302494189.html",
-          "relevance": "Low",
-          "confidence": "Primary",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "chengdu_rongsheng_tiantan_weian",
-      "name": "Tiantan Weian (20% subcutaneous immunoglobulin - SCIG)",
-      "company": "Chengdu Rongsheng Pharmaceutical (China National Pharmaceutical Group / Sinopharm)",
-      "stage_raw": "Approved",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Other",
-      "concentration_text": "20% concentration (200 mg/mL) - China's first approved product in this category",
-      "concentration_numeric": 200.0,
-      "concentration_bucket": "< 300 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Plasma-derived polyclonal immunoglobulin (not a monoclonal antibody) formulated at 20% concentration for home-based SC administration. Included for competitive/market context only - adjacent product category, not mAb drug substance.",
-      "date_added": "2026-07-12",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "chengdu_nmpa-approval_2026-06",
-          "partner": "NMPA",
-          "deal_type": "Regulatory approval",
-          "date": "2026-06-10",
-          "date_sort_key": 20260610,
-          "summary": "China's first 20% subcutaneous immunoglobulin (SCIG) product approved by NMPA.",
-          "molecule": "N/A (immunoglobulin, not mAb)",
-          "source_name": "Eastmoney (Chinese financial press)",
-          "source_url": "https://caifuhao.eastmoney.com/news/20260610190803703379240",
-          "relevance": "Low",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "snapshot_surfbio",
-      "name": "SnapShot (glassy surfactant / MoNi)",
-      "company": "Surf Bio (acquired by Halozyme Therapeutics, Dec 2025)",
-      "stage_raw": "Preclinical / Platform (feasibility demonstrated; Halozyme integration ongoing)",
-      "stage_bucket": "Platform / Feasibility",
-      "type": "Suspension/particle",
-      "concentration_text": "600+ mg/mL - doses over 1,000 mg in a single standard autoinjector shot (Surf Bio's own claim). CONFLICTING: Halozyme's official post-acquisition statement (Jan 2026) and the independent peer-reviewed Sci. Transl. Med. data both cite up to/surpassing 500 mg/mL instead.",
-      "concentration_numeric": 600.0,
-      "concentration_bucket": "600+ mg/mL",
-      "needle_size": "Standard 27-gauge (per Stanford STM study); compatible with commercial autoinjectors",
-      "mechanism": "Commercial surfactants (e.g. Tween) depress the glass-transition temperature of spray-dried protein microparticles, leaving soft, tacky surfaces that stick together and clog injection. Surf Bio's MoNi surfactant enriches at the particle surface during drying and keeps it glassy above room temperature, yielding free-flowing, injectable ultra-high-concentration suspensions. Same underlying science published by the Stanford Appel lab (bioRxiv 2024, peer-reviewed in Science Translational Medicine, Aug 2025) - SnapShot is that platform's commercial form.",
-      "date_added": "2026-07-13",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "surfbio_halozyme_2025-12",
-          "partner": "Halozyme Therapeutics",
-          "deal_type": "Acquisition",
-          "date": "2026-01-01",
-          "date_sort_key": 20260101,
-          "summary": "Acquired by Halozyme, up to ~$400M ($300M upfront + up to $100M milestones). Halozyme's own official post-acquisition statement (Jan 28 2026, via pharmaphorum) describes the platform as enabling concentrations 'up to 500 mg/mL' - lower than Surf Bio's own pre-acquisition marketing claim of 600+ mg/mL.",
-          "molecule": "N/A (platform acquisition)",
-          "source_name": "pharmaphorum / FiercePharma / Contract Pharma",
-          "source_url": "https://pharmaphorum.com/news/halozyme-diversifies-drug-delivery-surf-bio-buy",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": true,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "surfbio_stm-publication_2025-08",
-          "partner": "N/A (research)",
-          "deal_type": "Research publication",
-          "date": "2025-08-01",
-          "date_sort_key": 20250801,
-          "summary": "Peer-reviewed Stanford-led study in Science Translational Medicine demonstrating spray-dried microparticle mAb suspensions surpassing 500 mg/mL, deliverable through a standard 27-gauge needle at clinically relevant force. This independent peer-reviewed figure (500+) is notably lower than Surf Bio's own marketing claim of 600+ mg/mL, and matches Halozyme's official post-acquisition statement.",
-          "molecule": "N/A (platform feasibility study)",
-          "source_name": "PR Newswire (Surf Bio) / Science Translational Medicine",
-          "source_url": "https://www.prnewswire.com/news-releases/surf-bio-announces-peer-reviewed-publication-demonstrating-feasibility-of-subcutaneous-delivery-of-ultra-concentrated-biologics-302534089.html",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": true,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "nanoform_nanoforming",
-      "name": "Nanoforming (biologics nanoparticle platform)",
-      "company": "Nanoform Finland Oyj",
-      "stage_raw": "Preclinical / Platform (first commercial exclusivity agreement signed)",
-      "stage_bucket": "Platform / Feasibility",
-      "type": "Suspension/particle",
-      "concentration_text": "Suspensions >500 mg/mL reported; enables IV-to-SC switch at >400 mg/mL; particle sizes down to 50 nm",
-      "concentration_numeric": 500.0,
-      "concentration_bucket": "450‚Äì600 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Controlled nanoparticle/microparticle formation ('nanoforming') of biologics (mAbs, peptides, other large molecules) into highly stable particles with tunable size, enabling ultra-high-concentration suspensions for SC or inhaled delivery.",
-      "date_added": "2026-07-13",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "nanoform_partner_2026",
-          "partner": "Undisclosed Nasdaq-listed US biopharma (market cap >$1B)",
-          "deal_type": "Exclusivity Agreement",
-          "date": "2026-05-12",
-          "date_sort_key": 20260512,
-          "summary": "CORRECTED 2026-07-15: exact date now confirmed as May 12, 2026, per Nanoform's own inside-information press release (previously flagged as year unconfirmed). First-ever exclusivity agreement for Nanoform's biologics nanoparticle technology, covering one clinically/commercially validated target receptor. $1M non-refundable fee for 1-year exclusivity, extendable one additional year.",
-          "molecule": "Undisclosed (single target receptor)",
-          "source_name": "Nanoform press release / 24/7 BIOPHARMA",
-          "source_url": "https://www.nanoform.com/en/inside-information-nanoform-signs-first-exclusivity-agreement-for-ultra-high-concentration-subcutaneous-delivery/",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "crystalomics_althea",
-      "name": "Crystalomics",
-      "company": "Althea Technologies (now part of Ajinomoto Bio-Pharma Services)",
-      "stage_raw": "Platform / Preclinical demonstration (Infliximab case study)",
-      "stage_bucket": "Platform / Feasibility",
-      "type": "Crystalline",
-      "concentration_text": "250 mg/mL demonstrated with crystallized infliximab (vs. 10 mg/mL IV solution), ~96% volume reduction. Related crystalline-antibody-in-hydrogel variants report up to 315 mg/mL, 89-97% encapsulation efficiency.",
-      "concentration_numeric": 250.0,
-      "concentration_bucket": "< 300 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Crystallizes monoclonal antibodies (demonstrated on infliximab/Remicade) into stable crystalline suspensions; some formulation variants combine crystalline-protein stability with soft hydrogel particle encapsulation. Legacy platform - no recent (2025-2026) deal activity found.",
-      "date_added": "2026-07-13",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "althea_crystalomics_whitepaper",
-          "partner": "N/A (platform technology paper, not a deal)",
-          "deal_type": "Platform disclosure / technical publication",
-          "date": "Undated (legacy Althea R&D)",
-          "date_sort_key": -1,
-          "summary": "Technical whitepaper describing the Crystalomics platform, demonstrating 250 mg/mL crystalline infliximab (~96% volume reduction vs. 10 mg/mL IV). No recent (2025-2026) deal activity found tied to this platform.",
-          "molecule": "Infliximab (Remicade)",
-          "source_name": "Generis / Althea (Ajinomoto Bio-Pharma Services)",
-          "source_url": "https://generisgp.com/wp-content/uploads/2017/05/crystalomics-paper_lsc.pdf",
-          "relevance": "Low",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "academic_solvent_dehydration_hydrogel",
-      "name": "Solvent-Dehydration Hydrogel Microparticles",
-      "company": "Academic (MIT - Doyle Lab, Dept. of Chemical Engineering; not a commercial platform)",
-      "stage_raw": "Research / Preclinical (academic)",
-      "stage_bucket": "Research / Academic",
-      "type": "Suspension/particle",
-      "concentration_text": "360 mg/mL antibody-laden hydrogel microparticle suspension achieved via continuous solvent-based dehydration",
-      "concentration_numeric": 360.0,
-      "concentration_bucket": "300‚Äì450 mg/mL",
-      "needle_size": "Not disclosed",
-      "mechanism": "Continuous microfluidic synthesis of hydrogel microparticles where antibody precipitation occurs simultaneously with solvent-driven dehydration, encapsulating antibody at high concentration for SC suspension delivery. Distinct academic approach (MIT, published Nov 2025) from commercial platforms like Hypercon or Microglassification, though mechanistically related.",
-      "date_added": "2026-07-13",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "mit_advmat_2025-11",
-          "partner": "N/A (research)",
-          "deal_type": "Research publication",
-          "date": "2025-11-01",
-          "date_sort_key": 20251101,
-          "summary": "Peer-reviewed paper (Zheng, Attia, Teng, Doyle - MIT) in Advanced Materials demonstrating 360 mg/mL antibody-laden hydrogel microparticles via continuous solvent-based dehydration.",
-          "molecule": "N/A",
-          "source_name": "Advanced Materials (Wiley) / MIT",
-          "source_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202516429",
-          "relevance": "Low",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "sanofi_sarclisa_escena_sc",
-      "name": "Sarclisa Escena (SC isatuximab, on-body injector)",
-      "company": "Sanofi",
-      "stage_raw": "Approved",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Other",
-      "concentration_text": "Not disclosed; delivered via on-body injector rather than a concentration-enabling formulation technology",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed (on-body injector / patch-pump device)",
-      "mechanism": "FDA-approved subcutaneous reformulation of isatuximab (previously IV-only), administered manually or via an on-body injector across all approved IV indications in multiple myeloma. First anticancer agent approved via on-body injector; no hyaluronidase, particle, or crystalline technology disclosed - device-enabled rather than formulation-enabled.",
-      "date_added": "2026-07-13",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "sanofi_sarclisa-escena_fda_2026-07",
-          "partner": "Sanofi",
-          "deal_type": "Regulatory approval",
-          "date": "2026-07-09",
-          "date_sort_key": 20260709,
-          "summary": "FDA approved isatuximab-irfc (Sarclisa Escena) for subcutaneous injection, extending to all currently approved IV isatuximab indications in multiple myeloma. Administered manually or via an on-body injector. First anticancer agent approved via on-body injector.",
-          "molecule": "Isatuximab-irfc",
-          "source_name": "FDA / Targeted Oncology / ASCO Post",
-          "source_url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-isatuximab-irfc-subcutaneous-injection-multiple-myeloma-indications",
-          "relevance": "High",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "brl_hc_sc_platform",
-      "name": "BRL high-concentration SC biologics platform",
-      "company": "Bhami's Research Laboratory (licensed to Ipca Laboratories)",
-      "stage_raw": "Preclinical (POC / formulation development underway)",
-      "stage_bucket": "Preclinical",
-      "type": "Other",
-      "concentration_text": "Not disclosed",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "Proprietary protein/peptide high-concentration subcutaneous delivery platform from Bhami's Research Laboratory (Mangalore, India); licensed globally to Ipca Laboratories for monoclonal antibody products in oncology and inflammatory disease. Mechanism not yet disclosed in available coverage.",
-      "date_added": "2026-07-13",
-      "last_reviewed": "2026-07-14",
-      "deals": [
-        {
-          "deal_id": "ipca_brl_license_2026-06",
-          "partner": "Ipca Laboratories",
-          "deal_type": "Licensing (global)",
-          "date": "2026-06-12",
-          "date_sort_key": 20260612,
-          "summary": "Global licensing collaboration granting Ipca access to BRL's proprietary high-concentration SC biologics delivery platform for mAb products in oncology and inflammatory disease.",
-          "molecule": "Undisclosed (multiple mAb targets)",
-          "source_name": "BioSpectrum India / Medical Dialogues / Whalesbook",
-          "source_url": "https://www.biospectrumindia.com/news/95/27952/ipca-labs-announces-global-licensing-collaboration-with-bhamis-research-laboratory-for-monoclonal-antibodies.html",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "samsungbioepis_ph20_sc",
-      "name": "Samsung Bioepis proprietary PH20-based SC conversion technology",
-      "company": "Samsung Bioepis",
-      "stage_raw": "Preclinical (internal testing completed)",
-      "stage_bucket": "Preclinical",
-      "type": "Enzyme-assisted",
-      "concentration_text": "Not disclosed numerically; enables IV-to-SC conversion of high-dose antibody drugs (previously only low-dose SC conversions achieved via concentration adjustment alone)",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "CORRECTED 2026-07-28: WIPO/KIPO's International Search Report (ISR) and Written Opinion of the International Searching Authority (ISA) gave both underlying patents (WO2026/142299, WO2026/142300) a preliminary negative opinion on novelty and inventive step, citing prior Huons Lab, Alteogen, and Halozyme prior art plus a 2012 US patent as anticipating/rendering obvious the claims. Samsung Bioepis and industry sources characterize both as hyaluronidase manufacturing/purification (CMC) patents, not composition-of-matter or SC-platform patents; company states no separate platform-commercialization plan exists and no target product is finalized. Preliminary opinion only - national-phase claim amendments remain possible. See Deals_News_Feed row samsungbioepis_isr-novelty-rejection_2026-07-14 for detail. ORIGINAL SUMMARY RETAINED: Proprietary in-house recombinant human hyaluronidase (PH20-based), independently developed (own hyaluronidase, cultivation, and purification processes) and distinct from Halozyme's rHuPH20 (ENHANZE) and Alteogen's ALT-B4 (Hybrozyme). Temporarily breaks down the physical barrier of subcutaneous tissue to enable SC conversion of high-dose antibody drugs. Samsung Bioepis' prior SC conversions (Benepali SC/Enbrel biosimilar, Imraldi SC/Humira biosimilar) were low-dose and needed only concentration adjustment; this hyaluronidase-based technology targets high-dose blockbusters. Being positioned for the company's Keytruda (pembrolizimab) biosimilar and Enhertu (trastuzumab deruxtecan ADC) biosimilar programs. Two WIPO patent publications (WO2026/142299, WO2026/142300) covering hyaluronidase purification surfaced 2026-07-14, firming up the primary IP basis for this technology (see Deals_News_Feed).",
-      "date_added": "2026-07-15",
-      "last_reviewed": "2026-07-28",
-      "deals": [
-        {
-          "deal_id": "samsungbioepis_celltrion_keytruda-market_2026-07-14",
-          "partner": "Celltrion (competing biosimilar developer)",
-          "deal_type": "Market analysis / Competitive context",
-          "date": "2026-07-14",
-          "date_sort_key": 20260714,
-          "summary": "Trade press reports both Samsung Bioepis and Celltrion are pursuing SC-converted biosimilars of Keytruda (pembrolizimab), targeting an estimated $12.7B Keytruda SC market opportunity as the reference product's patent protections face expiry; Celltrion is pursuing this via its own in-house proprietary hyaluronidase SC platform (the same underlying technology used for Herzuma SC/CT-P6 SC, tracked separately under Technology ID celltrion_herzuma_sc).",
-          "molecule": "Pembrolizimab biosimilar (Keytruda)",
-          "source_name": "Seoul Economic Daily",
-          "source_url": "https://en.sedaily.com/finance/2026/07/14/samsung-celltrion-bet-big-on-127-billion-keytruda-sc-market",
-          "relevance": "Medium",
-          "confidence": "Not assessed",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "samsungbioepis_isr-novelty-rejection_2026-07-14",
-          "partner": "N/A (patent examination finding)",
-          "deal_type": "Flag / Correction (patent prosecution development)",
-          "date": "2026-07-14",
-          "date_sort_key": 20260714,
-          "summary": "FLAGGED 2026-07-28 (out-of-window source used per Gate D correction exception; original reporting dated 2026-07-14, surfaced during this run's search, not previously logged): Per Pharm Edaily exclusive reporting citing the WIPO PCT international publication plus the Korean IPO's International Search Report (ISR) and Written Opinion of the International Searching Authority (ISA), the two Samsung Bioepis hyaluronidase-purification patents already tracked here (WO2026/142299, WO2026/142300; both filed 2025-12-23, internationally published 2026-07-02) received a preliminary negative opinion on novelty and inventive step. WO2026/142299 (removal of truncated hyaluronidase): claims 1-53, 56, 58-67 found to lack inventive step, with the ISA citing a prior Huons Lab patent as anticipating the core claims, and finding the multimodal-chromatography claims (5-7) obvious in view of Huons Lab + Alteogen prior art. WO2026/142300 (caprylic acid + depth filtration impurity removal): claims 1-51 found to lack inventive step, citing a 2012 US prior patent for the caprylic-acid/depth-filtration combination and Halozyme prior art for its hyaluronidase application; a composition-of-matter claim (hyaluronidase with HCP <100ppm) was found not novel either, since the ISA found the resulting substance indistinguishable from known hyaluronidase regardless of manufacturing process. Samsung Bioepis and industry sources characterize both patents as hyaluronidase manufacturing/purification (CMC) patents, not composition-of-matter or platform patents; Samsung Bioepis states it has no separate SC-platform commercialization plan and has not finalized a target product. This is a preliminary ISR/ISA opinion only, not a final rejection - claims can still be amended in national-phase prosecution. Directly qualifies the competitive-threat framing of the already-tracked WIPO-disclosure row (samsungbioepis_ph20_disclosure_2026-07-13) and market-analysis row (samsungbioepis_celltrion_keytruda-market_2026-07-14): the underlying IP, as currently claimed, appears weaker than the market reaction (Alteogen shares fell 2026-07-13/14) implied.",
-          "molecule": "Pembrolizimab biosimilar (Keytruda); Trastuzumab deruxtecan biosimilar (Enhertu)",
-          "source_name": "Pharm Edaily (Ïù¥Îç∞ÏùºÎ¶¨)",
-          "source_url": "https://pharm.edaily.co.kr/news/read?newsId=03873686645514520",
-          "relevance": "High",
-          "confidence": "Secondary",
-          "flagged": true,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "samsungbioepis_ph20_disclosure_2026-07-13",
-          "partner": "N/A (internal R&D milestone / technology disclosure)",
-          "deal_type": "R&D milestone / Technology disclosure",
-          "date": "2026-07-13",
-          "date_sort_key": 20260713,
-          "summary": "CORRECTED 2026-07-15: firmed up with primary-source detail. WIPO published two international patent applications from Samsung Bioepis in early July 2026 covering hyaluronidase purification/manufacturing: WO2026/142299 (method for removing cleaved/truncated hyaluronidase) and WO2026/142300 (method for removing impurities via caprylic acid treatment and depth filtration). No specific target product named. Following public reporting of this on 2026-07-14, Alteogen issued a same-day rebuttal statement asserting its ALT-B4 is a materially different substance from any PH20-based enzyme and that products combining pembrolizimab with ALT-B4 (Keytruda Qlex) are protected until 2043, arguing biosimilar competitors could not lawfully substitute a different hyaluronidase. Alteogen shares fell intraday on 2026-07-13/14 on the news. Samsung Bioepis stated it has not finalized which product(s) the purification IP will be applied to and is not pursuing an external platform-licensing business.",
-          "molecule": "Pembrolizimab biosimilar (Keytruda); Trastuzumab deruxtecan biosimilar (Enhertu)",
-          "source_name": "Seoul Economic Daily / WIPO (PATENTSCOPE)",
-          "source_url": "https://en.sedaily.com/finance/2026/07/13/samsung-bioepis-cracks-high-dose-sc-tech-guarding-big",
-          "relevance": "High",
-          "confidence": "Secondary",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "g2gbio_innobiolamp",
-      "name": "InnoBioLAMP",
-      "company": "G2G Bio (ÏßÄÌà¨ÏßÄÎ∞îÏù¥Ïò§)",
-      "stage_raw": "Preclinical / Platform (first public disclosure; feasibility evaluation stage via MTA, no antibody applicability confirmed yet)",
-      "stage_bucket": "Platform / Feasibility",
-      "type": "Suspension/particle",
-      "concentration_text": "Not disclosed numerically; described qualitatively as an 'ultra-high-concentration' antibody microparticle platform",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "Extension of G2G Bio's existing long-acting microsphere DDS platform (InnoLAMP) into biologics: a high-concentration microparticle platform intended to load antibodies at high concentration to enable conversion of IV antibody drugs to SC formulations. Company states applicability extends beyond mAbs to bispecifics, ADCs, and recombinant proteins; actual antibody applicability for any named molecule not yet confirmed (feasibility/MTA stage only, per Celltrion MOU announced 2026-07-30).",
-      "date_added": "2026-07-31",
-      "last_reviewed": "2026-07-31",
-      "deals": [
-        {
-          "deal_id": "g2gbio_celltrion_mou_2026-07-30",
-          "partner": "Celltrion",
-          "deal_type": "MOU / Material Transfer Agreement (Collaboration)",
-          "date": "2026-07-30",
-          "date_sort_key": 20260730,
-          "summary": "G2G Bio and Celltrion signed an MOU including a Material Transfer Agreement (MTA) for 'ultra-high-concentration antibody SC formulation platform technology cooperation.' Under the MTA, Celltrion will transfer antibody substance(s) to G2G Bio so the companies can evaluate applicability to G2G Bio's high-concentration microparticle platform 'InnoBioLAMP' (an extension of G2G Bio's existing InnoLAMP long-acting microsphere DDS technology into biologics/antibodies), with a view to joint R&D and potential commercialization if feasibility is confirmed. This is G2G Bio's first public disclosure of InnoBioLAMP and marks its formal entry into antibody biologics. Specific target molecule(s), research schedule, and cost-sharing terms not disclosed; actual SC-formulation conversion feasibility still to be confirmed via non-clinical/clinical testing per company statement.",
-          "molecule": "Not disclosed",
-          "source_name": "Newspim (Îâ¥Ïä§Ìïå); corroborated by Ïù¥Ìà¨Îç∞Ïù¥ (eToday), Î©îÎîîÍ≤åÏù¥Ìä∏Îâ¥Ïä§ (Medigate News), ÎÑ§Ïù¥Ìä∏Îâ¥Ïä§, ÏÑúÏö∏Í≤ΩÏ†ú (Seoul Economic Daily), ÎçîÎ∞îÏù¥Ïò§ (TheBioNews), Daum",
-          "source_url": "https://www.newspim.com/news/view/20260730000944",
-          "relevance": "High",
-          "confidence": "Secondary",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "alphamab_sc_hc_platform",
-      "name": "Subcutaneous High-Concentration Co-formulation Platform",
-      "company": "Alphamab Oncology (Jiangsu/Suzhou Alphamab Biopharmaceuticals; Â∫∑ÂÆÅÊù∞ÁëûÂà∂ËçØ)",
-      "stage_raw": "Commercial (lead product Envafolimab/KN035 approved 2021); platform extension JSKN033 in Phase III (CDE-approved Aug 2026)",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Co-formulation",
-      "concentration_text": "Not disclosed numerically; described qualitatively as enabling 'high concentration' co-formulation, administered 'in tens of seconds', independent of hyaluronidase",
-      "concentration_numeric": null,
-      "concentration_bucket": "Not disclosed",
-      "needle_size": "Not disclosed",
-      "mechanism": "Proprietary high-concentration SC co-formulation platform enabling subcutaneous injection of large-molecule biologics (mAbs, bispecific ADCs) without a co-formulated hyaluronidase enzyme. Lead validation: Envafolimab (KN035), described by the company as the world's first SC-injected PD-L1 inhibitor, approved 2021. Platform extended to JSKN033 (HER2 bispecific ADC JSKN003 [DAR4, site-specific glycan conjugation of a topoisomerase I inhibitor] co-formulated with envafolimab PD-L1), now CDE-approved for Phase III (JSKN033-301) in recurrent/metastatic cervical cancer (announced 2026-08-03). Also underlies JSKN016 (TROP2/HER3 bispecific ADC), which has an ongoing SC-formulation Phase Ib (China) / Phase I (Australia) program, licensed globally (ex-Greater China) to Pathos AI in a deal announced 2026-08-03/04.",
-      "date_added": "2026-08-19",
-      "last_reviewed": "2026-08-19",
-      "deals": [
-        {
-          "deal_id": "alphamab_jskn033_cde-phase3_2026-08",
-          "partner": "China CDE / NMPA (regulatory)",
-          "deal_type": "Regulatory filing / Clinical trial milestone",
-          "date": "2026-08-03",
-          "date_sort_key": 20260803,
-          "summary": "China's Center for Drug Evaluation (CDE) approved initiation of a Phase III study (JSKN033-301) for JSKN033, described by Alphamab Oncology as a first-in-class high-concentration SC co-formulation of a HER2 bispecific ADC (JSKN003; DAR4; site-specific glycan conjugation of a topoisomerase I inhibitor) with envafolimab (PD-L1 inhibitor). Trial: open-label, randomized, controlled, multicenter study of JSKN033 monotherapy vs. physician's-choice chemotherapy in recurrent/metastatic cervical cancer after platinum-based chemo/immunotherapy, irrespective of HER2 expression status. Company states the co-formulation is administered 'in tens of seconds' and is independent of hyaluronidase. No numeric concentration (mg/mL) disclosed in available coverage.",
-          "molecule": "JSKN033 (JSKN003 HER2 bispecific ADC + Envafolimab/KN035 PD-L1 inhibitor)",
-          "source_name": "Alphamab Oncology (company press release)",
-          "source_url": "https://www.alphamabonc.com/en/html/news/2823.html",
-          "relevance": "High",
-          "confidence": "Primary",
-          "flagged": false,
-          "new_in_digest": false
-        },
-        {
-          "deal_id": "alphamab_pathosai_jskn016_2026-08",
-          "partner": "Pathos AI",
-          "deal_type": "Exclusive Global License",
-          "date": "2026-08-03",
-          "date_sort_key": 20260803,
-          "summary": "Pathos AI licensed JSKN016 (a first-in-class TROP2/HER3 bispecific ADC) from Alphamab Oncology, gaining exclusive development/commercialization rights outside Greater China (Alphamab retains Chinese-territory rights). Terms: $125M non-refundable upfront + up to $2,093M in development/commercialization milestones + tiered royalties (high-single to low-double-digit % of net sales). Both IV and SC formulations of JSKN016 are covered; an SC formulation of JSKN016 is already in Phase Ib (China) and Phase I (Australia) trials. CAVEAT (per soul-file 'never guess' rule): the primary source does not explicitly confirm whether Alphamab's proprietary SC high-concentration platform IP itself transfers under this deal, or only rights to the JSKN016 molecule/its existing SC-formulated clinical material -- logged with this ambiguity flagged rather than assumed.",
-          "molecule": "JSKN016 (TROP2/HER3 bispecific ADC)",
-          "source_name": "Pathos AI (press release, GlobeNewswire) / BioSpace",
-          "source_url": "https://www.pathos.com/pathos-ai-enters-global-licensing-agreement-with-alphamab-oncology-on-jskn016-a-first-in-class-trop2-her3-bispecific-adc",
-          "relevance": "Medium",
-          "confidence": "Primary",
-          "flagged": false,
-          "new_in_digest": false
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    },
-    {
-      "id": "eisai_biogen_leqembi_iqlik_sc",
-      "name": "LEQEMBI IQLIK (lecanemab-irmb SC autoinjector formulation)",
-      "company": "Eisai / Biogen",
-      "stage_raw": "Approved / Commercially available (SC maintenance dose approved Aug 2025; SC initiation dose approved 2026-07-13; initiation-dose autoinjector commercially launched in the US 2026-08-24)",
-      "stage_bucket": "Approved / Marketed",
-      "type": "Other",
-      "concentration_text": "SC formulation 200 mg/mL (vs. 100 mg/mL for the IV formulation); 500 mg initiation dose given as two 250 mg/1.25 mL injections, each delivered in ~15 seconds; 360 mg/1.8 mL autoinjector used for maintenance dosing",
-      "concentration_numeric": 200.0,
-      "concentration_bucket": "< 300 mg/mL",
-      "needle_size": "29-gauge fixed 1/2-inch needle (single-dose prefilled autoinjector)",
-      "mechanism": "High-concentration (200 mg/mL) aqueous liquid formulation of lecanemab-irmb (anti-amyloid-beta protofibril monoclonal antibody) -- roughly double the concentration of the approved IV formulation (100 mg/mL) -- delivered via a single-dose prefilled autoinjector in approximately 15 seconds per injection. No hyaluronidase or particle/suspension technology involved: a straightforward high-concentration liquid reformulation paired with a fast, fixed-needle autoinjector device, enabling at-home SC initiation and maintenance dosing as an alternative to IV infusion. Included as an external cross-indication benchmark (Alzheimer's disease, not oncology/immunology) for a commercially-validated high-concentration mAb SC delivery technology.",
-      "date_added": "2026-08-27",
-      "last_reviewed": "2026-08-27",
-      "deals": [
-        {
-          "deal_id": "eisai_biogen_leqembiiqlik_launch_2026-08-24",
-          "partner": "N/A (commercial launch; Eisai/Biogen own product)",
-          "deal_type": "Commercial launch / Product availability announcement",
-          "date": "2026-08-24",
-          "date_sort_key": 20260824,
-          "summary": "Eisai and Biogen announced that LEQEMBI IQLIK (lecanemab-irmb) autoinjector is now commercially available in the U.S. for SC initiation therapy in early Alzheimer's disease: 500 mg given once weekly as two consecutive 250 mg/1.25 mL injections, each delivered in approximately 15 seconds. This follows FDA approval of the initiation-dose sBLA on 2026-07-13 (out-of-window for this run; context only) and is separate from the SC maintenance-dose formulation (360 mg/1.8 mL) approved in August 2025. SC formulation is 200 mg/mL vs. 100 mg/mL for the IV formulation. Patients may switch between IV and SC administration at any point in the treatment course. NEW ENTITY - first log of Eisai/Biogen lecanemab in this tracker; included as an external cross-indication (Alzheimer's, not oncology/immunology) benchmark for commercially-validated high-concentration mAb SC autoinjector delivery.",
-          "molecule": "Lecanemab-irmb (Leqembi)",
-          "source_name": "Biogen Inc. / Eisai Co. Ltd. (GlobeNewswire)",
-          "source_url": "https://www.globenewswire.com/news-release/2026/08/24/3349698/0/en/leqembi-iqlik-lecanemab-irmb-autoinjector-for-initiation-of-therapy-now-available-in-the-u-s-for-early-alzheimer-s-disease.html",
-          "relevance": "Medium",
-          "confidence": "Primary",
-          "flagged": false,
-          "new_in_digest": true
-        }
-      ],
-      "is_internal": false,
-      "is_reference": false
-    }
-  ],
-  "recent_activity": [
-    {
-      "deal_id": "eisai_biogen_leqembiiqlik_launch_2026-08-24",
-      "partner": "N/A (commercial launch; Eisai/Biogen own product)",
-      "deal_type": "Commercial launch / Product availability announcement",
-      "date": "2026-08-24",
-      "date_sort_key": 20260824,
-      "summary": "Eisai and Biogen announced that LEQEMBI IQLIK (lecanemab-irmb) autoinjector is now commercially available in the U.S. for SC initiation therapy in early Alzheimer's disease: 500 mg given once weekly as two consecutive 250 mg/1.25 mL injections, each delivered in approximately 15 seconds. This follows FDA approval of the initiation-dose sBLA on 2026-07-13 (out-of-window for this run; context only) and is separate from the SC maintenance-dose formulation (360 mg/1.8 mL) approved in August 2025. SC formulation is 200 mg/mL vs. 100 mg/mL for the IV formulation. Patients may switch between IV and SC administration at any point in the treatment course. NEW ENTITY - first log of Eisai/Biogen lecanemab in this tracker; included as an external cross-indication (Alzheimer's, not oncology/immunology) benchmark for commercially-validated high-concentration mAb SC autoinjector delivery.",
-      "molecule": "Lecanemab-irmb (Leqembi)",
-      "source_name": "Biogen Inc. / Eisai Co. Ltd. (GlobeNewswire)",
-      "source_url": "https://www.globenewswire.com/news-release/2026/08/24/3349698/0/en/leqembi-iqlik-lecanemab-irmb-autoinjector-for-initiation-of-therapy-now-available-in-the-u-s-for-early-alzheimer-s-disease.html",
-      "relevance": "Medium",
-      "confidence": "Primary",
-      "flagged": false,
-      "new_in_digest": true,
-      "technology_id": "eisai_biogen_leqembi_iqlik_sc",
-      "technology_name": "LEQEMBI IQLIK (lecanemab-irmb SC autoinjector formulation)"
-    },
-    {
-      "deal_id": "alteogen_undisclosed-pharma_2026-08",
-      "partner": "Undisclosed global pharmaceutical company",
-      "deal_type": "Exclusive License",
-      "date": "2026-08-05",
-      "date_sort_key": 20260805,
-      "summary": "Exclusive worldwide license for an undisclosed global pharmaceutical company to develop and commercialize a Hybrozyme(TM)-enabled subcutaneous formulation of a biologic product using ALT-B4 (berahyaluronidase alfa). Total deal value up to $365M (~KRW 521.9B): upfront payment (amount undisclosed) plus development, regulatory, and sales milestones, plus royalties on net sales post-commercialization; Korean press reports upfront due within 30 days of signing. This is Alteogen's third ALT-B4/Hybrozyme licensing deal disclosed in 2026 (after AstraZeneca and GSK/Tesaro, both already tracked); Korean press reports Alteogen's cumulative technology-export total now exceeds KRW 12 trillion.",
-      "molecule": "Undisclosed",
-      "source_name": "Alteogen (IR press release) / PR Newswire / Edaily",
-      "source_url": "http://www.alteogen.com/en/sub/ir/news.php?mode=view&bid=13&idx=340&page=1",
-      "relevance": "High",
-      "confidence": "Primary",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "alt-b4_hybrozyme",
-      "technology_name": "ALT-B4 / Hybrozyme (berahyaluronidase alfa)"
-    },
-    {
-      "deal_id": "alphamab_jskn033_cde-phase3_2026-08",
-      "partner": "China CDE / NMPA (regulatory)",
-      "deal_type": "Regulatory filing / Clinical trial milestone",
-      "date": "2026-08-03",
-      "date_sort_key": 20260803,
-      "summary": "China's Center for Drug Evaluation (CDE) approved initiation of a Phase III study (JSKN033-301) for JSKN033, described by Alphamab Oncology as a first-in-class high-concentration SC co-formulation of a HER2 bispecific ADC (JSKN003; DAR4; site-specific glycan conjugation of a topoisomerase I inhibitor) with envafolimab (PD-L1 inhibitor). Trial: open-label, randomized, controlled, multicenter study of JSKN033 monotherapy vs. physician's-choice chemotherapy in recurrent/metastatic cervical cancer after platinum-based chemo/immunotherapy, irrespective of HER2 expression status. Company states the co-formulation is administered 'in tens of seconds' and is independent of hyaluronidase. No numeric concentration (mg/mL) disclosed in available coverage.",
-      "molecule": "JSKN033 (JSKN003 HER2 bispecific ADC + Envafolimab/KN035 PD-L1 inhibitor)",
-      "source_name": "Alphamab Oncology (company press release)",
-      "source_url": "https://www.alphamabonc.com/en/html/news/2823.html",
-      "relevance": "High",
-      "confidence": "Primary",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "alphamab_sc_hc_platform",
-      "technology_name": "Subcutaneous High-Concentration Co-formulation Platform"
-    },
-    {
-      "deal_id": "alphamab_pathosai_jskn016_2026-08",
-      "partner": "Pathos AI",
-      "deal_type": "Exclusive Global License",
-      "date": "2026-08-03",
-      "date_sort_key": 20260803,
-      "summary": "Pathos AI licensed JSKN016 (a first-in-class TROP2/HER3 bispecific ADC) from Alphamab Oncology, gaining exclusive development/commercialization rights outside Greater China (Alphamab retains Chinese-territory rights). Terms: $125M non-refundable upfront + up to $2,093M in development/commercialization milestones + tiered royalties (high-single to low-double-digit % of net sales). Both IV and SC formulations of JSKN016 are covered; an SC formulation of JSKN016 is already in Phase Ib (China) and Phase I (Australia) trials. CAVEAT (per soul-file 'never guess' rule): the primary source does not explicitly confirm whether Alphamab's proprietary SC high-concentration platform IP itself transfers under this deal, or only rights to the JSKN016 molecule/its existing SC-formulated clinical material -- logged with this ambiguity flagged rather than assumed.",
-      "molecule": "JSKN016 (TROP2/HER3 bispecific ADC)",
-      "source_name": "Pathos AI (press release, GlobeNewswire) / BioSpace",
-      "source_url": "https://www.pathos.com/pathos-ai-enters-global-licensing-agreement-with-alphamab-oncology-on-jskn016-a-first-in-class-trop2-her3-bispecific-adc",
-      "relevance": "Medium",
-      "confidence": "Primary",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "alphamab_sc_hc_platform",
-      "technology_name": "Subcutaneous High-Concentration Co-formulation Platform"
-    },
-    {
-      "deal_id": "g2gbio_celltrion_mou_2026-07-30",
-      "partner": "Celltrion",
-      "deal_type": "MOU / Material Transfer Agreement (Collaboration)",
-      "date": "2026-07-30",
-      "date_sort_key": 20260730,
-      "summary": "G2G Bio and Celltrion signed an MOU including a Material Transfer Agreement (MTA) for 'ultra-high-concentration antibody SC formulation platform technology cooperation.' Under the MTA, Celltrion will transfer antibody substance(s) to G2G Bio so the companies can evaluate applicability to G2G Bio's high-concentration microparticle platform 'InnoBioLAMP' (an extension of G2G Bio's existing InnoLAMP long-acting microsphere DDS technology into biologics/antibodies), with a view to joint R&D and potential commercialization if feasibility is confirmed. This is G2G Bio's first public disclosure of InnoBioLAMP and marks its formal entry into antibody biologics. Specific target molecule(s), research schedule, and cost-sharing terms not disclosed; actual SC-formulation conversion feasibility still to be confirmed via non-clinical/clinical testing per company statement.",
-      "molecule": "Not disclosed",
-      "source_name": "Newspim (Îâ¥Ïä§Ìïå); corroborated by Ïù¥Ìà¨Îç∞Ïù¥ (eToday), Î©îÎîîÍ≤åÏù¥Ìä∏Îâ¥Ïä§ (Medigate News), ÎÑ§Ïù¥Ìä∏Îâ¥Ïä§, ÏÑúÏö∏Í≤ΩÏ†ú (Seoul Economic Daily), ÎçîÎ∞îÏù¥Ïò§ (TheBioNews), Daum",
-      "source_url": "https://www.newspim.com/news/view/20260730000944",
-      "relevance": "High",
-      "confidence": "Secondary",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "g2gbio_innobiolamp",
-      "technology_name": "InnoBioLAMP"
-    },
-    {
-      "deal_id": "halozyme_incyte_2026-07",
-      "partner": "Incyte",
-      "deal_type": "Licensing/Collaboration",
-      "date": "2026-07-20",
-      "date_sort_key": 20260720,
-      "summary": "Global collaboration & license agreement applying ENHANZE (rHuPH20) to subcutaneous formulations of INCA033989, Incyte's first-in-class anti-mutant-calreticulin (mutCALR) monoclonal antibody for myeloproliferative neoplasms (MPNs). Incyte also receives an option to nominate up to two additional ENHANZE targets. Halozyme to receive an upfront payment (amount undisclosed) plus development/regulatory milestone payments and royalties on net sales of any commercialized ENHANZE-enabled medicines.",
-      "molecule": "INCA033989",
-      "source_name": "PR Newswire (Halozyme)",
-      "source_url": "https://www.prnewswire.com/news-releases/halozyme-announces-global-collaboration-and-license-agreement-with-incyte-to-support-the-development-of-subcutaneous-formulations-of-inca033989-using-its-enhanze-technology-302829283.html",
-      "relevance": "High",
-      "confidence": "Primary",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "enhanze",
-      "technology_name": "ENHANZE (rHuPH20)"
-    },
-    {
-      "deal_id": "samsungbioepis_celltrion_keytruda-market_2026-07-14",
-      "partner": "Celltrion (competing biosimilar developer)",
-      "deal_type": "Market analysis / Competitive context",
-      "date": "2026-07-14",
-      "date_sort_key": 20260714,
-      "summary": "Trade press reports both Samsung Bioepis and Celltrion are pursuing SC-converted biosimilars of Keytruda (pembrolizimab), targeting an estimated $12.7B Keytruda SC market opportunity as the reference product's patent protections face expiry; Celltrion is pursuing this via its own in-house proprietary hyaluronidase SC platform (the same underlying technology used for Herzuma SC/CT-P6 SC, tracked separately under Technology ID celltrion_herzuma_sc).",
-      "molecule": "Pembrolizimab biosimilar (Keytruda)",
-      "source_name": "Seoul Economic Daily",
-      "source_url": "https://en.sedaily.com/finance/2026/07/14/samsung-celltrion-bet-big-on-127-billion-keytruda-sc-market",
-      "relevance": "Medium",
-      "confidence": "Not assessed",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "samsungbioepis_ph20_sc",
-      "technology_name": "Samsung Bioepis proprietary PH20-based SC conversion technology"
-    },
-    {
-      "deal_id": "samsungbioepis_isr-novelty-rejection_2026-07-14",
-      "partner": "N/A (patent examination finding)",
-      "deal_type": "Flag / Correction (patent prosecution development)",
-      "date": "2026-07-14",
-      "date_sort_key": 20260714,
-      "summary": "FLAGGED 2026-07-28 (out-of-window source used per Gate D correction exception; original reporting dated 2026-07-14, surfaced during this run's search, not previously logged): Per Pharm Edaily exclusive reporting citing the WIPO PCT international publication plus the Korean IPO's International Search Report (ISR) and Written Opinion of the International Searching Authority (ISA), the two Samsung Bioepis hyaluronidase-purification patents already tracked here (WO2026/142299, WO2026/142300; both filed 2025-12-23, internationally published 2026-07-02) received a preliminary negative opinion on novelty and inventive step. WO2026/142299 (removal of truncated hyaluronidase): claims 1-53, 56, 58-67 found to lack inventive step, with the ISA citing a prior Huons Lab patent as anticipating the core claims, and finding the multimodal-chromatography claims (5-7) obvious in view of Huons Lab + Alteogen prior art. WO2026/142300 (caprylic acid + depth filtration impurity removal): claims 1-51 found to lack inventive step, citing a 2012 US prior patent for the caprylic-acid/depth-filtration combination and Halozyme prior art for its hyaluronidase application; a composition-of-matter claim (hyaluronidase with HCP <100ppm) was found not novel either, since the ISA found the resulting substance indistinguishable from known hyaluronidase regardless of manufacturing process. Samsung Bioepis and industry sources characterize both patents as hyaluronidase manufacturing/purification (CMC) patents, not composition-of-matter or platform patents; Samsung Bioepis states it has no separate SC-platform commercialization plan and has not finalized a target product. This is a preliminary ISR/ISA opinion only, not a final rejection - claims can still be amended in national-phase prosecution. Directly qualifies the competitive-threat framing of the already-tracked WIPO-disclosure row (samsungbioepis_ph20_disclosure_2026-07-13) and market-analysis row (samsungbioepis_celltrion_keytruda-market_2026-07-14): the underlying IP, as currently claimed, appears weaker than the market reaction (Alteogen shares fell 2026-07-13/14) implied.",
-      "molecule": "Pembrolizimab biosimilar (Keytruda); Trastuzumab deruxtecan biosimilar (Enhertu)",
-      "source_name": "Pharm Edaily (Ïù¥Îç∞ÏùºÎ¶¨)",
-      "source_url": "https://pharm.edaily.co.kr/news/read?newsId=03873686645514520",
-      "relevance": "High",
-      "confidence": "Secondary",
-      "flagged": true,
-      "new_in_digest": false,
-      "technology_id": "samsungbioepis_ph20_sc",
-      "technology_name": "Samsung Bioepis proprietary PH20-based SC conversion technology"
-    },
-    {
-      "deal_id": "samsungbioepis_ph20_disclosure_2026-07-13",
-      "partner": "N/A (internal R&D milestone / technology disclosure)",
-      "deal_type": "R&D milestone / Technology disclosure",
-      "date": "2026-07-13",
-      "date_sort_key": 20260713,
-      "summary": "CORRECTED 2026-07-15: firmed up with primary-source detail. WIPO published two international patent applications from Samsung Bioepis in early July 2026 covering hyaluronidase purification/manufacturing: WO2026/142299 (method for removing cleaved/truncated hyaluronidase) and WO2026/142300 (method for removing impurities via caprylic acid treatment and depth filtration). No specific target product named. Following public reporting of this on 2026-07-14, Alteogen issued a same-day rebuttal statement asserting its ALT-B4 is a materially different substance from any PH20-based enzyme and that products combining pembrolizimab with ALT-B4 (Keytruda Qlex) are protected until 2043, arguing biosimilar competitors could not lawfully substitute a different hyaluronidase. Alteogen shares fell intraday on 2026-07-13/14 on the news. Samsung Bioepis stated it has not finalized which product(s) the purification IP will be applied to and is not pursuing an external platform-licensing business.",
-      "molecule": "Pembrolizimab biosimilar (Keytruda); Trastuzumab deruxtecan biosimilar (Enhertu)",
-      "source_name": "Seoul Economic Daily / WIPO (PATENTSCOPE)",
-      "source_url": "https://en.sedaily.com/finance/2026/07/13/samsung-bioepis-cracks-high-dose-sc-tech-guarding-big",
-      "relevance": "High",
-      "confidence": "Secondary",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "samsungbioepis_ph20_sc",
-      "technology_name": "Samsung Bioepis proprietary PH20-based SC conversion technology"
-    },
-    {
-      "deal_id": "sanofi_sarclisa-escena_fda_2026-07",
-      "partner": "Sanofi",
-      "deal_type": "Regulatory approval",
-      "date": "2026-07-09",
-      "date_sort_key": 20260709,
-      "summary": "FDA approved isatuximab-irfc (Sarclisa Escena) for subcutaneous injection, extending to all currently approved IV isatuximab indications in multiple myeloma. Administered manually or via an on-body injector. First anticancer agent approved via on-body injector.",
-      "molecule": "Isatuximab-irfc",
-      "source_name": "FDA / Targeted Oncology / ASCO Post",
-      "source_url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-isatuximab-irfc-subcutaneous-injection-multiple-myeloma-indications",
-      "relevance": "High",
-      "confidence": "Not assessed",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "sanofi_sarclisa_escena_sc",
-      "technology_name": "Sarclisa Escena (SC isatuximab, on-body injector)"
-    },
-    {
-      "deal_id": "samsungbio_astrazeneca_saphnelo_2026-07",
-      "partner": "AstraZeneca",
-      "deal_type": "Manufacturing/CDMO",
-      "date": "2026-07 (reported 2026-07-06)",
-      "date_sort_key": 20260706,
-      "summary": "Samsung Biologics selected to produce drug substance for AstraZeneca's Saphnelo (anifrolumab) subcutaneous injection for systemic lupus erythematosus. Second known SC-formulation CDMO win for Samsung Biologics after J&J's Rybrevant SC. Saphnelo SC formulation itself already FDA/EU approved (self-administration pre-filled pen/autoinjector); this deal covers drug-substance manufacturing via S-HiCon. Specific volume/terms not disclosed.",
-      "molecule": "Anifrolumab (Saphnelo)",
-      "source_name": "Seoul Economic Daily",
-      "source_url": "https://en.sedaily.com/finance/2026/07/06/samsung-biologics-wins-subcutaneous-drug-deals-eyes-new",
-      "relevance": "Medium",
-      "confidence": "Not assessed",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "samsungbio_s-hicon",
-      "technology_name": "S-HiCon (CDMO high-concentration formulation development platform)"
-    },
-    {
-      "deal_id": "ipca_brl_license_2026-06",
-      "partner": "Ipca Laboratories",
-      "deal_type": "Licensing (global)",
-      "date": "2026-06-12",
-      "date_sort_key": 20260612,
-      "summary": "Global licensing collaboration granting Ipca access to BRL's proprietary high-concentration SC biologics delivery platform for mAb products in oncology and inflammatory disease.",
-      "molecule": "Undisclosed (multiple mAb targets)",
-      "source_name": "BioSpectrum India / Medical Dialogues / Whalesbook",
-      "source_url": "https://www.biospectrumindia.com/news/95/27952/ipca-labs-announces-global-licensing-collaboration-with-bhamis-research-laboratory-for-monoclonal-antibodies.html",
-      "relevance": "Medium",
-      "confidence": "Not assessed",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "brl_hc_sc_platform",
-      "technology_name": "BRL high-concentration SC biologics platform"
-    },
-    {
-      "deal_id": "chengdu_nmpa-approval_2026-06",
-      "partner": "NMPA",
-      "deal_type": "Regulatory approval",
-      "date": "2026-06-10",
-      "date_sort_key": 20260610,
-      "summary": "China's first 20% subcutaneous immunoglobulin (SCIG) product approved by NMPA.",
-      "molecule": "N/A (immunoglobulin, not mAb)",
-      "source_name": "Eastmoney (Chinese financial press)",
-      "source_url": "https://caifuhao.eastmoney.com/news/20260610190803703379240",
-      "relevance": "Low",
-      "confidence": "Not assessed",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "chengdu_rongsheng_tiantan_weian",
-      "technology_name": "Tiantan Weian (20% subcutaneous immunoglobulin - SCIG)"
-    },
-    {
-      "deal_id": "alteogen_sanofi_2026-06",
-      "partner": "Sanofi",
-      "deal_type": "Non-exclusive License (reconfirmed)",
-      "date": "2019 (original); reconfirmed 2026-06",
-      "date_sort_key": 20260601,
-      "summary": "Non-exclusive license (originally signed 2019) for high-dose SC formulation of dupilumab (Dupixent), development reconfirmed as ongoing.",
-      "molecule": "Dupilumab (Dupixent)",
-      "source_name": "Pearce IP",
-      "source_url": "https://www.pearceip.law/2026/06/18/sanofi-alteogen-confirm-development-of-subcutaneous-dupilumab/",
-      "relevance": "High",
-      "confidence": "Not assessed",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "alt-b4_hybrozyme",
-      "technology_name": "ALT-B4 / Hybrozyme (berahyaluronidase alfa)"
-    },
-    {
-      "deal_id": "genentech_lunsumio_2026-06",
-      "partner": "FDA (regulatory)",
-      "deal_type": "Regulatory filing",
-      "date": "2026-06-01",
-      "date_sort_key": 20260601,
-      "summary": "sBLA accepted for Lunsumio VELO (SC mosunetuzumab) + Polivy combination, R/R large B-cell lymphoma. FDA decision expected ~Feb 2027.",
-      "molecule": "Mosunetuzumab",
-      "source_name": "Genentech Press Releases",
-      "source_url": "https://www.gene.com/media/press-releases/15117/2026-06-17/fda-accepts-supplemental-biologics-licen",
-      "relevance": "Medium",
-      "confidence": "Not assessed",
-      "flagged": false,
-      "new_in_digest": false,
-      "technology_id": "genentech_unbranded_sc",
-      "technology_name": "Proprietary SC reformulations (unbranded)"
-    }
-  ]
-}
+Y™Áäx-ÆÈ‹j◊ù¢Îi∫⁄+äßj[hëÈ‹¢ÈÌﬂ~|Â:-jZ.∂õ≠ñ)ﬁ≥W∞–¢&vVÊW&FVEˆB#¢###b”Ç”#ÖCC£3#£2≥ì£"¿–¢&vVÊW&FVEˆg&ˆ“#¢∞–¢'FV6ÜÊˆ∆ˆvñW2#¢'FV6ÜÊˆ∆ˆvñW5ˆF"Áí"¿–¢&FV«2#¢&FV«5ˆF"Áí –¢“¿–¢&∆7E˜WFFVB#¢###b”Ç”#r"¿–¢'7FvUˆ˜&FW"#¢∞–¢%&W6V&6ÇÚ6FV÷ñ2"¿–¢%&V6∆ñÊñ6¬"¿–¢%∆Ff˜&“ÚfV6ñ&ñ∆óGí"¿–¢%&R◊&Vvó7G&Fñˆ‚Ú∆FR◊7FvR"¿–¢$&˜fVBÚ÷&∂WFVB"¿–¢%f&ñW2'í&ˆw&“ –¢“¿–¢'GóUˆ˜&FW"#¢∞–¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢$˜FÜW""¿–¢$VÁßñ÷R÷76ó7FVB"¿–¢$6Ú÷f˜&◊V∆Fñˆ‚"¿–¢$7'ó7F∆∆ñÊR –¢“¿–¢&6ˆ◊Áïˆ˜&FW"#¢∞–¢$6FV÷ñ2Ñ‘ïB“F˜ñ∆R∆"¬FWB‚ˆb6ÜV÷ñ6¬VÊvñÊVW&ñÊs≤Ê˜B6ˆ÷÷W&6ñ¬∆Ff˜&“í"¿–¢$6FV÷ñ2Ú◊V«Fó∆RÜÊ˜B6ñÊv∆R6ˆ◊Áí76WBí"¿–¢$«Ü÷"ˆÊ6ˆ∆ˆwíÑ¶ñÊw7Rı7W¶Ü˜R«Ü÷"&ñ˜Ü&÷6WWFñ6«3≤[´~ZËi€yÓXãnà⁄Úí"¿–¢$«FVˆvV‚"¿–¢$«FÜVFV6ÜÊˆ∆ˆvñW2ÜÊ˜r'Bˆb¶ñÊˆ÷˜FÚ&ñÚ’Ü&÷6W'fñ6W2í"¿–¢$&Ü÷íw2&W6V&6Ç∆&˜&F˜'íÜ∆ñ6VÁ6VBFÚó6∆&˜&F˜&ñW2í"¿–¢$6V∆«G&ñˆ‚"¿–¢$6ÜVÊvGR&ˆÊw6ÜVÊrÜ&÷6WWFñ6¬Ñ6ÜñÊÊFñˆÊ¬Ü&÷6WWFñ6¬w&˜WÚ6ñÊ˜Ü&“í"¿–¢$Vó6íÚ&ñˆvV‚"¿–¢$s$r&ñÚé xÿäŒ xª	N…€N…äBí"¿–¢$vVÊVÁFV6ÇÚ&ˆ6ÜR"¿–¢$Ü∆˜ßñ÷RFÜW&WWFñ72"¿–¢$Ü∆˜ßñ÷RFÜW&WWFñ72áfñV∆V∑G&ˆfí7Vó6óFñˆ‚í"¿–¢$ñÁfVÁFvT∆""¿–¢$∆ñÊGí&ñ˜66ñVÊ6W2"¿–¢$ÊÊˆf˜&“fñÊ∆ÊB˜ñ¢"¿–¢%&W7FñvR&ñ˜Ü&÷îD2"¿–¢%6◊7VÊr&ñˆWó2"¿–¢%6◊7VÊr&ñˆ∆ˆvñ72"¿–¢%6Êˆfí"¿–¢%7W&b&ñÚÜ7Vó&VB'íÜ∆˜ßñ÷RFÜW&WWFñ72¬FV2##Rí"¿–¢%wUÜí&ñˆ∆ˆvñ72"¿–¢%ÜW&ó2&ñ˜Ü&÷ –¢“¿–¢&6ˆÊ6VÁG&FñˆÂˆ˜&FW"#¢∞–¢#¬3÷rˆ‘¬"¿–¢#3(	3CS÷rˆ‘¬"¿–¢#CS(	3c÷rˆ‘¬"¿–¢#c≤÷rˆ‘¬"¿–¢$Ê˜BFó66∆˜6VB –¢“¿–¢&6˜VÁG2#¢∞–¢'G&6∂VB#¢#R¿–¢&6ˆ◊&&∆R#¢R¿–¢&6ˆ÷÷W&6ñ¬#¢Ç¿–¢&FV«5˜G&6∂VB#¢CB¿–¢&f∆vvVEˆFV«2#¢P–¢“¿–¢&ñÁFW&Ê≈˜F&vWG2#¢∞–¢∞–¢&ñB#¢&áóW&ñˆ‚"¿–¢&Ê÷R#¢$áóW&ñˆ‚"¿–¢&6ˆ◊Áí#¢$˜W"ñÁFW&Ê¬∆Ff˜&“"¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬ÚñÁFW&Ê¬"¿–¢'7FvUˆ'V6∂WB#¢%&V6∆ñÊñ6¬"¿–¢'GóR#¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢#s≤÷rˆ‘¬(	BñÁFW&Ê¬&ˆw&“F&vWB6ˆÊ6VÁG&Fñˆ‚‚"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢s¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#c≤÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢$ñÁFW&Ê¬ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚&Vf˜&◊V∆Fñˆ‚&ˆw&“‚6Ü˜v‚ÜW&R2˜W"˜v‚&VÊ6Ü÷&≤F&vWBvñÁ7BFÜRWáFW&Ê¬6ˆ◊WFóFófR∆ÊG66R¬Ê˜BFÜó&B◊'Gí∆ñ6VÁ6&∆RFV6ÜÊˆ∆ˆwí‚"¿–¢'6˜W&6Uˆ∆&V¬#¢$ñÁFW&Ê¬"¿–¢&Ê˜FW2#¢µ“¿–¢&ó5ˆñÁFW&Ê¬#¢G'VR¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢'FÜW&÷ñ7&"¿–¢&Ê÷R#¢%FÜW&÷ñ7&"¿–¢&6ˆ◊Áí#¢$˜W"ñÁFW&Ê¬∆Ff˜&“"¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬ÚñÁFW&Ê¬"¿–¢'7FvUˆ'V6∂WB#¢%&V6∆ñÊñ6¬"¿–¢'GóR#¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢'„3É÷rˆ‘¬(	BñÁFW&Ê¬&ˆw&“F&vWB6ˆÊ6VÁG&Fñˆ‚Ü&˜Üñ÷FRí‚"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢3É¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#3(	3CS÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢%6V6ˆÊBñÁFW&Ê¬ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚&Vf˜&◊V∆Fñˆ‚F&vWB¬G&6∂VB∆ˆÊw6ñFRáóW&ñˆ‚2&VÊ6Ü÷&≤vñÁ7BWáFW&Ê¬∆Ff˜&◊2‚"¿–¢'6˜W&6Uˆ∆&V¬#¢$ñÁFW&Ê¬"¿–¢&Ê˜FW2#¢∞–¢∞–¢&FV≈ˆñB#¢'FÜW&÷ñ7&ˆñÁFW&Ê≈Û##b”r"¿–¢''FÊW"#¢$‚ÙÜñÁFW&Ê¬6˜'&V7Fñˆ‚í"¿–¢&FV≈˜GóR#¢$f∆rÚ6˜'&V7Fñˆ‚"¿–¢&FFR#¢###b”r”2"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cs2¿–¢'7V÷÷'í#¢$4ı%$T5DTC¢6ˆÊfó&÷VBvóFÇG&6∂W"˜vÊW"FÜBuFÜW&÷ñ7&ró2‚ñÁFW&Ê¬F&vWB∆Ff˜&“¬G&6∂VB∆ˆÊw6ñFRáóW&ñˆ‚2˜W"˜v‚&VÊ6Ü÷&≤“Ê˜B‚WáFW&Ê¬6ˆ◊Áí‚&Wfñ˜W6«í∆ˆvvVB2‚VÁfW&ñfñVBWáFW&Ê¬6V&6Ç&W7V«C≤FÜB6∆76ñfñ6Fñˆ‚v2w&ˆÊr‚Ê˜r6Ü˜v‚ˆÊ«íˆ‚FÜRñÁFW&Ê¬˜V&∆ñ2F6Ü&ˆ&B¬Ê˜B2G&6∂VB6ˆ◊WFóF˜"‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ù"¿–¢'6˜W&6UˆÊ÷R#¢$ñÁFW&Ê¬6ˆÊfó&÷Fñˆ‚"¿–¢'6˜W&6U˜W&¬#¢ÁV∆¬¿–¢'&V∆WfÊ6R#¢$‚Ù"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢G'VR¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢––¢“¿–¢'&VfW&VÊ6U˜&ˆGV7G2#¢∞–¢∞–¢&ñB#¢&GWóÜVÁB"¿–¢&Ê÷R#¢$GWóÜVÁBá&VfW&VÊ6R&ˆGV7Bí"¿–¢&6ˆ◊Áí#¢%6ÊˆfíÚ&VvVÊW&ˆ‚"¿–¢'7FvU˜&r#¢$6ˆ÷÷W&6ñ¬"¿–¢'7FvUˆ'V6∂WB#¢$&˜fVBÚ÷&∂WFVB"¿–¢'GóR#¢$˜FÜW""¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢#S÷rˆ‘¬É3÷rÛ"‘¬&Vfñ∆∆VB7ó&ñÊvR˜V‚¬6ˆ÷÷W&6ñ¬&W6VÁFFñˆ‚í"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢S¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#¬3÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢##ívVvRÜ6ˆ÷÷W&6ñ¬WFˆñÊ¶V7F˜"˜V‚í"¿–¢&÷V6ÜÊó6“#¢$7W'&VÁB÷&∂WFVBGWñ«V÷"f˜&◊V∆Fñˆ‚(	B6ˆÁfVÁFñˆÊ¬∆óVñB≤WÜ6óñVÁBf˜&◊V∆Fñˆ‚vóFÇÊÚ6ˆÊ6VÁG&Fñˆ‚÷VÊ&∆ñÊrFV∆ófW'íFV6ÜÊˆ∆ˆwí‚ñÊ6«VFVB2FÜR&VÊ6Ü÷&≤6ˆ◊&F˜"f˜"FÜó2∆ÊG66R‚"¿–¢'6˜W&6Uˆ∆&V¬#¢%V&∆ñ2&W67&ñ&ñÊrñÊf˜&÷Fñˆ‚"¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢G'VP–¢––¢“¿–¢'FV6ÜÊˆ∆ˆvñW2#¢∞–¢∞–¢&ñB#¢'ÜW&ñ¶V7B"¿–¢&Ê÷R#¢%ÜW&î¶V7B"¿–¢&6ˆ◊Áí#¢%ÜW&ó2&ñ˜Ü&÷"¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬"¿–¢'7FvUˆ'V6∂WB#¢%&V6∆ñÊñ6¬"¿–¢'GóR#¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢#C3"÷rˆ‘¬FV÷ˆÁ7G&FVBáG&7GWßV÷"&ñ˜6ñ÷ñ∆"ì≤∆Ff˜&“&ÊvR„C”CS≤÷rˆ‘¬"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢C3"„¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#3(	3CS÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢##”3vVvR¬„R”"ñ‚¬32”cB÷ñ7&ˆ‚îBÜf˜&◊V∆Fñˆ‚÷FWVÊFVÁBí"¿–¢&÷V6ÜÊó6“#¢%&VGí◊FÚ◊W6R¬Êˆ‚÷VV˜W2fó66ˆV∆7Fñ27W7VÁ6ñˆÁ2ˆb7&í◊&ˆ6W76VBÁFñ&ˆGí'Fñ6∆W2FÜB6ÜV"◊FÜñ‚VÊFW"ñÊ¶V7Fñˆ‚f˜&6R‚6ˆ◊Fñ&∆RvóFÇ7FÊF&B&Vfñ∆∆VB7ó&ñÊvW2‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢'ÜW&ñ¶V7E˜&VvVÊW&ˆÂÛ##2”2"¿–¢''FÊW"#¢%&VvVÊW&ˆ‚"¿–¢&FV≈˜GóR#¢%&W6V&6ÇWf«VFñˆ‚≤˜Fñˆ‚"¿–¢&FFR#¢###2”2”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##33¿–¢'7V÷÷'í#¢%&W6V&6ÇWf«VFñˆ‚6ˆ∆∆&˜&Fñˆ‚≤˜Fñˆ‚w&VV÷VÁBf˜""VÊFó66∆˜6VB‘'2FWfV∆˜VB'í&VvVÊW&ˆ‚‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VBÉ"‘'2í"¿–¢'6˜W&6UˆÊ÷R#¢%ÜW&ó2&ñ˜Ü&÷Ú'W6ñÊW75vó&R"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜ÜW&ó7Ü&÷Ê6ˆ“ˆÊWw2◊&V∆V6W2ˆÊWw2◊&V∆V6R÷FWFñ«2˜ÜW&ó2÷&ñ˜Ü&÷÷ÊÊ˜VÊ6W2◊&W6V&6Ç÷Wf«VFñˆ‚÷6ˆ∆∆&˜&Fñˆ‚÷ÊB"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢'ÜW&ñ¶V7EˆÜ˜&ó¶ˆ‚÷÷vVÂÛ##"”"¿–¢''FÊW"#¢$Ü˜&ó¶ˆ‚FÜW&WWFñ72Ü∆FW"÷vV‚í"¿–¢&FV≈˜GóR#¢$˜Fñˆ‚”‚WÜ6«W6ófR∆ñ6VÁ6R"¿–¢&FFR#¢###"”Ü˜Fñˆ‚ì≤6ˆÁfW'FVBFÚWÜ6«W6ófRv˜&∆GvñFR∆ñ6VÁ6R"¿–¢&FFU˜6˜'Eˆ∂Wí#¢###¿–¢'7V÷÷'í#¢%&W6V&6Ç6ˆ∆∆&˜&Fñˆ‚b˜Fñˆ‚f˜"FW&˜GV◊V÷"ÖFWWß¶í42&Vf˜&◊V∆Fñˆ‚¬6ˆÁfW'FVBFÚWÜ6«W6ófRv˜&∆GvñFR∆ñ6VÁ6R‚WFÚCsT“FWb˜&VwV∆F˜'í÷ñ∆W7FˆÊW2≤6∆W2÷ñ∆W7FˆÊW2≤&˜ñ«FñW2‚"¿–¢&÷ˆ∆V7V∆R#¢%FW&˜GV◊V÷"ÖFWWß¶í"¿–¢'6˜W&6UˆÊ÷R#¢%ÜW&ó2&ñ˜Ü&÷"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁÜW&ó7Ü&÷Ê6ˆ“ˆÊWw2◊&V∆V6W2ˆÊWw2◊&V∆V6R÷FWFñ«2˜ÜW&ó2÷&ñ˜Ü&÷÷VÁFW'2÷WÜ6«W6ófR◊v˜&∆GvñFR÷∆ñ6VÁ6R÷w&VV÷VÁB"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢'ÜW&ñ¶V7Eˆ÷W&6µÛ##”"¿–¢''FÊW"#¢$÷W&6≤"¿–¢&FV≈˜GóR#¢$˜Fñˆ‚Ù6ˆ∆∆&˜&Fñˆ‚"¿–¢&FFR#¢###””"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##¿–¢'7V÷÷'í#¢$˜Fñˆ‚ˆ6ˆ∆∆&˜&Fñˆ‚f˜"V«G&÷ÜñvÇ6ˆÊ6VÁG&Fñˆ‚¬&VGí◊FÚ◊W6Rf˜&◊V∆FñˆÁ2ˆbVÊFó66∆˜6VB‘'2‚FW&◊2Ê˜BFó66∆˜6VB‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VB‘'2"¿–¢'6˜W&6UˆÊ÷R#¢%ÜW&ó2&ñ˜Ü&÷ï""¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Úˆó"ÁÜW&ó7Ü&÷Ê6ˆ“ˆÊWw2◊&V∆V6W2ˆÊWw2◊&V∆V6R÷FWFñ«2˜ÜW&ó2◊Ü&÷6WWFñ6«2÷VÁFW'2÷6ˆ∆∆&˜&Fñˆ‚÷w&VV÷VÁB÷÷W&6≤"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&÷ñ7&ˆv∆76ñfñ6Fñˆ‚"¿–¢&Ê÷R#¢$÷ñ7&ˆv∆76ñfñ6Fñˆ‚"¿–¢&6ˆ◊Áí#¢$∆ñÊGí&ñ˜66ñVÊ6W2"¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬"¿–¢'7FvUˆ'V6∂WB#¢%&V6∆ñÊñ6¬"¿–¢'GóR#¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢#„C÷rˆ‘¬á∆Ff˜&“6∆ñ“¬W"6ˆ◊Áí÷FW&ñ«2í"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢C„¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#3(	3CS÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢$FVÁ6R¬7ÜW&ñ6¬¬7F&∆R÷ñ7&ˆ&VG2ˆbFÜRFÜW&WWFñ2&˜FVñ‚fñf7B6ˆ«fVÁB÷&6VBvFW"&V÷˜f¬Üv∆76ñfñ6Fñˆ‚í¬FÜV‚7W7VÊFVBf˜"42ñÊ¶V7Fñˆ‚‚˜&ñvñÊFVBBGV∂RVÊófW'6óGí‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&∆ñÊGïˆ∆ñfV6˜&UÛ##B”"¿–¢''FÊW"#¢$∆ñfV6˜&R&ñˆ÷VFñ6¬"¿–¢&FV≈˜GóR#¢$÷ÁVf7GW&ñÊrÙ4D‘Ú"¿–¢&FFR#¢###B””"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##C¿–¢'7V÷÷'í#¢%6V∆V7FVB24D‘Ú˜&ˆ6W72÷FWfV∆˜÷VÁB'FÊW"f˜"6ˆ÷÷W&6ñ¬66∆R◊Wˆb÷ñ7&ˆv∆76ñfñ6Fñˆ‚f˜&◊V∆Fñˆ‚‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ù"¿–¢'6˜W&6UˆÊ÷R#¢$v∆ˆ&TÊWw7vó&R"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊv∆ˆ&VÊWw7vó&RÊ6ˆ“ˆÊWw2◊&V∆V6RÛ##BÛÛÛ#ìSSìcÛˆV‚Ù∆ñfV6˜&R‘&ñˆ÷VFñ6¬’6V∆V7FVB÷'í‘∆ñÊGí‘&ñ˜66ñVÊ6W2◊FÚ’7W˜'B’&ˆ6W72‘FWfV∆˜÷VÁB÷ÊB‘6ˆ÷÷W&6ñ¬’66∆R’W÷f˜"‘ñÊÊ˜fFófR‘÷ñ7&ˆv∆76ñfñ6Fñˆ‚‘f˜&◊V∆Fñˆ‚’FV6ÜÊˆ∆ˆwíÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&∆ñÊGïˆÊ˜f'Fó5Û##B”Ç"¿–¢''FÊW"#¢$Ê˜f'Fó2"¿–¢&FV≈˜GóR#¢$∆ñ6VÁ6ñÊrÙ6ˆ∆∆&˜&Fñˆ‚"¿–¢&FFR#¢###B”Ç”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##CÉ¿–¢'7V÷÷'í#¢$WÜ6«W6ófRv∆ˆ&¬∆ñ6VÁ6Rb6ˆ∆∆&˜&Fñˆ‚‚C#“Wg&ˆÁB≤WFÚCì3D“ñ‚÷ñ∆W7FˆÊW2ÜFV¬f«VRWFÚ‚CìSD“í≤FñW&VB6ñÊv∆R÷FñvóB&˜ñ«FñW2‚◊V«Fí◊F&vWB&ñˆ∆ˆvñ72f˜"6V∆b÷F÷ñÊó7G&Fñˆ‚‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VBÜ◊V«Fó∆RF&vWG2í"¿–¢'6˜W&6UˆÊ÷R#¢$'W6ñÊW75vó&R"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊ'W6ñÊW77vó&RÊ6ˆ“ˆÊWw2ˆÜˆ÷RÛ##CÉ#sì#SˆV‚Ù∆ñÊGí‘&ñ˜66ñVÊ6W2‘VÁFW'2‘∆ñ6VÁ6ñÊr÷ÊB‘6ˆ∆∆&˜&Fñˆ‚‘w&VV÷VÁB’vóFÇ‘Ê˜f'Fó2÷f˜"‘◊V«Fí◊F&vWB‘G'Vr‘FV∆ófW'í‘ñÊÊ˜fFñˆ‚"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&VÊÜÁ¶R"¿–¢&Ê÷R#¢$T‰ÑÂ§Rá$áUÉ#í"¿–¢&6ˆ◊Áí#¢$Ü∆˜ßñ÷RFÜW&WWFñ72"¿–¢'7FvU˜&r#¢$&˜fVB"¿–¢'7FvUˆ'V6∂WB#¢$&˜fVBÚ÷&∂WFVB"¿–¢'GóR#¢$VÁßñ÷R÷76ó7FVB"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢$‚Ù“VÊ&∆W2„"‘¬42fˆ«V÷W2BWÜó7FñÊrf˜&◊V∆Fñˆ‚6ˆÊ6VÁG&FñˆÁ2¬Ê˜B6ˆÊ6VÁG&Fñˆ‚FV6ÜÊˆ∆ˆwíóG6V∆b"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢ÁV∆¬¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢$Ê˜BFó66∆˜6VB"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VBá6WB'í'FÊW"w2fñÊ¬&ˆGV7Bí"¿–¢&÷V6ÜÊó6“#¢%&V6ˆ÷&ñÊÁBáV÷‚áñ«W&ˆÊñF6RFV◊˜&&ñ«íFWˆ«ñ÷W&ó¶W2áñ«W&ˆÊ‚ñ‚FÜRñÁFW'7FóFñ¬76R¬∆˜vW&ñÊrFÜR&'&ñW"FÚ'V∆≤f«VñBf∆˜rf˜"∆&vR◊fˆ«V÷RˆÜñvÇ÷F˜6R42F÷ñÊó7G&Fñˆ‚‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&Ü∆˜ßñ÷UˆñÊ7óFUÛ##b”r"¿–¢''FÊW"#¢$ñÊ7óFR"¿–¢&FV≈˜GóR#¢$∆ñ6VÁ6ñÊrÙ6ˆ∆∆&˜&Fñˆ‚"¿–¢&FFR#¢###b”r”#"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cs#¿–¢'7V÷÷'í#¢$v∆ˆ&¬6ˆ∆∆&˜&Fñˆ‚b∆ñ6VÁ6Rw&VV÷VÁB«ññÊrT‰ÑÂ§Rá$áUÉ#íFÚ7V&7WFÊV˜W2f˜&◊V∆FñˆÁ2ˆbî‰433ìÉí¬ñÊ7óFRw2fó'7B÷ñ‚÷6∆72ÁFí÷◊WFÁB÷6«&WFñ7V∆ñ‚Ü◊WD4≈"í÷ˆÊˆ6∆ˆÊ¬ÁFñ&ˆGíf˜"◊ñV∆˜&ˆ∆ñfW&FófRÊV˜∆6◊2Ñ’Á2í‚ñÊ7óFR«6Ú&V6VófW2‚˜Fñˆ‚FÚÊˆ÷ñÊFRWFÚGvÚFFóFñˆÊ¬T‰ÑÂ§RF&vWG2‚Ü∆˜ßñ÷RFÚ&V6VófR‚Wg&ˆÁBñ÷VÁBÜ÷˜VÁBVÊFó66∆˜6VBí«W2FWfV∆˜÷VÁB˜&VwV∆F˜'í÷ñ∆W7FˆÊRñ÷VÁG2ÊB&˜ñ«FñW2ˆ‚ÊWB6∆W2ˆbÁí6ˆ÷÷W&6ñ∆ó¶VBT‰ÑÂ§R÷VÊ&∆VB÷VFñ6ñÊW2‚"¿–¢&÷ˆ∆V7V∆R#¢$î‰433ìÉí"¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&RÑÜ∆˜ßñ÷Rí"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁ&ÊWw7vó&RÊ6ˆ“ˆÊWw2◊&V∆V6W2ˆÜ∆˜ßñ÷R÷ÊÊ˜VÊ6W2÷v∆ˆ&¬÷6ˆ∆∆&˜&Fñˆ‚÷ÊB÷∆ñ6VÁ6R÷w&VV÷VÁB◊vóFÇ÷ñÊ7óFR◊FÚ◊7W˜'B◊FÜR÷FWfV∆˜÷VÁB÷ˆb◊7V&7WFÊV˜W2÷f˜&◊V∆FñˆÁ2÷ˆb÷ñÊ633ìÉí◊W6ñÊr÷óG2÷VÊÜÁ¶R◊FV6ÜÊˆ∆ˆwí”3#É#ì#É2ÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢%&ñ÷'í"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&Ü∆˜ßñ÷Uˆw6µÛ##b”R"¿–¢''FÊW"#¢$u4≤"¿–¢&FV≈˜GóR#¢$∆ñ6VÁ6ñÊrÙ6ˆ∆∆&˜&Fñˆ‚"¿–¢&FFR#¢###b”R”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cS¿–¢'7V÷÷'í#¢$v∆ˆ&¬6ˆ∆∆&˜&Fñˆ‚b∆ñ6VÁ6Rf˜"42FV∆ófW'íˆb◊V«Fó∆RˆÊ6ˆ∆ˆwíF&vWG2ñÊ6¬‚ÁFñ&ˆGí÷G'Vr6ˆÊßVvFW2ÑD72í‚fó'7B6∆ñÊñ6¬G&ñ¬WáV7FVB##b‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VBÜ◊V«Fó∆RD2ˆˆÊ6ˆ∆ˆwíF&vWG2í"¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&RÚ7Fˆ6µFóF‚"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁ7Fˆ6∑FóF‚ÊÊWBˆÊWw2ÙÑƒÚˆÜ∆˜ßñ÷R÷ÊÊ˜VÊ6W2÷v∆ˆ&¬÷6ˆ∆∆&˜&Fñˆ‚÷ÊB÷∆ñ6VÁ6R÷w&VV÷VÁB◊vóFÇ÷'3Sf˜F'6ˆ'BÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&áóW&6ˆ‚"¿–¢&Ê÷R#¢$áóW&6ˆ‚ÜWÇ‘V∆V∑G&ˆfíí"¿–¢&6ˆ◊Áí#¢$Ü∆˜ßñ÷RFÜW&WWFñ72áfñV∆V∑G&ˆfí7Vó6óFñˆ‚í"¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬"¿–¢'7FvUˆ'V6∂WB#¢%&V6∆ñÊñ6¬"¿–¢'GóR#¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢%WFÚS÷rˆ‘¬"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢S„¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#CS(	3c÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢%vFW"ó2WáG&7FVBg&ˆ“ÁFñ&ˆGí◊6ˆ«WFñˆ‚G&˜∆WG2¬&V6óóFFñÊrFÜR&˜FVñ‚ñÁFÚ6÷ˆ˜FÇ¬FVÁ6R÷ñ7&˜'Fñ6∆W2vÜñ6Ç&RFÜV‚7W7VÊFVBñ‚Êˆ‚÷VV˜W26'&ñW"‚&V÷˜fñÊrvFW"g&ˆ“FÜR'Fñ6∆R6˜&R¬&FÜW"FÜ‚Fñ«WFñÊrFÜR&˜FVñ‚ñ‚÷˜&R∆óVñB¬ó2vÜB∆∆˜w26ˆÊ6VÁG&Fñˆ‚vV∆¬&WñˆÊBvÜB∆óVñBf˜&◊V∆Fñˆ‚6‚Üˆ∆B‚FV÷ˆÁ7G&FVBñÊ¶V7F&∆Rñ‚„#6V6ˆÊG2B√#‚v∆ñFRf˜&6RFá&˜VvÇ7FÊF&B42ÊVVF∆W2‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&Ü∆˜ßñ÷Uˆ˜'V∂Û##b”R"¿–¢''FÊW"#¢$˜'V∂FÜW&WWFñ72"¿–¢&FV≈˜GóR#¢$∆ñ6VÁ6ñÊrÙ6ˆ∆∆&˜&Fñˆ‚"¿–¢&FFR#¢###b”R”b"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cSb¿–¢'7V÷÷'í#¢$v∆ˆ&¬WÜ6«W6ófR6ˆ∆∆&˜&Fñˆ‚b∆ñ6VÁ6Rw&VV÷VÁBw&ÁFñÊr˜'V∂&ñváG2FÚÜ∆˜ßñ÷Rw2áóW&6ˆ‚÷ñ7&˜'Fñ6∆RFV6ÜÊˆ∆ˆwíf˜"ı$¥”Üñ‚FWfV∆˜÷VÁBf˜"6˜&ñ6ó2ÊB&V∆FVBñÊf∆÷÷F˜'íFó6V6Rí«W2‚˜Fñˆ‚f˜"ˆÊRFFóFñˆÊ¬F&vWB‚˜'V∂FÚí‚Wg&ˆÁBfVRÊB˜FVÁFñ¬÷ñ∆W7FˆÊRñ÷VÁG3≤Ü∆˜ßñ÷RV∆ñvñ&∆Rf˜"÷ñB◊6ñÊv∆R÷FñvóB&˜ñ«FñW2ˆ‚ÊWB6∆W2‚7V6ñfñ2fñÊÊ6ñ¬FW&◊2Ê˜BFó66∆˜6VB‚"¿–¢&÷ˆ∆V7V∆R#¢$ı$¥”áVÊFó66∆˜6VBÁFñ&ˆGíF&vWBí"¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&RÚ6ˆÁG&7BÜ&÷"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁ&ÊWw7vó&RÊ6ˆ“ˆÊWw2◊&V∆V6W2ˆÜ∆˜ßñ÷R÷ÊB÷˜'V∂÷ÊÊ˜VÊ6R÷v∆ˆ&¬÷6ˆ∆∆&˜&Fñˆ‚÷ÊB÷∆ñ6VÁ6R÷w&VV÷VÁB◊FÚ÷FWfV∆˜÷˜&∂”◊vóFÇ÷áóW&6ˆ‚◊FV6ÜÊˆ∆ˆwí”3#sc3sCbÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&Ü∆˜ßñ÷U˜fW'FWÖÛ##b”B"¿–¢''FÊW"#¢%fW'FWÇÜ&÷6WWFñ6«2"¿–¢&FV≈˜GóR#¢$∆ñ6VÁ6ñÊrÙ6ˆ∆∆&˜&Fñˆ‚"¿–¢&FFR#¢###b”B”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cC¿–¢'7V÷÷'í#¢$v∆ˆ&¬WÜ6«W6ófR∆ñ6VÁ6R¬WFÚ2G'VrF&vWG2‚CT“Wg&ˆÁB≤÷ñ∆W7FˆÊW2˜&˜ñ«FñW2‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VBáWFÚ2F&vWG2í"¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&R"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁ&ÊWw7vó&RÊ6ˆ“ˆÊWw2◊&V∆V6W2ˆÜ∆˜ßñ÷R÷ÊÊ˜VÊ6W2÷v∆ˆ&¬÷6ˆ∆∆&˜&Fñˆ‚÷ÊB÷∆ñ6VÁ6R÷w&VV÷VÁB◊vóFÇ◊fW'FWÇ◊Ü&÷6WWFñ6«2÷f˜"÷áóW&6ˆ‚◊FV6ÜÊˆ∆ˆwí”3#s3SCìÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&Ü∆˜ßñ÷UˆV∆V∑G&ˆfïÛ##b"¿–¢''FÊW"#¢$Ü∆˜ßñ÷RFÜW&WWFñ72"¿–¢&FV≈˜GóR#¢$7Vó6óFñˆ‚"¿–¢&FFR#¢###R””ÇÜFV¬6ˆ◊∆WFñˆ„≤˜&ñvñÊ∆«íÊÊ˜VÊ6VB##Rí"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##SÇ¿–¢'7V÷÷'í#¢$4ı%$T5DTB##b”r”3¢7Vó6óFñˆ‚6ˆ◊∆WFVBÊ˜bÇ¬##R‚6ˆÊfó&÷VB7G'V7GW&S¢CsS“Wg&ˆÁBá7V&¶V7BFÚ7W7Fˆ÷'íW&6Ü6R&ñ6RFßW7F÷VÁG2í≤WFÚFá&VRCS“÷ñ∆W7FˆÊRñ÷VÁG2FñVBFÚFá&VR6W&FR&ˆGV7B&VwV∆F˜'í&˜f«2“WFÚCì“F˜F¬6ˆÁ6ñFW&Fñˆ‚B&˜f«2‚VÊFW&«ññÊrV∆V∑G&ˆfíÙáóW&6ˆ‚∆Ff˜&“7Vó6óFñˆ‚FÜBFÜR&ñ¬##bfW'FWÇ∆ñ6VÁ6Rv2'Vñ«Bˆ‚F˜ˆb‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ùá∆Ff˜&“7Vó6óFñˆ‚í"¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&RÑÜ∆˜ßñ÷RíÚfñW&6R&ñ˜FV6ÇÚ6ˆÁG&7BÜ&÷"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁ&ÊWw7vó&RÊ6ˆ“ˆÊWw2◊&V∆V6W2ˆÜ∆˜ßñ÷R÷6ˆ◊∆WFW2÷7Vó6óFñˆ‚÷ˆb÷V∆V∑G&ˆfí÷WáÊFñÊr÷'&VGFÇ÷ˆb÷ˆffW&ñÊw2÷ñ‚÷G'Vr÷FV∆ófW'í”3#cÉSsíÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&V∆V∑G&ˆfï˜'FÊW'5ˆFWFñ≈Û##b”r”R"¿–¢''FÊW"#¢$V∆í∆ñ∆«ì≤¶ˆÜÁ6ˆ‚b¶ˆÜÁ6ˆ‚Ñ¶Á76V‚ì≤&vVÁÇÜñÊFófñGV∆«íóFV÷ó¶VB¬7Fñ∆¬Ê˜BñÊFófñGV∆«í6ˆÊfó&÷VBfñ&ñ÷'í6˜W&6Rí"¿–¢&FV≈˜GóR#¢%VÁfW&ñfñVBÚf∆vvVB"¿–¢&FFR#¢###2”Ñ∆ñ∆«íFV¬ì≤FFW2f˜"¢d¢ˆ&vVÁÇÊ˜B6ˆÊfó&÷VB“f∆vvVB"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##3¿–¢'7V÷÷'í#¢$dƒttTB“FFóFñˆÊ¬6V6ˆÊF'í◊6˜W&6RFWFñ¬f˜VÊB'WB7Fñ∆¬Ê˜B6ˆÊfó&÷VBfñ&ñ÷'í6˜W&6RÊ÷ñÊrV6Ç6˜VÁFW''GíñÊFófñGV∆«íá6÷RVÊFW&«ññÊr÷&ñwVóGí2V∆V∑G&ˆfï˜'FÊW'5ˆf∆vvVEÛ##b”r¬∆ˆvvVB##b”r”2í‚fñW&6RÜ&÷ÚÜ&÷6WWFñ6¬FV6ÜÊˆ∆ˆwíG&FR6˜fW&vRˆbÜ∆˜ßñ÷Rw2Cì“V∆V∑G&ˆfí7Vó6óFñˆ‚&W˜'G2&R÷7Vó6óFñˆ‚V∆V∑G&ˆfíÜB6ñvÊVC¢Éí‚V∆í∆ñ∆«íFV¬v˜'FÇWFÚCCs“Ñˆ7B##2íf˜"WÜ6«W6ófR&ñváG2FÚ2VÊFó66∆˜6VBF&vWG3≤É"íR◊&ˆw&“¶ˆÜÁ6ˆ‚b¶ˆÜÁ6ˆ‚Ñ¶Á76V‚í∆ñ6VÁ6ñÊrFV¬v˜'FÇÊV&«íCÉ“ñÊ6«VFñÊr÷ñ∆W7FˆÊW2‚&vVÁÇó2«6ÚÊ÷VB2áóW&6ˆ‚'FÊW"ñ‚FÜó26V6ˆÊF'í6˜fW&vR¬vóFÜ˜WB7V6ñfñ2FV¬◊f«VR'&V∂F˜v‚‚ÊÚÜ∆˜ßñ÷R¬∆ñ∆«í¬¢d¢¬˜"&vVÁÇ&ñ÷'í&W72&V∆V6R˜"4T2fñ∆ñÊrÊ÷ñÊrñÊFófñGV¬FV¬FW&◊2W"6˜VÁFW''GíÜ2&VV‚f˜VÊC≤FÜó2&V÷ñÁ26V6ˆÊF'íG&FR◊&W72vw&VvFñˆ‚¬Ê˜B&ñ÷'í6ˆÊfó&÷Fñˆ‚‚&ñ÷'í6˜W&6RÜ6ˆ◊Áí&W72&V∆V6R˜"4T2fñ∆ñÊríÊ÷ñÊrV6Ç6˜VÁFW''GíñÊFófñGV∆«ívóFÇFW&◊2v˜V∆B&RÊVVFVBFÚ&W6ˆ«fRFÜó2f∆r‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VBÜ◊V«Fó∆RF&vWG2W"'FÊW"í"¿–¢'6˜W&6UˆÊ÷R#¢$fñW&6RÜ&÷ÚÜ&÷6WWFñ6¬FV6ÜÊˆ∆ˆwí"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊfñW&6WÜ&÷Ê6ˆ“˜Ü&÷ˆÜ∆˜ßñ÷W2”ì“÷V∆V∑G&ˆfí÷'Wñ˜WB÷'&ñÊw2◊GvÚ÷&ñr◊Ü&÷◊'FÊW'2◊FˆvWFÜW""¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢G'VR¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&V∆V∑G&ˆfï˜'FÊW'5ˆf∆vvVEÛ##b”r"¿–¢''FÊW"#¢&&vVÁÇ¬V∆í∆ñ∆«í¬¶ˆÜÁ6ˆ‚b¶ˆÜÁ6ˆ‚á7FGW2VÊ6ˆÊfó&÷VBí"¿–¢&FV≈˜GóR#¢%VÁfW&ñfñVBÚf∆vvVB"¿–¢&FFR#¢$FFRÊ˜B6ˆÊfó&÷VB“f∆vvVB"¿–¢&FFU˜6˜'Eˆ∂Wí#¢”¿–¢'7V÷÷'í#¢$dƒttTB“6˜W&6W26ˆÊf∆ñ7Bˆ‚FV¬7FGW2‚ˆÊR6˜W&6RÖñÜˆÚfñÊÊ6RÙÜ∆˜ßñ÷RwVñFÊ6R6ˆ÷÷VÁF'íí7FFW2V∆V∑G&ˆfívÜ26ñvÊVB∆ñ6VÁ6ñÊrw&VV÷VÁG2rvóFÇ&vVÁÇ¬¶ˆÜÁ6ˆ‚b¶ˆÜÁ6ˆ‚¬ÊBV∆í∆ñ∆«í‚Ê˜FÜW"6˜W&6RÑ&ñı76RíFW67&ñ&W2FÜW6RFá&VR6ˆ◊ÊñW2ˆÊ«í2ÜfñÊr6Ü˜v‚vñÁFW&W7Brñ‚áóW&6ˆ‚&Vf˜&RÜ∆˜ßñ÷Rw27Vó6óFñˆ‚¬vóFÜ˜WB6ˆÊfó&÷ñÊr6ñvÊVBw&VV÷VÁG2f˜"∆¬Fá&VR‚ˆÊ«íFÜRfW'FWÇ∆ñ6VÁ6RÑ&ñ¬##b¬«&VGíG&6∂VB6W&FV«ííó26ˆÊfó&÷VBfñ&ñ÷'í◊6˜W&6R&W72&V∆V6R‚FÚÊ˜BG&VB22FFóFñˆÊ¬6ñvÊVBFV«2VÁFñ¬&ñ÷'í6˜W&6RÜ6ˆ◊Áí&W72&V∆V6R˜"4T2fñ∆ñÊríó2f˜VÊBÊ÷ñÊrV6Ç6˜VÁFW''GíñÊFófñGV∆«í‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VB"¿–¢'6˜W&6UˆÊ÷R#¢%ñÜˆÚfñÊÊ6RÚ&ñı76Rá6V6ˆÊF'í¬6ˆÊf∆ñ7FñÊrí"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊ&ñ˜76RÊ6ˆ“ˆ'W6ñÊW72ˆÜ∆˜ßñ÷W2”ì“÷V∆V∑G&ˆfí÷'Wñ˜WB÷'&ñÊw2◊GvÚ÷&ñr◊Ü&÷◊'FÊW'2◊FˆvWFÜW""¿–¢'&V∆WfÊ6R#¢$∆˜r"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢G'VR¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&«B÷#Eˆáñ'&˜ßñ÷R"¿–¢&Ê÷R#¢$≈B‘#BÚáñ'&˜ßñ÷RÜ&W&áñ«W&ˆÊñF6R∆fí"¿–¢&6ˆ◊Áí#¢$«FVˆvV‚"¿–¢'7FvU˜&r#¢%f&ñW2'í'FÊW"&ˆw&“"¿–¢'7FvUˆ'V6∂WB#¢%f&ñW2'í&ˆw&“"¿–¢'GóR#¢$VÁßñ÷R÷76ó7FVB"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢$Ê˜BFó66∆˜6VBf˜"Áí##b'FÊW"&ˆw&“"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢ÁV∆¬¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢$Ê˜BFó66∆˜6VB"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢%&V6ˆ÷&ñÊÁBáV÷‚áñ«W&ˆÊñF6RFÜBFV◊˜&&ñ«íáñG&ˆ«ó¶W2áñ«W&ˆÊ‚ñ‚FÜRWáG&6V∆«V∆"÷G&óÇ¬W&÷óGFñÊr∆&vR◊fˆ«V÷Rïb◊FÚ’426ˆÁfW'6ñˆ‚ˆbWÜó7FñÊr&ñˆ∆ˆvñ72‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&«FVˆvVÂ˜VÊFó66∆˜6VB◊Ü&÷Û##b”Ç"¿–¢''FÊW"#¢%VÊFó66∆˜6VBv∆ˆ&¬Ü&÷6WWFñ6¬6ˆ◊Áí"¿–¢&FV≈˜GóR#¢$WÜ6«W6ófR∆ñ6VÁ6R"¿–¢&FFR#¢###b”Ç”R"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cÉR¿–¢'7V÷÷'í#¢$WÜ6«W6ófRv˜&∆GvñFR∆ñ6VÁ6Rf˜"‚VÊFó66∆˜6VBv∆ˆ&¬Ü&÷6WWFñ6¬6ˆ◊ÁíFÚFWfV∆˜ÊB6ˆ÷÷W&6ñ∆ó¶Ráñ'&˜ßñ÷RÖD“í÷VÊ&∆VB7V&7WFÊV˜W2f˜&◊V∆Fñˆ‚ˆb&ñˆ∆ˆvñ2&ˆGV7BW6ñÊr≈B‘#BÜ&W&áñ«W&ˆÊñF6R∆fí‚F˜F¬FV¬f«VRWFÚC3cT“á‰µ%rS#„î"ì¢Wg&ˆÁBñ÷VÁBÜ÷˜VÁBVÊFó66∆˜6VBí«W2FWfV∆˜÷VÁB¬&VwV∆F˜'í¬ÊB6∆W2÷ñ∆W7FˆÊW2¬«W2&˜ñ«FñW2ˆ‚ÊWB6∆W2˜7B÷6ˆ÷÷W&6ñ∆ó¶Fñˆ„≤∂˜&V‚&W72&W˜'G2Wg&ˆÁBGVRvóFÜñ‚3Fó2ˆb6ñvÊñÊr‚FÜó2ó2«FVˆvV‚w2FÜó&B≈B‘#BÙáñ'&˜ßñ÷R∆ñ6VÁ6ñÊrFV¬Fó66∆˜6VBñ‚##bÜgFW"7G&¶VÊV6ÊBu4≤ıFW6&Ú¬&˜FÇ«&VGíG&6∂VBì≤∂˜&V‚&W72&W˜'G2«FVˆvV‚w27V◊V∆FófRFV6ÜÊˆ∆ˆwí÷Wá˜'BF˜F¬Ê˜rWÜ6VVG2µ%r"G&ñ∆∆ñˆ‚‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VB"¿–¢'6˜W&6UˆÊ÷R#¢$«FVˆvV‚Ñï"&W72&V∆V6RíÚ"ÊWw7vó&RÚVFñ«í"¿–¢'6˜W&6U˜W&¬#¢&áGG¢Ú˜wwrÊ«FVˆvV‚Ê6ˆ“ˆV‚˜7V"ˆó"ˆÊWw2Ááˆ÷ˆFS◊fñWrf&ñC”2fñGÉ”3CgvS”"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢%&ñ÷'í"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&«FVˆvVÂ˜6ÊˆfïÛ##b”b"¿–¢''FÊW"#¢%6Êˆfí"¿–¢&FV≈˜GóR#¢$Êˆ‚÷WÜ6«W6ófR∆ñ6VÁ6Rá&V6ˆÊfó&÷VBí"¿–¢&FFR#¢##íÜ˜&ñvñÊ¬ì≤&V6ˆÊfó&÷VB##b”b"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cc¿–¢'7V÷÷'í#¢$Êˆ‚÷WÜ6«W6ófR∆ñ6VÁ6RÜ˜&ñvñÊ∆«í6ñvÊVB#ííf˜"ÜñvÇ÷F˜6R42f˜&◊V∆Fñˆ‚ˆbGWñ«V÷"ÑGWóÜVÁBí¬FWfV∆˜÷VÁB&V6ˆÊfó&÷VB2ˆÊvˆñÊr‚"¿–¢&÷ˆ∆V7V∆R#¢$GWñ«V÷"ÑGWóÜVÁBí"¿–¢'6˜W&6UˆÊ÷R#¢%V&6Rï"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁV&6VóÊ∆rÛ##bÛbÛÇ˜6Êˆfí÷«FVˆvV‚÷6ˆÊfó&“÷FWfV∆˜÷VÁB÷ˆb◊7V&7WFÊV˜W2÷GWñ«V÷"Ú"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&«FVˆvVÂˆ&ñˆvVÂÛ##b”2"¿–¢''FÊW"#¢$&ñˆvV‚"¿–¢&FV≈˜GóR#¢$∆ñ6VÁ6ñÊr"¿–¢&FFR#¢###b”2”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##c3¿–¢'7V÷÷'í#¢%UDDTB##b”r”#¢∆ñ6VÁ6Rw&VV÷VÁBf˜""VÊFó66∆˜6VB&ñˆ∆ˆvñ2&ˆGV7G2W6ñÊr≈B‘#B‚F˜F¬FV¬f«VR‚CSsî”¢C#“Wg&ˆÁBÇ≤C“÷˜&Rñb&ÊB&ˆGV7B6V∆V7FVBí≤WFÚCSCî“ñ‚6∆ñÊñ6¬˜&VwV∆F˜'íˆ6ˆ÷÷W&6ñ¬÷ñ∆W7FˆÊW2á‰µ%rÉ&ñ∆∆ñˆ‚66∆Rí‚fñwW&W26ˆÊfó&÷VBfñ∂˜&V‚fñÊÊ6ñ¬&W72‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VBÉ"&ñˆ∆ˆvñ72í"¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&RÚ∂˜&VÜ&÷6WWFñ6¬ÊWw7W"é…[ﬁ»*Œ´;^∫í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊ∑ÊWw2Ê6ÚÊ∑"ˆÊWw2ˆ'Fñ6∆UfñWrÊáF÷√ˆñGÜÊÛ”S3sb"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&«FVˆvVÂˆw6≤◊FW6&ıÛ##b”"¿–¢''FÊW"#¢$u4≤ÚFW6&Ú"¿–¢&FV≈˜GóR#¢$WÜ6«W6ófR∆ñ6VÁ6R"¿–¢&FFR#¢###b””"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##c¿–¢'7V÷÷'í#¢$WÜ6«W6ófR∆ñ6VÁ6Rf˜"42f˜&◊V∆Fñˆ‚ˆbF˜7F&∆ñ÷"‚C#“Wg&ˆÁB≤WFÚC#cT“÷ñ∆W7FˆÊW2ÇC#ÉT“F˜F¬6ˆÊfó&÷VBfñ∂˜&V‚&W72í‚"¿–¢&÷ˆ∆V7V∆R#¢$F˜7F&∆ñ÷""¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&RÚ…[ﬁ»*Œ´;^∫"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁ&ÊWw7vó&RÊ6ˆ“ˆÊWw2◊&V∆V6W2ˆ«FVˆvV‚÷ÊÊ˜VÊ6W2÷WÜ6«W6ófR÷∆ñ6VÁ6R÷w&VV÷VÁB◊vóFÇ◊FW6&Ú÷◊7V'6ñFñ'í÷ˆb÷w6≤÷f˜"◊FÜR÷FWfV∆˜÷VÁB÷ˆb÷◊7V&7WFÊV˜W2÷f˜&◊V∆Fñˆ‚÷ˆb÷F˜7F&∆ñ÷"÷VÊ&∆VB÷'í÷áñ'&˜ßñ÷R◊FV6ÜÊˆ∆ˆwí”3#ccSs2ÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&«FVˆvVÂˆ7G&¶VÊV6Û##b"¿–¢''FÊW"#¢$7G&¶VÊV6"¿–¢&FV≈˜GóR#¢$∆ñ6VÁ6ñÊrÉ"w&VV÷VÁG2í"¿–¢&FFR#¢###R”2”r"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##S3r¿–¢'7V÷÷'í#¢$4ı%$T5DTB##b”r”##¢&ñ÷'í6˜W&6RÑ7G&¶VÊV6&W72&V∆V6R¬V&∆ó6ÜVBr÷&6Ç##Rí6ˆÊfó&◊2FÜRWÜ7BFV¬FFR2##R”2”r“&Wfñ˜W6«í∆ˆvvVBvóFÇ‚VÊ6ˆÊfó&÷VB∆6VÜˆ∆FW"FFRˆbs##br‚fñW&6UÜ&÷w26÷R÷Fí&W˜'FñÊrÉ##R”2”r¬6÷RU$¬«&VGí6óFVB&V∆˜rí6˜'&ˆ&˜&FW3¢"w&VV÷VÁG2¬‚C„3T"6ˆ÷&ñÊVBf«VR¬CCT“6ˆ÷&ñÊVBWg&ˆÁBáW"«FVˆvV‚w2µ%Çfñ∆ñÊw2¬W"fñW&6UÜ&÷w2G&Á6∆Fñˆ„¢ˆÊRFV¬vóFÇC#T“Wg&ˆÁB˜WFÚCs#T“÷ñ∆W7FˆÊW2¬ˆÊRvóFÇC#“Wg&ˆÁB˜WFÚCSÉ“÷ñ∆W7FˆÊW2í‚7G&¶VÊV6w2˜v‚&V∆V6RFW67&ñ&W2&ñváG2FÚFWfV∆˜ˆ6ˆ÷÷W&6ñ∆ó¶R42f˜&◊V∆FñˆÁ2ˆbw6WfW&¬ˆÊ6ˆ∆ˆwí76WG2rÜFˆW2Ê˜BóG6V∆b6ˆÊfó&“FÜRs276WG2rfñwW&R˜"Fó66∆˜6RfñÊÊ6ñ«3≤FÜ˜6RfñwW&W26ˆ÷Rg&ˆ“fñW&6UÜ&÷w2&W˜'FñÊrˆb«FVˆvV‚w2µ%Çfñ∆ñÊw2í‚"¿–¢&÷ˆ∆V7V∆R#¢%VÊFó66∆˜6VBÉ2ˆÊ6ˆ∆ˆwí76WG2¬W"6V6ˆÊF'í6˜W&6ñÊrí"¿–¢'6˜W&6UˆÊ÷R#¢$7G&¶VÊV6á&W72&V∆V6RíÚfñW&6UÜ&÷"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊ7G&¶VÊV6Ê6ˆ“ˆ÷VFñ÷6VÁG&R˜&W72◊&V∆V6W2Û##Rˆ7G&¶VÊV6÷VÁFW'2÷∆ñ6VÁ6R÷w&VV÷VÁB◊vóFÇ÷«FVˆvV‚÷f˜"◊7V&7WFÊV˜W2÷f˜&◊V∆FñˆÁ2÷ˆb÷◊V«Fó∆R÷ˆÊ6ˆ∆ˆwí÷76WG2ÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢%&ñ÷'í"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&vVÊVÁFV6Ö˜VÊ'&ÊFVE˜62"¿–¢&Ê÷R#¢%&˜&ñWF'í42&Vf˜&◊V∆FñˆÁ2áVÊ'&ÊFVBí"¿–¢&6ˆ◊Áí#¢$vVÊVÁFV6ÇÚ&ˆ6ÜR"¿–¢'7FvU˜&r#¢$&˜fVBÚ&VwV∆F˜'í&WfñWráf&ñW2'í76WBí"¿–¢'7FvUˆ'V6∂WB#¢$&˜fVBÚ÷&∂WFVB"¿–¢'GóR#¢$˜FÜW""¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢$Ê˜BFó66∆˜6VBñ‚7W'&VÁB&W72&V∆V6W2"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢ÁV∆¬¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢$Ê˜BFó66∆˜6VB"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢%7FÊF&BÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚∆óVñB42&Vf˜&◊V∆FñˆÁ2ˆbWÜó7FñÊrïb&ñˆ∆ˆvñ73≤ÊÚFó7FñÊ7B'&ÊFVBFV∆ófW'íFV6ÜÊˆ∆ˆwíFó66∆˜6VB‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&vVÊVÁFV6Öˆ«VÁ7V÷ñıÛ##b”b"¿–¢''FÊW"#¢$dDá&VwV∆F˜'íí"¿–¢&FV≈˜GóR#¢%&VwV∆F˜'ífñ∆ñÊr"¿–¢&FFR#¢###b”b”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cc¿–¢'7V÷÷'í#¢'4$ƒ66WFVBf˜"«VÁ7V÷ñÚdTƒÚÖ42÷˜7VÊWGWßV÷"í≤ˆ∆ógí6ˆ÷&ñÊFñˆ‚¬"ı"∆&vR"÷6V∆¬«ñ◊Üˆ÷‚dDFV6ó6ñˆ‚WáV7FVB‰fV"##r‚"¿–¢&÷ˆ∆V7V∆R#¢$÷˜7VÊWGWßV÷""¿–¢'6˜W&6UˆÊ÷R#¢$vVÊVÁFV6Ç&W72&V∆V6W2"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊvVÊRÊ6ˆ“ˆ÷VFñ˜&W72◊&V∆V6W2ÛSrÛ##b”b”rˆfF÷66WG2◊7W∆V÷VÁF¬÷&ñˆ∆ˆvñ72÷∆ñ6V‚"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&vVÊVÁFV6ÖˆVÁ7'ñÊuÛ##b”b"¿–¢''FÊW"#¢$dDá&VwV∆F˜'íí"¿–¢&FV≈˜GóR#¢%&VwV∆F˜'ífñ∆ñÊr"¿–¢&FFR#¢###b”b”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cc¿–¢'7V÷÷'í#¢%&ñ˜&óGí&WfñWrw&ÁFVBf˜"VÁ7'ñÊrÖ426G&∆óßV÷"íñ‚Fáó&ˆñBWñRFó6V6R‚dDFV6ó6ñˆ‚WáV7FVB‰ˆ7B##b‚"¿–¢&÷ˆ∆V7V∆R#¢%6G&∆óßV÷""¿–¢'6˜W&6UˆÊ÷R#¢$vVÊVÁFV6Ç&W72&V∆V6W2"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊvVÊRÊ6ˆ“ˆ÷VFñ˜&W72◊&V∆V6W2ÛSÇÛ##b”b”#íˆfF÷w&ÁG2◊&ñ˜&óGí◊&WfñWr◊FÚ÷vVÊVÁFV6á2"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&6FV÷ñ5˜7&ïˆG&ñVB"¿–¢&Ê÷R#¢%7&í÷G&ñVB‘"7W7VÁ6ñˆ‚ÜÊˆ‚÷VV˜W2fVÜñ6∆Rí"¿–¢&6ˆ◊Áí#¢$6FV÷ñ2Ú◊V«Fó∆RÜÊ˜B6ñÊv∆R6ˆ◊Áí76WBí"¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬Ú&W6V&6Ç"¿–¢'7FvUˆ'V6∂WB#¢%&W6V&6ÇÚ6FV÷ñ2"¿–¢'GóR#¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢%&˜FVñ‚6ˆÊ6VÁG&FñˆÁ2vf"WÜ6VVFñÊr#÷rˆ‘¬r&W˜'FVB"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢#„¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#¬3÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢&‘"6ˆ«WFñˆ‚7&í÷G&ñVBñÁFÚ˜vFW"¬FÜV‚7W7VÊFVBñ‚Êˆ‚÷VV˜W2fVÜñ6∆RFÚ&VGV6Rfó66˜6óGí“6÷R&ˆ6Ç6FVv˜'í2ÜW&î¶V7B¬g&ˆ“ñÊFWVÊFVÁB6FV÷ñ2∆óFW&GW&R&FÜW"FÜ‚Ê÷VB6ˆ÷÷W&6ñ¬∆Ff˜&“‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&6FV÷ñ5ˆ5Û##b"¿–¢''FÊW"#¢$‚Ùá&W6V&6Çí"¿–¢&FV≈˜GóR#¢%&W6V&6ÇV&∆ñ6Fñˆ‚"¿–¢&FFR#¢###b"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##c¿–¢'7V÷÷'í#¢$2˜V‚W'7V7FófR'Fñ6∆Rˆ‚7&í÷G&ñVB‘"7W7VÁ6ñˆÁ2f˜"42FV∆ófW'ì≤Ê˜B6ˆ◊ÁíˆFV¬óFV“‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ù"¿–¢'6˜W&6UˆÊ÷R#¢$2˜V‚Ö7&ñÊvW"ÊGW&Rí"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Úˆ∆ñÊ≤Á7&ñÊvW"Ê6ˆ“ˆ'Fñ6∆RÛ„Éb˜3C#”#b”c”Ç"¿–¢'&V∆WfÊ6R#¢$∆˜r"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&6V∆«G&ñˆÂˆÜW'ßV÷˜62"¿–¢&Ê÷R#¢$ÜW'ßV÷42á&˜&ñWF'íáñ«W&ˆÊñF6R42∆Ff˜&“¬5B’b42í"¿–¢&6ˆ◊Áí#¢$6V∆«G&ñˆ‚"¿–¢'7FvU˜&r#¢%&R◊&Vvó7G&Fñˆ‚áóf˜F¬G&ñ¬6ˆ◊∆WFR¬URfñ∆ñÊr7V&÷óGFVB¬µ"fñ∆ñÊrVÊFñÊrí"¿–¢'7FvUˆ'V6∂WB#¢%&R◊&Vvó7G&Fñˆ‚Ú∆FR◊7FvR"¿–¢'GóR#¢$VÁßñ÷R÷76ó7FVB"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢$Ê˜BFó66∆˜6VBá7V6ñfñ2÷rˆ‘¬Ê˜BV&∆ó6ÜVBì≤G&7GWßV÷"&ñ˜6ñ÷ñ∆"426ˆÁfW'6ñˆ‚"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢ÁV∆¬¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢$Ê˜BFó66∆˜6VB"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢%&˜&ñWF'íñ‚÷Ü˜W6RÜÊ˜B∆ñ6VÁ6VBíáñ«W&ˆÊñF6R÷&6VB426ˆÁfW'6ñˆ‚FV6ÜÊˆ∆ˆwì≤FV◊˜&&ñ«íFVw&FW27V&7WFÊV˜W2áñ«W&ˆÊñ26ñBFÚV6RG'VrFñfgW6ñˆ‚¬vÜñ6ÇÊGW&∆«í&VvVÊW&FW2˜fW"Fñ÷R‚7WG2ñÊgW6ñˆ‚Fñ÷Rg&ˆ“3”ì÷ñ‚ÑïbíFÚVÊFW"R÷ñ‚Ö42í‚v˜V∆B&Rfó'7B◊FÚ÷÷&∂WB42G&7GWßV÷"&ñ˜6ñ÷ñ∆"ñb&˜fVB¬6ñÊ6RÊÚ&˜fVB42G&7GWßV÷"&ñ˜6ñ÷ñ∆"7W'&VÁF«íWÜó7G2‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&6V∆«G&ñˆÂˆ÷fG2÷fñ∆ñÊuÛ##b”R"¿–¢''FÊW"#¢$∂˜&V‘dE2á&VwV∆F˜'íí"¿–¢&FV≈˜GóR#¢%&VwV∆F˜'ífñ∆ñÊr"¿–¢&FFR#¢###b”R”#Ç"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cS#Ç¿–¢'7V÷÷'í#¢$6V∆«G&ñˆ‚fñ∆VB‚∆ñ6Fñˆ‚vóFÇ∂˜&Vw2÷ñÊó7G'íˆbfˆˆBÊBG'Vr6fWGíf˜"&˜f¬ˆbÜW'ßV÷42Ù5B’b42¬6˜fW&ñÊr∆¬ÜW&6WFñ‚42ñÊFñ6FñˆÁ2ÜV&«í'&V7B6Ê6W"¬÷WF7FFñ2'&V7B6Ê6W"¬÷WF7FFñ2v7G&ñ26Ê6W"í‚fˆ∆∆˜w2FÜR&ñ¬3¬##bT‘fñ∆ñÊrÜ«&VGíG&6∂VB6W&FV«íí‚6V∆«G&ñˆ‚7FFW2ÊÚ&ñ˜6ñ÷ñ∆"42f˜&◊V∆Fñˆ‚ˆbG&7GWßV÷"ó27W'&VÁF«íˆ‚FÜR÷&∂WBÊB˜6óFñˆÁ2óG6V∆bf˜"fó'7B÷÷˜fW"GfÁFvS≤∆Á2gW'FÜW"&VwV∆F˜'í7V&÷ó76ñˆÁ2ñ‚˜FÜW"÷¶˜"÷&∂WG2‚"¿–¢&÷ˆ∆V7V∆R#¢%G&7GWßV÷"ÑÜW&6WFñ‚&ñ˜6ñ÷ñ∆"í"¿–¢'6˜W&6UˆÊ÷R#¢%V&6RïÚ6V˜V¬V6ˆÊˆ÷ñ2Fñ«í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁV&6VóÊ∆rÛ##bÛRÛ#Çˆ6V∆«G&ñˆ‚◊7V&÷óG2÷∂˜&V‚÷∆ñ6Fñˆ‚÷f˜"÷&ñ˜6ñ÷ñ∆"◊G&7GWßV÷"◊62Ú"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&6V∆«G&ñˆÂˆV÷÷fñ∆ñÊuÛ##b”B"¿–¢''FÊW"#¢$T‘á&VwV∆F˜'íí"¿–¢&FV≈˜GóR#¢%&VwV∆F˜'ífñ∆ñÊr"¿–¢&FFR#¢###b”B”3"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cC3¿–¢'7V÷÷'í#¢$6ˆ◊∆WFVBT‘fñ∆ñÊrf˜"ÜW'ßV÷42f˜&◊V∆Fñˆ‚FFóFñˆ‚ÖGóRîíf&ñFñˆ‚í‚"¿–¢&÷ˆ∆V7V∆R#¢%G&7GWßV÷"ÑÜW&6WFñ‚&ñ˜6ñ÷ñ∆"í"¿–¢'6˜W&6UˆÊ÷R#¢$fñÁFV6ÇFñ÷W2∂˜&VÚ6V∆«G&ñˆ‚&W72&V∆V6R"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÊfñÁFV6áFñ÷W2Ê6ÚÊ∑"ˆÊWw2ˆ'Fñ6∆RÊáF÷√ˆÊÛ”SSìCÇ"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&6V∆«G&ñˆÂ˜óf˜F¬◊G&ñ≈Û##b”""¿–¢''FÊW"#¢$‚ÙÜñÁFW&Ê¬"dB÷ñ∆W7FˆÊRí"¿–¢&FV≈˜GóR#¢$6∆ñÊñ6¬ı&VwV∆F˜'í÷ñ∆W7FˆÊR"¿–¢&FFR#¢###b”"”""¿–¢&FFU˜6˜'Eˆ∂Wí#¢##c#"¿–¢'7V÷÷'í#¢$6ˆ◊∆WFVBóf˜F¬≤÷WVóf∆VÊ6R6∆ñÊñ6¬G&ñ¬f˜"ÜW'ßV÷42g2ïbÜW&6WFñ‚Ü˜&ñvñÊF˜"ì≤FV÷ˆÁ7G&FVB≤WVóf∆VÊ6RÊB6ˆ◊&&∆R6fWGíˆñ÷◊VÊˆvVÊñ6óGí‚"¿–¢&÷ˆ∆V7V∆R#¢%G&7GWßV÷"ÑÜW&6WFñ‚&ñ˜6ñ÷ñ∆"í"¿–¢'6˜W&6UˆÊ÷R#¢%FÜT&ñÙÊWw2ÚµÊWw2ÚT$‚Ñ∂˜&V‚&W72í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁFÜV&ñˆÊWw2ÊÊWBˆÊWw2ˆ'Fñ6∆UfñWrÊáF÷√ˆñGÜÊÛ”#ìí"¿–¢'&V∆WfÊ6R#¢$ÜñvÇ"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢'&W7FñvUˆ&ñ˜Ü&÷ˆñF3##B"¿–¢&Ê÷R#¢$îD3##BÜñ‚◊6óGRFÜW&÷ˆvV¬42∆Ff˜&“í"¿–¢&6ˆ◊Áí#¢%&W7FñvR&ñ˜Ü&÷îD2"¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬Ñ∂˜&VFVÁBfñ∆VBí"¿–¢'7FvUˆ'V6∂WB#¢%&V6∆ñÊñ6¬"¿–¢'GóR#¢$6Ú÷f˜&◊V∆Fñˆ‚"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢$Ê˜BFó66∆˜6VBÁV÷W&ñ6∆«ì≤FW67&ñ&VB2VÊ&∆ñÊrVÊñf˜&“ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚ÁFñ&ˆGí∆ˆFñÊr"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢ÁV∆¬¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢$Ê˜BFó66∆˜6VB"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢$ñÊ¶V7FVB2∆óVñB¬vV«2ñ‚fófÚfñ&ˆGíFV◊W&GW&RFÚf˜&“7W7FñÊVB◊&V∆V6RFW˜B¬WáFVÊFñÊrGW&Fñˆ‚ˆb7Fñˆ‚ÊB&VGV6ñÊrF˜6ñÊrg&WVVÊ7í‚W6W2&ñˆFVw&F&∆R÷FW&ñ«2‚˜6óFñˆÊVB2ÊWáB÷vVÊW&Fñˆ‚42∆Ff˜&“Fó7FñÊ7Bg&ˆ“áñ«W&ˆÊñF6R÷&6VB&ˆ6ÜW2‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢'&W7FñvUˆñF3##E˜FVÁEÛ##b”B"¿–¢''FÊW"#¢$∂˜&V‚ñÁFV∆∆V7GV¬&˜W'Gíˆffñ6R"¿–¢&FV≈˜GóR#¢%FVÁBfñ∆ñÊr"¿–¢&FFR#¢###b”B”#"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cC#¿–¢'7V÷÷'í#¢$Fˆ÷W7Fñ2Ñ∂˜&VíFVÁBfñ∆VBf˜"îD3##Bñ‚◊6óGRFÜW&÷ˆvV¬42∆Ff˜&“‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ùá∆Ff˜&“FVÁBí"¿–¢'6˜W&6UˆÊ÷R#¢%FÜT&ñÙÊWw2ÚÊWw7ñ“Ú‘EFˆFíÑ∂˜&V‚&W72í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁFÜV&ñˆÊWw2ÊÊWBˆÊWw2ˆ'Fñ6∆UfñWrÊáF÷√ˆñGÜÊÛ”#3ÉCí"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&ñÁfVÁFvV∆%ˆóf≈ˆ&ñˆf«VñFñ2"¿–¢&Ê÷R#¢$ïd¬‘&ñÙf«VñFñ2Ü÷ñ7&ˆf«VñFñ2ˆ÷ñ7&˜7ÜW&R÷&6VB42∆Ff˜&“í"¿–¢&6ˆ◊Áí#¢$ñÁfVÁFvT∆""¿–¢'7FvU˜&r#¢%&V6∆ñÊñ6¬"¿–¢'7FvUˆ'V6∂WB#¢%&V6∆ñÊñ6¬"¿–¢'GóR#¢%7W7VÁ6ñˆ‚˜'Fñ6∆R"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢#sS÷rˆ‘¬FV÷ˆÁ7G&FVB¬ñÊ¶V7FVBñ‚”"÷ñÁWFW2"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢sS„¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#c≤÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$Ê˜BFó66∆˜6VB"¿–¢&÷V6ÜÊó6“#¢$÷ñ7&ˆf«VñFñ72÷FW&ófVB÷ñ7&˜7ÜW&Rˆ÷ñ7&˜'Fñ6∆RG'VrFV∆ófW'í∆Ff˜&“FÜBVÊ&∆W2V«G&÷ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚42F˜6ñÊrvóFÜ˜WB6Ú÷f˜&◊V∆FVBáñ«W&ˆÊñF6RVÁßñ÷R‚F&vWFVBB÷ˆÊˆ6∆ˆÊ¬ÁFñ&ˆFñW2¬ÁFñ&ˆGí÷G'Vr6ˆÊßVvFW2ÑD72í¬ÊB&ó7V6ñfñ2ˆgW6ñˆ‚&˜FVñÁ2‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”B"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢&ñÁfVÁFvV∆%ˆ&ñÚ◊W6Û##b”b"¿–¢''FÊW"#¢$‚ÙÜ6ˆÊfW&VÊ6RFó66∆˜7W&Rí"¿–¢&FV≈˜GóR#¢%∆Ff˜&“Fó66∆˜7W&RÚ'FÊW&ñÊr"¿–¢&FFR#¢###b”b”"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##cc¿–¢'7V÷÷'í#¢$fó'7BV&∆ñ2Fó66∆˜7W&Rˆbïd¬‘&ñÙf«VñFñ2∆Ff˜&“B$îÚU4##c≤6ˆ◊Áí&W˜'G2sS÷rˆ‘¬6ÜñWf&∆Rñ‚”"÷ñÁWFRñÊ¶V7Fñˆ‚vóFÜ˜WBáñ«W&ˆÊñF6R‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ùá∆Ff˜&“÷∆WfV¬í"¿–¢'6˜W&6UˆÊ÷R#¢%FÜT&ñÙÊWw2ÚÜÊ∑óVÊrÑ∂˜&V‚&W72í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁFÜV&ñˆÊWw2ÊÊWBˆÊWw2ˆ'Fñ6∆UfñWrÊáF÷√ˆñGÜÊÛ”#SÉ3Ç"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢&ñÁfVÁFvV∆%ˆgVÊFñÊuÛ##b”2"¿–¢''FÊW"#¢$ñÁ7FóGWFñˆÊ¬ñÁfW7F˜'2ÜgVÊFñÊr&˜VÊBí"¿–¢&FV≈˜GóR#¢$gVÊFñÊrÙñÁfW7F÷VÁB"¿–¢&FFR#¢###b”2”Ç"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##c3Ç¿–¢'7V÷÷'í#¢$ñÁfVÁFvR∆"&ó6VBµ%rìÇ„R&ñ∆∆ñˆ‚á‚Ccî“í¬WÜ6VVFñÊróG2µ%rÉ"F&vWB'í#2R¬vóFÇ7G&ˆÊr&R◊'Fñ6óFñˆ‚g&ˆ“WÜó7FñÊr÷Wß¶ÊñÊR˜&R‘ïÚñÁfW7F˜'2‚4TÚ∂ñ“ßR÷ÜVR7FFVBgVÊG2vñ∆¬66V∆W&FRGfÊ6V÷VÁBˆbFÜR6ˆ◊Áíw2DE2∆Ff˜&◊2ÜñÊ6«VFñÊrïd¬‘&ñÙf«VñFñ2íÊB'Vñ∆B˜WBt’&ˆGV7Fñˆ‚ñÊg&7G'V7GW&R‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ùá∆Ff˜&“÷∆WfV¬gVÊFñÊrí"¿–¢'6˜W&6UˆÊ÷R#¢%6V˜V¬V6ˆÊˆ÷ñ2Fñ«í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢ÚˆV‚Á6VFñ«íÊ6ˆ“ˆfñÊÊ6RÛ##bÛ2ÛÇˆñÁfVÁFvR÷∆"◊&ó6W2”cñ“÷WÜ6VVFñÊr◊F&vWB÷'í”#2◊W&6VÁB"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢'6◊7VÊv&ñı˜2÷Üñ6ˆ‚"¿–¢&Ê÷R#¢%2‘Üî6ˆ‚Ñ4D‘ÚÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚f˜&◊V∆Fñˆ‚FWfV∆˜÷VÁB∆Ff˜&“í"¿–¢&6ˆ◊Áí#¢%6◊7VÊr&ñˆ∆ˆvñ72"¿–¢'7FvU˜&r#¢$&˜fVBÚ6ˆ÷÷W&6ñ∆«ífñ∆&∆RÑ4D‘Ú6W'fñ6Rí"¿–¢'7FvUˆ'V6∂WB#¢$&˜fVBÚ÷&∂WFVB"¿–¢'GóR#¢$˜FÜW""¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢%7W˜'G27F&∆R∆óVñBf˜&◊V∆FñˆÁ2„#÷rˆ‘¬f˜"42F÷ñÊó7G&Fñˆ‚"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢#„¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#¬3÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$‚ÙÜf˜&◊V∆Fñˆ‚÷FWfV∆˜÷VÁB6W'fñ6R¬Ê˜BG'VrFV6ÜÊˆ∆ˆwíí"¿–¢&÷V6ÜÊó6“#¢$4D‘Úf˜&◊V∆Fñˆ‚÷FWfV∆˜÷VÁB∆Ff˜&“6ˆ÷&ñÊñÊrÇˆ'VffW"ˆWÜ6óñVÁB˜Fñ÷ó¶Fñˆ‚vóFÇ&˜&ñWF'ít6ˆÊ6VÁG&Fñˆ‚vFR6ÜV6≤r67&VVÊñÊr&ˆ6W72FÚ&VGV6Rfó66˜6óGíÊBñ◊&˜fR7F&ñ∆óGíˆbÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚∆óVñB&ñˆ∆ˆvñ2f˜&◊V∆FñˆÁ2‚ˆffW&VB26W'fñ6RFÚ6◊7VÊr&ñˆ∆ˆvñ72rÜ&÷6∆ñVÁG2&FÜW"FÜ‚7V6ñfñ2G'Vr76WB‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”#2"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢'6◊7VÊv&ñıˆ7G&¶VÊV6˜6ÜÊV∆ıÛ##b”r"¿–¢''FÊW"#¢$7G&¶VÊV6"¿–¢&FV≈˜GóR#¢$÷ÁVf7GW&ñÊrÙ4D‘Ú"¿–¢&FFR#¢###b”rá&W˜'FVB##b”r”bí"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##csb¿–¢'7V÷÷'í#¢%6◊7VÊr&ñˆ∆ˆvñ726V∆V7FVBFÚ&ˆGV6RG'Vr7V'7FÊ6Rf˜"7G&¶VÊV6w26ÜÊV∆ÚÜÊñg&ˆ«V÷"í7V&7WFÊV˜W2ñÊ¶V7Fñˆ‚f˜"7ó7FV÷ñ2«WW2W'óFÜV÷F˜7W2‚6V6ˆÊB∂Ê˜v‚42÷f˜&◊V∆Fñˆ‚4D‘Úvñ‚f˜"6◊7VÊr&ñˆ∆ˆvñ72gFW"¢d¢w2'ñ'&WfÁB42‚6ÜÊV∆Ú42f˜&◊V∆Fñˆ‚óG6V∆b«&VGídDÙUR&˜fVBá6V∆b÷F÷ñÊó7G&Fñˆ‚&R÷fñ∆∆VBV‚ˆWFˆñÊ¶V7F˜"ì≤FÜó2FV¬6˜fW'2G'Vr◊7V'7FÊ6R÷ÁVf7GW&ñÊrfñ2‘Üî6ˆ‚‚7V6ñfñ2fˆ«V÷R˜FW&◊2Ê˜BFó66∆˜6VB‚"¿–¢&÷ˆ∆V7V∆R#¢$Êñg&ˆ«V÷"Ö6ÜÊV∆Úí"¿–¢'6˜W&6UˆÊ÷R#¢%6V˜V¬V6ˆÊˆ÷ñ2Fñ«í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢ÚˆV‚Á6VFñ«íÊ6ˆ“ˆfñÊÊ6RÛ##bÛrÛb˜6◊7VÊr÷&ñˆ∆ˆvñ72◊vñÁ2◊7V&7WFÊV˜W2÷G'Vr÷FV«2÷WñW2÷ÊWr"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢“¿–¢∞–¢&FV≈ˆñB#¢'6◊7VÊv&ñıˆ∆VÊ6ÖÛ##B”"¿–¢''FÊW"#¢$‚Ùá∆Ff˜&“∆VÊ6Çí"¿–¢&FV≈˜GóR#¢%∆Ff˜&“∆VÊ6Ç"¿–¢&FFR#¢###B””B"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##CB¿–¢'7V÷÷'í#¢%6◊7VÊr&ñˆ∆ˆvñ72∆VÊ6ÜVB2‘Üî6ˆ‚4D‘Úf˜&◊V∆Fñˆ‚÷FWfV∆˜÷VÁB∆Ff˜&“f˜"ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚É„#÷rˆ‘¬í&ñˆ∆ˆvñ72‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ùá∆Ff˜&“÷∆WfV¬í"¿–¢'6˜W&6UˆÊ÷R#¢%"ÊWw7vó&RÚ&ñı76RÚ6◊7VÊr&ñˆ∆ˆvñ72"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜6◊7VÊv&ñˆ∆ˆvñ72Ê6ˆ“ˆ÷VFñˆ6ˆ◊Áí÷ÊWw2˜6◊7VÊr÷&ñˆ∆ˆvñ72÷∆VÊ6ÜW2÷ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚÷f˜&◊V∆Fñˆ‚◊∆Ff˜&“÷66V∆W&FR÷ÜñvÇ÷F˜6R÷G'Vr÷FWfV∆˜"¿–¢'&V∆WfÊ6R#¢$÷VFóV“"¿–¢&6ˆÊfñFVÊ6R#¢$Ê˜B76W76VB"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢'wWÜñ&ñı˜wWÜñÜñvÉ""¿–¢&Ê÷R#¢%wUÜîÜñvÇ"„Ñ4D‘Úfó66˜6óGí◊&VGV7Fñˆ‚WÜ6óñVÁB∆Ff˜&“í"¿–¢&6ˆ◊Áí#¢%wUÜí&ñˆ∆ˆvñ72"¿–¢'7FvU˜&r#¢$&˜fVBÚ6ˆ÷÷W&6ñ∆«ífñ∆&∆RÑ4D‘Ú6W'fñ6Rí"¿–¢'7FvUˆ'V6∂WB#¢$&˜fVBÚ÷&∂WFVB"¿–¢'GóR#¢$6Ú÷f˜&◊V∆Fñˆ‚"¿–¢&6ˆÊ6VÁG&FñˆÂ˜FWáB#¢%WFÚ#3÷rˆ‘¬&˜FVñ‚6ˆÊ6VÁG&Fñˆ‚6ˆÊfó&÷VBfñ&ñ÷'í6˜W&6RÖwUÜí&ñˆ∆ˆvñ72&W72&V∆V6R¬##R”b”3ì≤„ìRfó66˜6óGí&VGV7Fñˆ‚Ü«6Ú6ˆÊfó&÷VBñ‚FÜR6÷R&ñ÷'í&V∆V6Rí‚FÜRs#B&˜&ñWF'íWÜ6óñVÁB6ˆ÷&ñÊFñˆÁ2rFWFñ¬˜&ñvñÊFW2g&ˆ“6V6ˆÊF'í6˜W&6RÑ'îG'VrıÜ&‘7V&R¬##b6˜fW&vRíÊBó2Ê˜BóG6V∆b6ˆÊfó&÷VB˜"6ˆÁG&Fñ7FVB'íFÜR&ñ÷'í&V∆V6R‚"¿–¢&6ˆÊ6VÁG&FñˆÂˆÁV÷W&ñ2#¢#3„¿–¢&6ˆÊ6VÁG&FñˆÂˆ'V6∂WB#¢#¬3÷rˆ‘¬"¿–¢&ÊVVF∆U˜6ó¶R#¢$‚ÙÜf˜&◊V∆Fñˆ‚÷FWfV∆˜÷VÁB6W'fñ6Rí"¿–¢&÷V6ÜÊó6“#¢%&˜&ñWF'íWÜ6óñVÁBFˆˆ∆∂óBÉ#B6ˆ÷&ñÊFñˆÁ2íFÜB&VGV6W2ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚f˜&◊V∆Fñˆ‚fó66˜6óGí'íWFÚ„ìRvÜñ∆RñÊÜñ&óFñÊr&˜FVñ‚vw&VvFñˆ‚¬VÊ&∆ñÊrÜñvÜW"÷6ˆÊ6VÁG&Fñˆ‚42◊&VGí∆óVñBf˜&◊V∆FñˆÁ2‚4D‘Ú6W'fñ6R∆Ff˜&“¬Ê˜B7V6ñfñ2G'Vr76WB‚"¿–¢&FFUˆFFVB#¢###b”r”""¿–¢&∆7E˜&WfñWvVB#¢###b”r”#2"¿–¢&FV«2#¢∞–¢∞–¢&FV≈ˆñB#¢'wWÜñ&ñıˆ6˜fW&vUÛ##b"¿–¢''FÊW"#¢$‚Ùá∆Ff˜&“6˜fW&vRí"¿–¢&FV≈˜GóR#¢%∆Ff˜&“6˜fW&vR"¿–¢&FFR#¢###R”b”3"¿–¢&FFU˜6˜'Eˆ∂Wí#¢##Sc3¿–¢'7V÷÷'í#¢$4ı%$T5DTB##b”r”#3¢&ñ÷'í6˜W&6RÖwUÜí&ñˆ∆ˆvñ72Ú$ÊWw7vó&R&W72&V∆V6R¬V&∆ó6ÜVB##R”b”3í6ˆÊfó&◊2FÜRWÜ7B∆Ff˜&“∆VÊ6ÇFFR2##R”b”3“&Wfñ˜W6«í∆ˆvvVBvóFÇ‚VÊ6ˆÊfó&÷VB∆6VÜˆ∆FW"FFRˆbs##br‚FÜR&ñ÷'í&V∆V6R6ˆÊfó&◊2&˜FVñ‚6ˆÊ6VÁG&FñˆÁ2&V6ÜñÊrWFÚ#3÷rˆ‘¬ÊBfó66˜6óGí&VGV7Fñˆ‚ˆbWFÚ„ìR‚FÜRs#B&˜&ñWF'íWÜ6óñVÁB6ˆ÷&ñÊFñˆÁ2rFWFñ¬g&ˆ“FÜR˜&ñvñÊ¬6V6ˆÊF'í6˜W&6RÑ'îG'VrıÜ&‘7V&R¬6ÜñÊW6RñÊGW7G'í&W72¬##b6˜fW&vRíó2&WFñÊVB2VÊ6ˆÊfó&÷VB'íFÜR&ñ÷'í&V∆V6R'WBÊ˜B6ˆÁG&Fñ7FVB'íóB‚"¿–¢&÷ˆ∆V7V∆R#¢$‚Ùá∆Ff˜&“÷∆WfV¬í"¿–¢'6˜W&6UˆÊ÷R#¢%wUÜí&ñˆ∆ˆvñ72á&W72&V∆V6RíÚ$ÊWw7vó&Rá&ñ÷'íì≤'îG'VrÚÜ&‘7V&Rá6V6ˆÊF'í¬˜&ñvñÊ¬í"¿–¢'6˜W&6U˜W&¬#¢&áGG3¢Ú˜wwrÁ&ÊWw7vó&RÊ6ˆ“ˆÊWw2◊&V∆V6W2˜wWÜí÷&ñˆ∆ˆvñ72÷∆VÊ6ÜW2÷ÊWáB÷vVÊW&Fñˆ‚◊∆Ff˜&“◊wWÜñÜñvÉ"”÷f˜"÷ÜñvÇ÷6ˆÊ6VÁG&Fñˆ‚÷&ñˆ∆ˆvñ72◊vóFÇ◊&˜FVñ‚÷6ˆÊ6VÁG&Fñˆ‚◊&V6ÜñÊr”#3÷÷v÷¬”3#CìCÉíÊáF÷¬"¿–¢'&V∆WfÊ6R#¢$∆˜r"¿–¢&6ˆÊfñFVÊ6R#¢%&ñ÷'í"¿–¢&f∆vvVB#¢f«6R¿–¢&ÊWuˆñÂˆFñvW7B#¢f«6P–¢––¢“¿–¢&ó5ˆñÁFW&Ê¬#¢f«6R¿–¢&ó5˜&VfW&VÊ6R#¢f«6P–¢“¿–¢∞–¢&ñB#¢&6ÜVÊvGU˜&ˆÊw6ÜVÊu˜FñÁM˘ÛõhëÈÏ∂ªßq´^wXÿ][€àãBàô]HéàååçKLLKLHãBàô]W‹€‹ù⁄Ÿ^HéàåçLLLKBàú›[[X\ûHéàîY\ã\ô]öY]ŸY\\à
+ö[ôÀ]XK[ôÀﬁ[HHRU
+H[àYò[òŸYX]\öX[»[[€ú›ò][ô»ÕåYÀ€S[ùXõŸK[Y[àYõŸŸ[ZX‹õ‹\ùX€\»öXH€€ù[ù[›\»€€ô[ùXò\ŸYZYò][€ãàãBàõ[€X›[Héàìã–HãBàú€›\òŸW€ò[YHéàêYò[òŸYX]\öX[»
+⁄[^JH»RUãBàú€›\òŸW›\õéàöŒãÀÿYò[òŸYõ€õ[ô[Xúò\ûKù⁄[^Kò€€KŸ⁄KÃLåLãÿYXKååçLMçéHãBàúô[]ò[òŸHéàì›»ãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàCBàKBàö\◊⁄[ù\õò[éàò[ŸKBàö\◊‹ôYô\ô[òŸHéàò[ŸCBàKBà√BàöYéàúÿ[õŸöW‹ÿ\ò€\ÿWŸ\ÿŸ[òW‹ÿ»ãBàõò[YHéàîÿ\ò€\ÿH\ÿŸ[òH
+–»\ÿ]^[XXã€ãXõŸH[öôX›‹äHãBàò€€\[ûHéàîÿ[õŸöHãBàú›YŸW‹ò]»éàê\õ›ôYãBàú›YŸWÿùX⁄Ÿ]éàê\õ›ôY»X\öŸ]YãBàù\Héàì›\àãBàò€€òŸ[ùò][€ó›^éàìõ›\ÿ€‹ŸY»[]ô\ôYöXH€ãXõŸH[öôX›‹àò]\à[àH€€òŸ[ùò][€ãY[òXõ[ô»õ‹õ][][€àX⁄õ€ŸﬁHãBàò€€òŸ[ùò][€ó€ù[Y\öX»éàù[Bàò€€òŸ[ùò][€óÿùX⁄Ÿ]éàìõ›\ÿ€‹ŸYãBàõôYYW‹⁄^ôHéàìõ›\ÿ€‹ŸY
+€ãXõŸH[öôX›‹à»]⁄\[\]öXŸJHãBàõYX⁄[ö\€HéàëëKX\õ›ôY›Xò›][ô[›\»ôYõ‹õ][][€àŸà\ÿ]^[XXà
+ô]ö[›\€HUã[€õJKYZ[ö\›\ôYX[ùX[H‹àöXH[à€ãXõŸH[öôX›‹àX‹õ‹‹»[\õ›ôYUà[ôXÿ][€ú»[à][\H^Y[€XKàö\ú›[ùXÿ[òŸ\àYŸ[ù\õ›ôYöXH€ãXõŸH[öôX›‹é»õ»X[\õ€öY\ŸK\ùX€K‹à‹û\›[[ôHX⁄õ€ŸﬁH\ÿ€‹ŸYH]öXŸKY[òXõYò]\à[àõ‹õ][][€ãY[òXõYàãBàô]WÿYYéàååçãLÀLL»ãBàõ\›‹ô]öY]ŸYéàååçãLÀLMãBàôX[»éà√Bà√BàôX[⁄Yéàúÿ[õŸöW‹ÿ\ò€\ÿKY\ÿŸ[òWŸôWÃåçãL»ãBàú\ùô\àéàîÿ[õŸöHãBàôX[›\HéàîôY›[]‹ûH\õ›ò[ãBàô]HéàååçãLÀLHãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃKBàú›[[X\ûHéàëëH\õ›ôY\ÿ]^[XXãZ\ôò»
+ÿ\ò€\ÿH\ÿŸ[òJHõ‹à›Xò›][ô[›\»[öôX›[€ã^[ô[ô»»[›\úô[ùH\õ›ôYUà\ÿ]^[XXà[ôXÿ][€ú»[à][\H^Y[€XKàYZ[ö\›\ôYX[ùX[H‹àöXH[à€ãXõŸH[öôX›‹ãàö\ú›[ùXÿ[òŸ\àYŸ[ù\õ›ôYöXH€ãXõŸH[öôX›‹ãàãBàõ[€X›[Héàí\ÿ]^[XXãZ\ôò»ãBàú€›\òŸW€ò[YHéàëëH»\ôŸ]Y€ò€€ŸﬁH»T–”»‹›ãBàú€›\òŸW›\õéàöŒãÀ›››ÀôôKô€›ãŸùY‹À‹ô\€›\òŸ\ÀZ[ôõ‹õX][€ãX\õ›ôYYùY‹ÀŸôKX\õ›ô\ÀZ\ÿ]^[XXãZ\ôòÀ\›Xò›][ô[›\ÀZ[öôX›[€ã[][\K[^Y[€XKZ[ôXÿ][€ú»ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàCBàKBàö\◊⁄[ù\õò[éàò[ŸKBàö\◊‹ôYô\ô[òŸHéàò[ŸCBàKBà√BàöYéàòúõ⁄◊‹ÿ◊‹]õ‹õHãBàõò[YHéàêîìY⁄X€€òŸ[ùò][€à–»ö[€Ÿ⁄X‹»]õ‹õHãBàò€€\[ûHéàêö[ZI‹»ô\ŸX\ò⁄Xõ‹ò]‹ûH
+XŸ[úŸY»\ÿHXõ‹ò]‹öY\ HãBàú›YŸW‹ò]»éàîôX€[öXÿ[
+–»»õ‹õ][][€à]ô[‹Y[ù[ô\ùÿ^JHãBàú›YŸWÿùX⁄Ÿ]éàîôX€[öXÿ[ãBàù\Héàì›\àãBàò€€òŸ[ùò][€ó›^éàìõ›\ÿ€‹ŸYãBàò€€òŸ[ùò][€ó€ù[Y\öX»éàù[Bàò€€òŸ[ùò][€óÿùX⁄Ÿ]éàìõ›\ÿ€‹ŸYãBàõôYYW‹⁄^ôHéàìõ›\ÿ€‹ŸYãBàõYX⁄[ö\€Héàîõ‹öY]\ûHõ›Z[ã‹\YHY⁄X€€òŸ[ùò][€à›Xò›][ô[›\»[]ô\ûH]õ‹õHúõ€Hö[ZI‹»ô\ŸX\ò⁄Xõ‹ò]‹ûH
+X[ôÿ[‹ôK[ôXJN»XŸ[úŸY€ÿò[H»\ÿHXõ‹ò]‹öY\»õ‹à[€õÿ€€ò[[ùXõŸHõŸX›»[à€ò€€ŸﬁH[ô[ôõ[[X]‹ûH\ŸX\ŸKàYX⁄[ö\€Hõ›Y]\ÿ€‹ŸY[à]òZ[XõH€›ô\òYŸKàãBàô]WÿYYéàååçãLÀLL»ãBàõ\›‹ô]öY]ŸYéàååçãLÀLMãBàôX[»éà√Bà√BàôX[⁄Yéàö\ÿWÿúõ€XŸ[úŸWÃåçãLàãBàú\ùô\àéàí\ÿHXõ‹ò]‹öY\»ãBàôX[›\HéàìXŸ[ú⁄[ô»
+€ÿò[
+HãBàô]HéàååçãLãLLàãBàô]W‹€‹ù⁄Ÿ^HéàåçååLãBàú›[[X\ûHéàë€ÿò[XŸ[ú⁄[ô»€€Xõ‹ò][€à‹ò[ù[ô»\ÿHXÿŸ\‹»»îì	‹»õ‹öY]\ûHY⁄X€€òŸ[ùò][€à–»ö[€Ÿ⁄X‹»[]ô\ûH]õ‹õHõ‹àPXàõŸX›»[à€ò€€ŸﬁH[ô[ôõ[[X]‹ûH\ŸX\ŸKàãBàõ[€X›[Héàï[ô\ÿ€‹ŸY
+][\HPXà\ôŸ] HãBàú€›\òŸW€ò[YHéàêö[‘‹X›ù[H[ôXH»YYXÿ[X[Ÿ›Y\»»⁄[\ÿõ€⁄»ãBàú€›\òŸW›\õéàöŒãÀ›››Àòö[‹‹X›ù[Z[ôXKò€€K€ô]‹ÀŒMKÃçŒMLã⁄\ÿK[XúÀX[õõ›[òŸ\ÀY€ÿò[[XŸ[ú⁄[ôÀX€€Xõ‹ò][€ã]⁄]Xö[Z\À\ô\ŸX\ò⁄[Xõ‹ò]‹ûKYõ‹ã[[€õÿ€€ò[X[ùXõŸY\Àö[ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàCBàKBàö\◊⁄[ù\õò[éàò[ŸKBàö\◊‹ôYô\ô[òŸHéàò[ŸCBàKBà√BàöYéàúÿ[\›[ôÿö[Ÿ\\◊‹å‹ÿ»ãBàõò[YHéàîÿ[\›[ô»ö[Ÿ\\»õ‹öY]\ûHåXò\ŸY–»€€ùô\ú⁄[€àX⁄õ€ŸﬁHãBàò€€\[ûHéàîÿ[\›[ô»ö[Ÿ\\»ãBàú›YŸW‹ò]»éàîôX€[öXÿ[
+[ù\õò[\›[ô»€€\]Y
+HãBàú›YŸWÿùX⁄Ÿ]éàîôX€[öXÿ[ãBàù\Héàë[ûû[YKX\‹⁄\›YãBàò€€òŸ[ùò][€ó›^éàìõ›\ÿ€‹ŸYù[Y\öXÿ[N»[òXõ\»Uã]ÀT–»€€ùô\ú⁄[€àŸàY⁄Y‹ŸH[ùXõŸHùY‹»
+ô]ö[›\€H€õH›ÀY‹ŸH–»€€ùô\ú⁄[€ú»X⁄Y]ôYöXH€€òŸ[ùò][€àYù\›Y[ù[€ôJHãBàò€€òŸ[ùò][€ó€ù[Y\öX»éàù[Bàò€€òŸ[ùò][€óÿùX⁄Ÿ]éàìõ›\ÿ€‹ŸYãBàõôYYW‹⁄^ôHéàìõ›\ÿ€‹ŸYãBàõYX⁄[ö\€Héàê”‘îëP’QåçãLÀLéà“TÀ““T…‹»[ù\õò][€ò[ŸX\ò⁄ô\‹ù
+T‘äH[ô‹ö][à‹[ö[€àŸàH[ù\õò][€ò[ŸX\ò⁄[ô»]]‹ö]H
+T–JHÿ]ôHõ›[ô\õZ[ô»][ù»
+”ÃåçãÃMåéNK”ÃåçãÃMåÃ
+HHô[[Z[ò\ûHôYÿ]]ôH‹[ö[€à€àõ›ô[H[ô[ùô[ù]ôH›\⁄][ô»ö[‹à[€ú»Xã[[ŸŸ[ã[ô[ﬁû[YHö[‹à\ù\»HåLàT»][ù\»[ùX⁄\][ôÀ‹ô[ô\ö[ô»ÿùö[›\»H€Z[\Ààÿ[\›[ô»ö[Ÿ\\»[ô[ô\›ûH€›\òŸ\»⁄\òX›\ö^ôHõ›\»X[\õ€öY\ŸHX[ùYòX›\ö[ôÀ‹\öYöXÿ][€à
+”P H][ùÀõ›€€\‹⁄][€ã[Ÿã[X]\à‹à–À\]õ‹õH][ùŒ»€€\[ûH›]\»õ»Ÿ\\ò]H]õ‹õKX€€[Y\ò⁄X[^ò][€à[à^\›»[ôõ»\ôŸ]õŸX›\»ö[ò[^ôYàô[[Z[ò\ûH‹[ö[€à€õHHò][€ò[\\ŸH€Z[H[Y[ôY[ù»ô[XZ[à‹‹⁄XõKàŸYHX[◊”ô]‹◊—ôYYõ›»ÿ[\›[ôÿö[Ÿ\\◊⁄\‹ã[õ›ô[K\ôZôX›[€óÃåçãLÀLMõ‹à]Z[à‘íQ“SêS’SSPTñHëURSëQàõ‹öY]\ûH[ãZ›\ŸHôX€€Xö[ò[ù[X[àX[\õ€öY\ŸH
+åXò\ŸY
+K[ô\[ô[ùH]ô[‹Y
+›€àX[\õ€öY\ŸK›[]ò][€ã[ô\öYöXÿ][€àõÿŸ\‹Ÿ\ H[ô\›[ò›úõ€H[ﬁû[YI‹»íTå
+SíSñëJH[ô[[ŸŸ[â‹»SPç
+Xúõﬁû[YJKà[\‹ò\ö[HúôXZ‹»›€àH\⁄Xÿ[ò\úöY\àŸà›Xò›][ô[›\»\‹›YH»[òXõH–»€€ùô\ú⁄[€àŸàY⁄Y‹ŸH[ùXõŸHùY‹Ààÿ[\›[ô»ö[Ÿ\\…»ö[‹à–»€€ùô\ú⁄[€ú»
+ô[ô\[H–À—[òúô[ö[‹⁄[Z[\ã[\ò[H–À“[Z\òHö[‹⁄[Z[\äHŸ\ôH›ÀY‹ŸH[ôôYYY€õH€€òŸ[ùò][€àYù\›Y[ù»\»X[\õ€öY\ŸKXò\ŸYX⁄õ€ŸﬁH\ôŸ]»Y⁄Y‹ŸHõÿ⁄ÿù\›\úÀàôZ[ô»‹⁄][€ôYõ‹àH€€\[ûI‹»Ÿ^]ùYH
+[Xúõ€^ö[XXäHö[‹⁄[Z[\à[ô[ö\ùH
+ò\›^ù[XXà\ù^Xÿ[àQ Hö[‹⁄[Z[\àõŸ‹ò[\Àà€»“T»][ùXõXÿ][€ú»
+”ÃåçãÃMåéNK”ÃåçãÃMåÃ
+H€›ô\ö[ô»X[\õ€öY\ŸH\öYöXÿ][€à›\ôòXŸYåçãLÀLMö\õZ[ô»\Hö[X\ûHTò\⁄\»õ‹à\»X⁄õ€ŸﬁH
+ŸYHX[◊”ô]‹◊—ôYY
+KàãBàô]WÿYYéàååçãLÀLMHãBàõ\›‹ô]öY]ŸYéàååçãLÀLéãBàôX[»éà√Bà√BàôX[⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊ÿŸ[ö[€ó⁄Ÿ^]ùYK[X\öŸ]ÃåçãLÀLMãBàú\ùô\àéàêŸ[ö[€à
+€€\][ô»ö[‹⁄[Z[\à]ô[‹\äHãBàôX[›\HéàìX\öŸ][ò[\⁄\»»€€\]]]ôH€€ù^ãBàô]HéàååçãLÀLMãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃMBàú›[[X\ûHéàïòYHô\‹»ô\‹ù»õ›ÿ[\›[ô»ö[Ÿ\\»[ôŸ[ö[€à\ôH\ú›Z[ô»–ÀX€€ùô\ùYö[‹⁄[Z[\ú»ŸàŸ^]ùYH
+[Xúõ€^ö[XXäK\ôŸ][ô»[à\›[X]Y	Lãç–àŸ^]ùYH–»X\öŸ]‹‹ù[ö]H\»HôYô\ô[òŸHõŸX›	‹»][ùõ›X›[€ú»òXŸH^\ûN»Ÿ[ö[€à\»\ú›Z[ô»\»öXH]»›€à[ãZ›\ŸHõ‹öY]\ûHX[\õ€öY\ŸH–»]õ‹õH
+Hÿ[YH[ô\õZ[ô»X⁄õ€ŸﬁH\ŸYõ‹à\ûù[XH–À–’Tà–ÀòX⁄ŸYŸ\\ò][H[ô\àX⁄õ€ŸﬁHQŸ[ö[€ó⁄\ûù[XW‹ÿ KàãBàõ[€X›[Héàî[Xúõ€^ö[XXàö[‹⁄[Z[\à
+Ÿ^]ùYJHãBàú€›\òŸW€ò[YHéàîŸ[›[X€€õ€ZX»Z[HãBàú€›\òŸW›\õéàöŒãÀŸ[ãúŸYZ[Kò€€KŸö[ò[òŸKÃåçãÃÀÃM‹ÿ[\›[ôÀXŸ[ö[€ãXô]XöYÀ[€ãLLçÀXö[[€ãZŸ^]ùYK\ÿÀ[X\öŸ]ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàKBà√BàôX[⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊⁄\‹ã[õ›ô[K\ôZôX›[€óÃåçãLÀLMãBàú\ùô\àéàìã–H
+][ù^[Z[ò][€àö[ô[ô HãBàôX[›\HéàëõY»»€‹úôX›[€à
+][ùõ‹ŸX›][€à]ô[‹Y[ù
+HãBàô]HéàååçãLÀLMãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃMBàú›[[X\ûHéàëìQ——QåçãLÀLé
+›][Ÿã]⁄[ô›»€›\òŸH\ŸY\àÿ]H€‹úôX›[€à^Ÿ\[€é»‹öY⁄[ò[ô\‹ù[ô»]YåçãLÀLM›\ôòXŸY\ö[ô»\»ù[â‹»ŸX\ò⁄õ›ô]ö[›\€HŸŸŸY
+Nà\à\õHYZ[H^€\⁄]ôHô\‹ù[ô»⁄][ô»H“T»’[ù\õò][€ò[XõXÿ][€à\»H€‹ôX[àT…‹»[ù\õò][€ò[ŸX\ò⁄ô\‹ù
+T‘äH[ô‹ö][à‹[ö[€àŸàH[ù\õò][€ò[ŸX\ò⁄[ô»]]‹ö]H
+T–JKH€»ÿ[\›[ô»ö[Ÿ\\»X[\õ€öY\ŸK\\öYöXÿ][€à][ù»[ôXYHòX⁄ŸY\ôH
+”ÃåçãÃMåéNK”ÃåçãÃMåÃ»õ›ö[YåçKLLãLåÀ[ù\õò][€ò[HXõ\⁄YåçãLÀLäHôXŸZ]ôYHô[[Z[ò\ûHôYÿ]]ôH‹[ö[€à€àõ›ô[H[ô[ùô[ù]ôH›\à”ÃåçãÃMåéNH
+ô[[›ò[Ÿàù[òÿ]YX[\õ€öY\ŸJNà€Z[\»KMLÀMãNMç»õ›[ô»X⁄»[ùô[ù]ôH›\⁄]HT–H⁄][ô»Hö[‹à[€ú»Xà][ù\»[ùX⁄\][ô»H€‹ôH€Z[\À[ôö[ô[ô»H][[[Ÿ[X⁄õ€X]Ÿ‹ò\H€Z[\»
+KM Hÿùö[›\»[àöY]»Ÿà[€ú»Xà
+»[[ŸŸ[àö[‹à\ùà”ÃåçãÃMåÃ
+ÿ\û[X»X⁄Y
+»\ö[ò][€à[\\ö]Hô[[›ò[
+Nà€Z[\»KMLHõ›[ô»X⁄»[ùô[ù]ôH›\⁄][ô»HåLàT»ö[‹à][ùõ‹àHÿ\û[XÀXX⁄YŸ\Yö[ò][€à€€Xö[ò][€à[ô[ﬁû[YHö[‹à\ùõ‹à]»X[\õ€öY\ŸH\Xÿ][€é»H€€\‹⁄][€ã[Ÿã[X]\à€Z[H
+X[\õ€öY\ŸH⁄]‘LJHÿ\»õ›[ôõ›õ›ô[Z]\ã⁄[òŸHHT–Hõ›[ôHô\›[[ô»›Xú›[òŸH[ô\›[ô›Z\⁄XõHúõ€H€õ›€àX[\õ€öY\ŸHôYÿ\ô\‹»ŸàX[ùYòX›\ö[ô»õÿŸ\‹Ààÿ[\›[ô»ö[Ÿ\\»[ô[ô\›ûH€›\òŸ\»⁄\òX›\ö^ôHõ›][ù»\»X[\õ€öY\ŸHX[ùYòX›\ö[ôÀ‹\öYöXÿ][€à
+”P H][ùÀõ›€€\‹⁄][€ã[Ÿã[X]\à‹à]õ‹õH][ùŒ»ÿ[\›[ô»ö[Ÿ\\»›]\»]\»õ»Ÿ\\ò]H–À\]õ‹õH€€[Y\ò⁄X[^ò][€à[à[ô\»õ›ö[ò[^ôYH\ôŸ]õŸX›à\»\»Hô[[Z[ò\ûHT‘ã“T–H‹[ö[€à€õKõ›Hö[ò[ôZôX›[€àH€Z[\»ÿ[à›[ôH[Y[ôY[àò][€ò[\\ŸHõ‹ŸX›][€ãà\ôX›H]X[YöY\»H€€\]]]ôK]ôX]úò[Z[ô»ŸàH[ôXYK]òX⁄ŸY“TÀY\ÿ€‹›\ôHõ›»
+ÿ[\›[ôÿö[Ÿ\\◊‹åŸ\ÿ€‹›\ôWÃåçãLÀLL H[ôX\öŸ]X[ò[\⁄\»õ›»
+ÿ[\›[ôÿö[Ÿ\\◊ÿŸ[ö[€ó⁄Ÿ^]ùYK[X\öŸ]ÃåçãLÀLM
+NàH[ô\õZ[ô»T\»›\úô[ùH€Z[YY\X\ú»ŸXZŸ\à[àHX\öŸ]ôXX›[€à
+[[ŸŸ[à⁄\ô\»ô[åçãLÀLLÀÃM
+H[\YYàãBàõ[€X›[Héàî[Xúõ€^ö[XXàö[‹⁄[Z[\à
+Ÿ^]ùYJN»ò\›^ù[XXà\ù^Xÿ[àö[‹⁄[Z[\à
+[ö\ùJHãBàú€›\òŸW€ò[YHéàî\õHYZ[H
+;'m:„l;'o:È´
+HãBàú€›\òŸW›\õéàöŒãÀ‹\õKôYZ[Kò€Àö‹ã€ô]‹À‹ôXY€ô]‹“YLŒÃÕéççMLMLåãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîŸX€€ô\ûHãBàôõYŸŸYéàùYKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàKBà√BàôX[⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊‹åŸ\ÿ€‹›\ôWÃåçãLÀLL»ãBàú\ùô\àéàìã–H
+[ù\õò[âëZ[\›€ôH»X⁄õ€ŸﬁH\ÿ€‹›\ôJHãBàôX[›\HéàîâëZ[\›€ôH»X⁄õ€ŸﬁH\ÿ€‹›\ôHãBàô]HéàååçãLÀLL»ãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃLÀBàú›[[X\ûHéàê”‘îëP’QåçãLÀLMNàö\õYY\⁄]ö[X\ûK\€›\òŸH]Z[à“T»Xõ\⁄Y€»[ù\õò][€ò[][ù\Xÿ][€ú»úõ€Hÿ[\›[ô»ö[Ÿ\\»[àX\õHù[Håçà€›ô\ö[ô»X[\õ€öY\ŸH\öYöXÿ][€ã€X[ùYòX›\ö[ôŒà”ÃåçãÃMåéNH
+Y]Ÿõ‹àô[[›ö[ô»€X]ôY›ù[òÿ]YX[\õ€öY\ŸJH[ô”ÃåçãÃMåÃ
+Y]Ÿõ‹àô[[›ö[ô»[\\ö]Y\»öXHÿ\û[X»X⁄YôX]Y[ù[ô\ö[ò][€äKàõ»‹X⁄YöX»\ôŸ]õŸX›ò[YYàõ€›⁄[ô»XõX»ô\‹ù[ô»Ÿà\»€àåçãLÀLM[[ŸŸ[à\‹›YYHÿ[YKY^HôXù][›][Y[ù\‹Ÿ\ù[ô»]»SPç\»HX]\öX[HYôô\ô[ù›Xú›[òŸHúõ€H[ûHåXò\ŸY[ûû[YH[ô]õŸX›»€€Xö[ö[ô»[Xúõ€^ö[XXà⁄]SPç
+Ÿ^]ùYH[^
+H\ôHõ›X›Y[ù[åÀ\ô›Z[ô»ö[‹⁄[Z[\à€€\]]‹ú»€›[õ›]Ÿù[H›Xú›]]HHYôô\ô[ùX[\õ€öY\ŸKà[[ŸŸ[à⁄\ô\»ô[[ùòY^H€àåçãLÀLLÀÃM€àHô]‹Ààÿ[\›[ô»ö[Ÿ\\»›]Y]\»õ›ö[ò[^ôY⁄X⁄õŸX›
+ HH\öYöXÿ][€àT⁄[ôH\YY»[ô\»õ›\ú›Z[ô»[à^\õò[]õ‹õK[XŸ[ú⁄[ô»ù\⁄[ô\‹ÀàãBàõ[€X›[Héàî[Xúõ€^ö[XXàö[‹⁄[Z[\à
+Ÿ^]ùYJN»ò\›^ù[XXà\ù^Xÿ[àö[‹⁄[Z[\à
+[ö\ùJHãBàú€›\òŸW€ò[YHéàîŸ[›[X€€õ€ZX»Z[H»“T»
+USï–”‘JHãBàú€›\òŸW›\õéàöŒãÀŸ[ãúŸYZ[Kò€€KŸö[ò[òŸKÃåçãÃÀÃLÀ‹ÿ[\›[ôÀXö[Ÿ\\ÀX‹òX⁄‹ÀZY⁄Y‹ŸK\ÿÀ]X⁄Y›X\ô[ôÀXöY»ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîŸX€€ô\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàCBàKBàö\◊⁄[ù\õò[éàò[ŸKBàö\◊‹ôYô\ô[òŸHéàò[ŸCBàKBà√BàöYéàôÃôÿö[◊⁄[õõÿö[€[\ãBàõò[YHéàí[õõ–ö[”STãBàò€€\[ûHéàëÃë»ö[»
+;)‡;b+;)‡:Ï%;'m;&)
+HãBàú›YŸW‹ò]»éàîôX€[öXÿ[»]õ‹õH
+ö\ú›XõX»\ÿ€‹›\ôN»ôX\⁄Xö[]H]ò[X][€à›YŸHöXHUKõ»[ùXõŸH\XÿXö[]H€€ôö\õYYY]
+HãBàú›YŸWÿùX⁄Ÿ]éàî]õ‹õH»ôX\⁄Xö[]HãBàù\Héàî›\‹[ú⁄[€ã‹\ùX€HãBàò€€òŸ[ùò][€ó›^éàìõ›\ÿ€‹ŸYù[Y\öXÿ[N»\ÿ‹öXôY]X[]]]ô[H\»[à	›[òKZY⁄X€€òŸ[ùò][€â»[ùXõŸHZX‹õ‹\ùX€H]õ‹õHãBàò€€òŸ[ùò][€ó€ù[Y\öX»éàù[Bàò€€òŸ[ùò][€óÿùX⁄Ÿ]éàìõ›\ÿ€‹ŸYãBàõôYYW‹⁄^ôHéàìõ›\ÿ€‹ŸYãBàõYX⁄[ö\€Héàë^[ú⁄[€àŸàÃë»ö[…‹»^\›[ô»€ôÀXX›[ô»ZX‹õ‹‹\ôH»]õ‹õH
+[õõ”ST
+H[ù»ö[€Ÿ⁄X‹ŒàHY⁄X€€òŸ[ùò][€àZX‹õ‹\ùX€H]õ‹õH[ù[ôY»ÿY[ùXõŸY\»]Y⁄€€òŸ[ùò][€à»[òXõH€€ùô\ú⁄[€àŸàUà[ùXõŸHùY‹»»–»õ‹õ][][€úÀà€€\[ûH›]\»\XÿXö[]H^[ô»ô^[€ôPXú»»ö\‹X⁄YöX‹ÀQ‹À[ôôX€€Xö[ò[ùõ›Z[úŒ»X›X[[ùXõŸH\XÿXö[]Hõ‹à[ûHò[YY[€X›[Hõ›Y]€€ôö\õYY
+ôX\⁄Xö[]K”UH›YŸH€õK\àŸ[ö[€àS’H[õõ›[òŸYåçãLÀLÃ
+KàãBàô]WÿYYéàååçãLÀLÃHãBàõ\›‹ô]öY]ŸYéàååçãLÀLÃHãBàôX[»éà√Bà√BàôX[⁄YéàôÃôÿö[◊ÿŸ[ö[€ó€[›WÃåçãLÀLÃãBàú\ùô\àéàêŸ[ö[€àãBàôX[›\HéàìS’H»X]\öX[ò[úŸô\àY‹ôY[Y[ù
+€€Xõ‹ò][€äHãBàô]HéàååçãLÀLÃãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃÃBàú›[[X\ûHéàëÃë»ö[»[ôŸ[ö[€à⁄Y€ôY[àS’H[ò€Y[ô»HX]\öX[ò[úŸô\àY‹ôY[Y[ù
+UJHõ‹à	›[òKZY⁄X€€òŸ[ùò][€à[ùXõŸH–»õ‹õ][][€à]õ‹õHX⁄õ€ŸﬁH€€‹\ò][€ãâ»[ô\àHUKŸ[ö[€à⁄[ò[úŸô\à[ùXõŸH›Xú›[òŸJ H»Ãë»ö[»€»H€€\[öY\»ÿ[à]ò[X]H\XÿXö[]H»Ãë»ö[…‹»Y⁄X€€òŸ[ùò][€àZX‹õ‹\ùX€H]õ‹õH	“[õõ–ö[”ST	»
+[à^[ú⁄[€àŸàÃë»ö[…‹»^\›[ô»[õõ”ST€ôÀXX›[ô»ZX‹õ‹‹\ôH»X⁄õ€ŸﬁH[ù»ö[€Ÿ⁄X‹Àÿ[ùXõŸY\ K⁄]HöY]»»õ⁄[ùâë[ô›[ùX[€€[Y\ò⁄X[^ò][€àYàôX\⁄Xö[]H\»€€ôö\õYYà\»\»Ãë»ö[…‹»ö\ú›XõX»\ÿ€‹›\ôHŸà[õõ–ö[”ST[ôX\ö‹»]»õ‹õX[[ùûH[ù»[ùXõŸHö[€Ÿ⁄X‹Àà‹X⁄YöX»\ôŸ][€X›[J Kô\ŸX\ò⁄ÿ⁄Y[K[ô€‹›\⁄\ö[ô»\õ\»õ›\ÿ€‹ŸY»X›X[–ÀYõ‹õ][][€à€€ùô\ú⁄[€àôX\⁄Xö[]H›[»ôH€€ôö\õYYöXHõ€ãX€[öXÿ[ÿ€[öXÿ[\›[ô»\à€€\[ûH›][Y[ùàãBàõ[€X›[Héàìõ›\ÿ€‹ŸYãBàú€›\òŸW€ò[YHéàìô]‹‹[H
+:‚m;"©;ec
+N»€‹úõÿõ‹ò]YûH;'m;b+:„l;'m
+UŸ^JK:Íe:Â%:¨£;'m;bÆ:‚m;"©
+YYYÿ]Hô]‹ K:·);'m;bÆ:‚m;"©;!';&Æ:¨Ø{('
+Ÿ[›[X€€õ€ZX»Z[JK:„e:Ï%;'m;&)
+Pö[”ô]‹ K][HãBàú€›\òŸW›\õéàöŒãÀ›››Àõô]‹‹[Kò€€K€ô]‹À›öY]ÀÃåçåÃÃMãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîŸX€€ô\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàCBàKBàö\◊⁄[ù\õò[éàò[ŸKBàö\◊‹ôYô\ô[òŸHéàò[ŸCBàKBà√BàöYéàò[[XXó‹ÿ◊⁄◊‹]õ‹õHãBàõò[YHéàî›Xò›][ô[›\»Y⁄P€€òŸ[ùò][€à€ÀYõ‹õ][][€à]õ‹õHãBàò€€\[ûHéàê[[XXà€ò€€ŸﬁH
+öX[ô‹›K‘›^ö›H[[XXàö[‹\õXXŸ]]Xÿ[Œ»9n≠˘k†yßl9‰gπb-∫#k HãBàú›YŸW‹ò]»éàê€€[Y\ò⁄X[
+XYõŸX›[ùòYõ€[XXã“”åÕH\õ›ôYååJN»]õ‹õH^[ú⁄[€àî“”åÃ»[à\ŸHRRH
+—KX\õ›ôY]Y»åçäHãBàú›YŸWÿùX⁄Ÿ]éàê\õ›ôY»X\öŸ]YãBàù\Héàê€ÀYõ‹õ][][€àãBàò€€òŸ[ùò][€ó›^éàìõ›\ÿ€‹ŸYù[Y\öXÿ[N»\ÿ‹öXôY]X[]]]ô[H\»[òXõ[ô»	⁄Y⁄€€òŸ[ùò][€â»€ÀYõ‹õ][][€ãYZ[ö\›\ôY	⁄[à[ú»ŸàŸX€€ô…À[ô\[ô[ùŸàX[\õ€öY\ŸHãBàò€€òŸ[ùò][€ó€ù[Y\öX»éàù[Bàò€€òŸ[ùò][€óÿùX⁄Ÿ]éàìõ›\ÿ€‹ŸYãBàõôYYW‹⁄^ôHéàìõ›\ÿ€‹ŸYãBàõYX⁄[ö\€Héàîõ‹öY]\ûHY⁄X€€òŸ[ùò][€à–»€ÀYõ‹õ][][€à]õ‹õH[òXõ[ô»›Xò›][ô[›\»[öôX›[€àŸà\ôŸK[[€X›[Hö[€Ÿ⁄X‹»
+PXúÀö\‹X⁄YöX»Q‹ H⁄]›]H€ÀYõ‹õ][]YX[\õ€öY\ŸH[ûû[YKàXYò[Y][€éà[ùòYõ€[XXà
+”åÕJK\ÿ‹öXôYûHH€€\[ûH\»H€‹õ	‹»ö\ú›–ÀZ[öôX›YSH[öXö]‹ã\õ›ôYååKà]õ‹õH^[ôY»î“”åÃ»
+Tåàö\‹X⁄YöX»Q»î“”å»—Tç⁄]K\‹X⁄YöX»€Xÿ[à€€öùYÿ][€àŸàH‹⁄\€€Y\ò\ŸHH[öXö]‹óH€ÀYõ‹õ][]Y⁄][ùòYõ€[XXàSJKõ›»—KX\õ›ôYõ‹à\ŸHRRH
+î“”åÃÀLÃJH[àôX›\úô[ù€Y]\›]X»Ÿ\ùöXÿ[ÿ[òŸ\à
+[õõ›[òŸYåçãLL Kà[€»[ô\õY\»î“”åMà
+ì‘ã“Tå»ö\‹X⁄YöX»Q K⁄X⁄\»[à€ô€⁄[ô»–ÀYõ‹õ][][€à\ŸHXà
+⁄[òJH»\ŸHH
+]\›ò[XJHõŸ‹ò[KXŸ[úŸY€ÿò[H
+^Q‹ôX]\à⁄[òJH»]‹»RH[àHX[[õõ›[òŸYåçãLLÀÃàãBàô]WÿYYéàååçãLLNHãBàõ\›‹ô]öY]ŸYéàååçãLLNHãBàôX[»éà√Bà√BàôX[⁄Yéàò[[XXó⁄ú⁄€åÃ◊ÿŸK\\ŸL◊ÃåçãLãBàú\ùô\àéàê⁄[òH—H»ìTH
+ôY›[]‹ûJHãBàôX[›\HéàîôY›[]‹ûHö[[ô»»€[öXÿ[öX[Z[\›€ôHãBàô]HéàååçãLL»ãBàô]W‹€‹ù⁄Ÿ^HéàåçåÀBàú›[[X\ûHéàê⁄[òI‹»Ÿ[ù\àõ‹àùY»]ò[X][€à
+—JH\õ›ôY[ö]X][€àŸàH\ŸHRRH›YH
+î“”åÃÀLÃJHõ‹àî“”åÃÀ\ÿ‹öXôYûH[[XXà€ò€€ŸﬁH\»Hö\ú›Z[ãX€\‹»Y⁄X€€òŸ[ùò][€à–»€ÀYõ‹õ][][€àŸàHTåàö\‹X⁄YöX»Q»
+î“”åŒ»Tç»⁄]K\‹X⁄YöX»€Xÿ[à€€öùYÿ][€àŸàH‹⁄\€€Y\ò\ŸHH[öXö]‹äH⁄][ùòYõ€[XXà
+SH[öXö]‹äKàöX[à‹[ã[Xô[ò[ô€Z^ôY€€ùõ€Y][XŸ[ù\à›YHŸàî“”åÃ»[€õ›\ò\HúÀà\⁄X⁄X[â‹ÀX⁄⁄XŸH⁄[[›\ò\H[àôX›\úô[ù€Y]\›]X»Ÿ\ùöXÿ[ÿ[òŸ\àYù\à][ù[KXò\ŸY⁄[[À⁄[[][õ›\ò\K\úô\‹X›]ôHŸàTåà^ô\‹⁄[€à›]\Àà€€\[ûH›]\»H€ÀYõ‹õ][][€à\»YZ[ö\›\ôY	⁄[à[ú»ŸàŸX€€ô…»[ô\»[ô\[ô[ùŸàX[\õ€öY\ŸKàõ»ù[Y\öX»€€òŸ[ùò][€à
+YÀ€S
+H\ÿ€‹ŸY[à]òZ[XõH€›ô\òYŸKàãBàõ[€X›[Héàíî“”åÃ»
+î“”å»Tåàö\‹X⁄YöX»Q»
+»[ùòYõ€[XXã“”åÕHSH[öXö]‹äHãBàú€›\òŸW€ò[YHéàê[[XXà€ò€€ŸﬁH
+€€\[ûHô\‹»ô[X\ŸJHãBàú€›\òŸW›\õéàöŒãÀ›››Àò[[XXõ€òÀò€€KŸ[ã⁄[€ô]‹ÀÃéåÀö[ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàKBà√BàôX[⁄Yéàò[[XXó‹]‹ÿZW⁄ú⁄€åMóÃåçãLãBàú\ùô\àéàî]‹»RHãBàôX[›\Héàë^€\⁄]ôH€ÿò[XŸ[úŸHãBàô]HéàååçãLL»ãBàô]W‹€‹ù⁄Ÿ^HéàåçåÀBàú›[[X\ûHéàî]‹»RHXŸ[úŸYî“”åMà
+Hö\ú›Z[ãX€\‹»ì‘ã“Tå»ö\‹X⁄YöX»Q Húõ€H[[XXà€ò€€ŸﬁKÿZ[ö[ô»^€\⁄]ôH]ô[‹Y[ùÿ€€[Y\ò⁄X[^ò][€àöY⁄»›]⁄YH‹ôX]\à⁄[òH
+[[XXàô]Z[ú»⁄[ô\ŸK]\úö]‹ûHöY⁄ Kà\õ\Œà	LçSHõ€ã\ôYù[ôXõH\úõ€ù
+»\»	ãL”H[à]ô[‹Y[ùÿ€€[Y\ò⁄X[^ò][€àZ[\›€ô\»
+»Y\ôYõﬁX[Y\»
+Y⁄\⁄[ô€H»›ÀY›XõKYY⁄]	HŸàô]ÿ[\ Kàõ›Uà[ô–»õ‹õ][][€ú»Ÿàî“”åMà\ôH€›ô\ôY»[à–»õ‹õ][][€àŸàî“”åMà\»[ôXYH[à\ŸHXà
+⁄[òJH[ô\ŸHH
+]\›ò[XJHöX[Àà–UëPU
+\à€›[Yö[H	€ô]ô\à›Y\‹…»ù[JNàHö[X\ûH€›\òŸHŸ\»õ›^X⁄]H€€ôö\õH⁄]\à[[XXâ‹»õ‹öY]\ûH–»Y⁄X€€òŸ[ùò][€à]õ‹õHT]Ÿ[àò[úŸô\ú»[ô\à\»X[‹à€õHöY⁄»»Hî“”åMà[€X›[K⁄]»^\›[ô»–ÀYõ‹õ][]Y€[öXÿ[X]\öX[KHŸŸŸY⁄]\»[XöY›Z]HõYŸŸYò]\à[à\‹›[YYàãBàõ[€X›[Héàíî“”åMà
+ì‘ã“Tå»ö\‹X⁄YöX»Q HãBàú€›\òŸW€ò[YHéàî]‹»RH
+ô\‹»ô[X\ŸK€ÿôSô]‹›⁄\ôJH»ö[‘‹XŸHãBàú€›\òŸW›\õéàöŒãÀ›››Àú]‹Àò€€K‹]‹ÀXZKY[ù\úÀY€ÿò[[XŸ[ú⁄[ôÀXY‹ôY[Y[ù]⁄]X[[XXã[€ò€€ŸﬁK[€ãZú⁄€åMãXKYö\ú›Z[ãX€\‹À]õ‹ãZ\åÀXö\‹X⁄YöXÀXY»ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàCBàKBàö\◊⁄[ù\õò[éàò[ŸKBàö\◊‹ôYô\ô[òŸHéàò[ŸCBàKBà√BàöYéàôZ\ÿZWÿö[ŸŸ[ó€\Y[XöW⁄\[Z◊‹ÿ»ãBàõò[YHéàìTQSPíHTSR»
+Xÿ[ô[XXãZ\õXà–»]]⁄[öôX›‹àõ‹õ][][€äHãBàò€€\[ûHéàëZ\ÿZH»ö[ŸŸ[àãBàú›YŸW‹ò]»éàê\õ›ôY»€€[Y\ò⁄X[H]òZ[XõH
+–»XZ[ù[ò[òŸH‹ŸH\õ›ôY]Y»åçN»–»[ö]X][€à‹ŸH\õ›ôYåçãLÀLLŒ»[ö]X][€ãY‹ŸH]]⁄[öôX›‹à€€[Y\ò⁄X[H][ò⁄Y[àHT»åçãLLç
+HãBàú›YŸWÿùX⁄Ÿ]éàê\õ›ôY»X\öŸ]YãBàù\Héàì›\àãBàò€€òŸ[ùò][€ó›^éàî–»õ‹õ][][€àåYÀ€S
+úÀàLYÀ€Sõ‹àHUàõ‹õ][][€äN»LY»[ö]X][€à‹ŸH⁄]ô[à\»€»çLYÀÃKåçHS[öôX›[€úÀXX⁄[]ô\ôY[àåMHŸX€€ôŒ»ÕåYÀÃKéS]]⁄[öôX›‹à\ŸYõ‹àXZ[ù[ò[òŸH‹⁄[ô»ãBàò€€òŸ[ùò][€ó€ù[Y\öX»éàååBàò€€òŸ[ùò][€óÿùX⁄Ÿ]éàèÃYÀ€SãBàõôYYW‹⁄^ôHéàåéKYÿ]YŸHö^YKÃãZ[ò⁄ôYYH
+⁄[ô€KY‹ŸHôYö[Y]]⁄[öôX›‹äHãBàõYX⁄[ö\€HéàíY⁄X€€òŸ[ùò][€à
+åYÀ€S
+H\]Y[›\»\]ZYõ‹õ][][€àŸàXÿ[ô[XXãZ\õXà
+[ùKX[^[⁄YXô]Hõ›ŸöXúö[[€õÿ€€ò[[ùXõŸJHKHõ›Y⁄H›XõHH€€òŸ[ùò][€àŸàH\õ›ôYUàõ‹õ][][€à
+LYÀ€S
+HKH[]ô\ôYöXHH⁄[ô€KY‹ŸHôYö[Y]]⁄[öôX›‹à[à\õﬁ[X][HMHŸX€€ô»\à[öôX›[€ãàõ»X[\õ€öY\ŸH‹à\ùX€K‹›\‹[ú⁄[€àX⁄õ€ŸﬁH[ùõ€ôYàH›òZY⁄õ‹ùÿ\ôY⁄X€€òŸ[ùò][€à\]ZYôYõ‹õ][][€àZ\ôY⁄]Hò\›ö^Y[ôYYH]]⁄[öôX›‹à]öXŸK[òXõ[ô»]Z€YH–»[ö]X][€à[ôXZ[ù[ò[òŸH‹⁄[ô»\»[à[\õò]]ôH»Uà[ôù\⁄[€ãà[ò€YY\»[à^\õò[‹õ‹‹ÀZ[ôXÿ][€àô[ò⁄X\ö»
+[öZ[Y\â‹»\ŸX\ŸKõ›€ò€€ŸﬁK⁄[[][õ€ŸﬁJHõ‹àH€€[Y\ò⁄X[K]ò[Y]YY⁄X€€òŸ[ùò][€àPXà–»[]ô\ûHX⁄õ€ŸﬁKàãBàô]WÿYYéàååçãLLç»ãBàõ\›‹ô]öY]ŸYéàååçãLLç»ãBàôX[»éà√Bà√BàôX[⁄YéàôZ\ÿZWÿö[ŸŸ[ó€\Y[XöZ\[Z◊€][ò⁄ÃåçãLLçãBàú\ùô\àéàìã–H
+€€[Y\ò⁄X[][ò⁄»Z\ÿZK–ö[ŸŸ[à›€àõŸX›
+HãBàôX[›\Héàê€€[Y\ò⁄X[][ò⁄»õŸX›]òZ[Xö[]H[õõ›[òŸ[Y[ùãBàô]HéàååçãLLçãBàô]W‹€‹ù⁄Ÿ^HéàåçåçBàú›[[X\ûHéàëZ\ÿZH[ôö[ŸŸ[à[õõ›[òŸY]TQSPíHTSR»
+Xÿ[ô[XXãZ\õXäH]]⁄[öôX›‹à\»õ›»€€[Y\ò⁄X[H]òZ[XõH[àHKîÀàõ‹à–»[ö]X][€à\ò\H[àX\õH[öZ[Y\â‹»\ŸX\ŸNàLY»⁄]ô[à€òŸHŸYZ€H\»€»€€úŸX›]]ôHçLYÀÃKåçHS[öôX›[€úÀXX⁄[]ô\ôY[à\õﬁ[X][HMHŸX€€ôÀà\»õ€›‹»ëH\õ›ò[ŸàH[ö]X][€ãY‹ŸH–ìH€àåçãLÀLL»
+›][Ÿã]⁄[ô›»õ‹à\»ù[é»€€ù^€õJH[ô\»Ÿ\\ò]Húõ€HH–»XZ[ù[ò[òŸKY‹ŸHõ‹õ][][€à
+ÕåYÀÃKéS
+H\õ›ôY[à]Y›\›åçKà–»õ‹õ][][€à\»åYÀ€SúÀàLYÀ€Sõ‹àHUàõ‹õ][][€ãà]Y[ù»X^H›⁄]⁄ô]ŸY[àUà[ô–»YZ[ö\›ò][€à][ûH⁄[ù[àHôX]Y[ù€›\úŸKàëU»SïUHHö\ú›Ÿ»ŸàZ\ÿZK–ö[ŸŸ[àXÿ[ô[XXà[à\»òX⁄Ÿ\é»[ò€YY\»[à^\õò[‹õ‹‹ÀZ[ôXÿ][€à
+[öZ[Y\â‹Àõ›€ò€€ŸﬁK⁄[[][õ€ŸﬁJHô[ò⁄X\ö»õ‹à€€[Y\ò⁄X[K]ò[Y]YY⁄X€€òŸ[ùò][€àPXà–»]]⁄[öôX›‹à[]ô\ûKàãBàõ[€X›[HéàìXÿ[ô[XXãZ\õXà
+\Y[XöJHãBàú€›\òŸW€ò[YHéàêö[ŸŸ[à[òÀà»Z\ÿZH€Ààà
+€ÿôSô]‹›⁄\ôJHãBàú€›\òŸW›\õéàöŒãÀ›››Àô€ÿô[ô]‹›⁄\ôKò€€K€ô]‹À\ô[X\ŸKÃåçãÃÃçÃÃÕMéNÃŸ[ã€\Y[XöKZ\[ZÀ[Xÿ[ô[XXãZ\õXãX]]⁄[öôX›‹ãYõ‹ãZ[ö]X][€ã[Ÿã]\ò\K[õ›ÀX]òZ[XõKZ[ã]K]K\ÀYõ‹ãYX\õKX[öZ[Y\ã\ÀY\ŸX\ŸKö[ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸCBàCBàKBàö\◊⁄[ù\õò[éàò[ŸKBàö\◊‹ôYô\ô[òŸHéàò[ŸCBàCBàKBàúôXŸ[ùÿX›]ö]Héà√Bà√BàôX[⁄YéàôZ\ÿZWÿö[ŸŸ[ó€\Y[XöZ\[Z◊€][ò⁄ÃåçãLLçãBàú\ùô\àéàìã–H
+€€[Y\ò⁄X[][ò⁄»Z\ÿZK–ö[ŸŸ[à›€àõŸX›
+HãBàôX[›\Héàê€€[Y\ò⁄X[][ò⁄»õŸX›]òZ[Xö[]H[õõ›[òŸ[Y[ùãBàô]HéàååçãLLçãBàô]W‹€‹ù⁄Ÿ^HéàåçåçBàú›[[X\ûHéàëZ\ÿZH[ôö[ŸŸ[à[õõ›[òŸY]TQSPíHTSR»
+Xÿ[ô[XXãZ\õXäH]]⁄[öôX›‹à\»õ›»€€[Y\ò⁄X[H]òZ[XõH[àHKîÀàõ‹à–»[ö]X][€à\ò\H[àX\õH[öZ[Y\â‹»\ŸX\ŸNàLY»⁄]ô[à€òŸHŸYZ€H\»€»€€úŸX›]]ôHçLYÀÃKåçHS[öôX›[€úÀXX⁄[]ô\ôY[à\õﬁ[X][HMHŸX€€ôÀà\»õ€›‹»ëH\õ›ò[ŸàH[ö]X][€ãY‹ŸH–ìH€àåçãLÀLL»
+›][Ÿã]⁄[ô›»õ‹à\»ù[é»€€ù^€õJH[ô\»Ÿ\\ò]Húõ€HH–»XZ[ù[ò[òŸKY‹ŸHõ‹õ][][€à
+ÕåYÀÃKéS
+H\õ›ôY[à]Y›\›åçKà–»õ‹õ][][€à\»åYÀ€SúÀàLYÀ€Sõ‹àHUàõ‹õ][][€ãà]Y[ù»X^H›⁄]⁄ô]ŸY[àUà[ô–»YZ[ö\›ò][€à][ûH⁄[ù[àHôX]Y[ù€›\úŸKàëU»SïUHHö\ú›Ÿ»ŸàZ\ÿZK–ö[ŸŸ[àXÿ[ô[XXà[à\»òX⁄Ÿ\é»[ò€YY\»[à^\õò[‹õ‹‹ÀZ[ôXÿ][€à
+[öZ[Y\â‹Àõ›€ò€€ŸﬁK⁄[[][õ€ŸﬁJHô[ò⁄X\ö»õ‹à€€[Y\ò⁄X[K]ò[Y]YY⁄X€€òŸ[ùò][€àPXà–»]]⁄[öôX›‹à[]ô\ûKàãBàõ[€X›[HéàìXÿ[ô[XXãZ\õXà
+\Y[XöJHãBàú€›\òŸW€ò[YHéàêö[ŸŸ[à[òÀà»Z\ÿZH€Ààà
+€ÿôSô]‹›⁄\ôJHãBàú€›\òŸW›\õéàöŒãÀ›››Àô€ÿô[ô]‹›⁄\ôKò€€K€ô]‹À\ô[X\ŸKÃåçãÃÃçÃÃÕMéNÃŸ[ã€\Y[XöKZ\[ZÀ[Xÿ[ô[XXãZ\õXãX]]⁄[öôX›‹ãYõ‹ãZ[ö]X][€ã[Ÿã]\ò\K[õ›ÀX]òZ[XõKZ[ã]K]K\ÀYõ‹ãYX\õKX[öZ[Y\ã\ÀY\ŸX\ŸKö[ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄YéàôZ\ÿZWÿö[ŸŸ[ó€\Y[XöW⁄\[Z◊‹ÿ»ãBàùX⁄õ€ŸﬁW€ò[YHéàìTQSPíHTSR»
+Xÿ[ô[XXãZ\õXà–»]]⁄[öôX›‹àõ‹õ][][€äHÉBàKBà√BàôX[⁄Yéàò[[ŸŸ[ó›[ô\ÿ€‹ŸY\\õXWÃåçãLãBàú\ùô\àéàï[ô\ÿ€‹ŸY€ÿò[\õXXŸ]]Xÿ[€€\[ûHãBàôX[›\Héàë^€\⁄]ôHXŸ[úŸHãBàô]HéàååçãLLHãBàô]W‹€‹ù⁄Ÿ^HéàåçåKBàú›[[X\ûHéàë^€\⁄]ôH€‹õ⁄YHXŸ[úŸHõ‹à[à[ô\ÿ€‹ŸY€ÿò[\õXXŸ]]Xÿ[€€\[ûH»]ô[‹[ô€€[Y\ò⁄X[^ôHHXúõﬁû[YJJKY[òXõY›Xò›][ô[›\»õ‹õ][][€àŸàHö[€Ÿ⁄X»õŸX›\⁄[ô»SPç
+ô\òZX[\õ€öY\ŸH[òJKà›[X[ò[YH\»	ÕçSH
+í‘ï»LåKéPäNà\úõ€ù^[Y[ù
+[[›[ù[ô\ÿ€‹ŸY
+H\»]ô[‹Y[ùôY›[]‹ûK[ôÿ[\»Z[\›€ô\À\»õﬁX[Y\»€àô]ÿ[\»‹›X€€[Y\ò⁄X[^ò][€é»€‹ôX[àô\‹»ô\‹ù»\úõ€ùYH⁄][àÃ^\»Ÿà⁄Y€ö[ôÀà\»\»[[ŸŸ[â‹»\ôSPç“Xúõﬁû[YHXŸ[ú⁄[ô»X[\ÿ€‹ŸY[àåçà
+Yù\à\›òVô[ôXÿH[ô‘“À’\ÿ\õÀõ›[ôXYHòX⁄ŸY
+N»€‹ôX[àô\‹»ô\‹ù»[[ŸŸ[â‹»›[][]]ôHX⁄õ€ŸﬁKY^‹ù›[õ›»^ŸYY»‘ï»Làö[[€ãàãBàõ[€X›[Héàï[ô\ÿ€‹ŸYãBàú€›\òŸW€ò[YHéàê[[ŸŸ[à
+Tàô\‹»ô[X\ŸJH»àô]‹›⁄\ôH»YZ[HãBàú€›\òŸW›\õéàöãÀ›››Àò[[ŸŸ[ãò€€KŸ[ã‹›Xã⁄\ã€ô]‹Àú€[ŸO]öY]…òöYLL…öYLÕ	úYŸOLHãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàò[Xç⁄Xúõﬁû[YHãBàùX⁄õ€ŸﬁW€ò[YHéàêSPç»Xúõﬁû[YH
+ô\òZX[\õ€öY\ŸH[òJHÉBàKBà√BàôX[⁄Yéàò[[XXó⁄ú⁄€åÃ◊ÿŸK\\ŸL◊ÃåçãLãBàú\ùô\àéàê⁄[òH—H»ìTH
+ôY›[]‹ûJHãBàôX[›\HéàîôY›[]‹ûHö[[ô»»€[öXÿ[öX[Z[\›€ôHãBàô]HéàååçãLL»ãBàô]W‹€‹ù⁄Ÿ^HéàåçåÀBàú›[[X\ûHéàê⁄[òI‹»Ÿ[ù\àõ‹àùY»]ò[X][€à
+—JH\õ›ôY[ö]X][€àŸàH\ŸHRRH›YH
+î“”åÃÀLÃJHõ‹àî“”åÃÀ\ÿ‹öXôYûH[[XXà€ò€€ŸﬁH\»Hö\ú›Z[ãX€\‹»Y⁄X€€òŸ[ùò][€à–»€ÀYõ‹õ][][€àŸàHTåàö\‹X⁄YöX»Q»
+î“”åŒ»Tç»⁄]K\‹X⁄YöX»€Xÿ[à€€öùYÿ][€àŸàH‹⁄\€€Y\ò\ŸHH[öXö]‹äH⁄][ùòYõ€[XXà
+SH[öXö]‹äKàöX[à‹[ã[Xô[ò[ô€Z^ôY€€ùõ€Y][XŸ[ù\à›YHŸàî“”åÃ»[€õ›\ò\HúÀà\⁄X⁄X[â‹ÀX⁄⁄XŸH⁄[[›\ò\H[àôX›\úô[ù€Y]\›]X»Ÿ\ùöXÿ[ÿ[òŸ\àYù\à][ù[KXò\ŸY⁄[[À⁄[[][õ›\ò\K\úô\‹X›]ôHŸàTåà^ô\‹⁄[€à›]\Àà€€\[ûH›]\»H€ÀYõ‹õ][][€à\»YZ[ö\›\ôY	⁄[à[ú»ŸàŸX€€ô…»[ô\»[ô\[ô[ùŸàX[\õ€öY\ŸKàõ»ù[Y\öX»€€òŸ[ùò][€à
+YÀ€S
+H\ÿ€‹ŸY[à]òZ[XõH€›ô\òYŸKàãBàõ[€X›[Héàíî“”åÃ»
+î“”å»Tåàö\‹X⁄YöX»Q»
+»[ùòYõ€[XXã“”åÕHSH[öXö]‹äHãBàú€›\òŸW€ò[YHéàê[[XXà€ò€€ŸﬁH
+€€\[ûHô\‹»ô[X\ŸJHãBàú€›\òŸW›\õéàöŒãÀ›››Àò[[XXõ€òÀò€€KŸ[ã⁄[€ô]‹ÀÃéåÀö[ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàò[[XXó‹ÿ◊⁄◊‹]õ‹õHãBàùX⁄õ€ŸﬁW€ò[YHéàî›Xò›][ô[›\»Y⁄P€€òŸ[ùò][€à€ÀYõ‹õ][][€à]õ‹õHÉBàKBà√BàôX[⁄Yéàò[[XXó‹]‹ÿZW⁄ú⁄€åMóÃåçãLãBàú\ùô\àéàî]‹»RHãBàôX[›\Héàë^€\⁄]ôH€ÿò[XŸ[úŸHãBàô]HéàååçãLL»ãBàô]W‹€‹ù⁄Ÿ^HéàåçåÀBàú›[[X\ûHéàî]‹»RHXŸ[úŸYî“”åMà
+Hö\ú›Z[ãX€\‹»ì‘ã“Tå»ö\‹X⁄YöX»Q Húõ€H[[XXà€ò€€ŸﬁKÿZ[ö[ô»^€\⁄]ôH]ô[‹Y[ùÿ€€[Y\ò⁄X[^ò][€àöY⁄»›]⁄YH‹ôX]\à⁄[òH
+[[XXàô]Z[ú»⁄[ô\ŸK]\úö]‹ûHöY⁄ Kà\õ\Œà	LçSHõ€ã\ôYù[ôXõH\úõ€ù
+»\»	ãL”H[à]ô[‹Y[ùÿ€€[Y\ò⁄X[^ò][€àZ[\›€ô\»
+»Y\ôYõﬁX[Y\»
+Y⁄\⁄[ô€H»›ÀY›XõKYY⁄]	HŸàô]ÿ[\ Kàõ›Uà[ô–»õ‹õ][][€ú»Ÿàî“”åMà\ôH€›ô\ôY»[à–»õ‹õ][][€àŸàî“”åMà\»[ôXYH[à\ŸHXà
+⁄[òJH[ô\ŸHH
+]\›ò[XJHöX[Àà–UëPU
+\à€›[Yö[H	€ô]ô\à›Y\‹…»ù[JNàHö[X\ûH€›\òŸHŸ\»õ›^X⁄]H€€ôö\õH⁄]\à[[XXâ‹»õ‹öY]\ûH–»Y⁄X€€òŸ[ùò][€à]õ‹õHT]Ÿ[àò[úŸô\ú»[ô\à\»X[‹à€õHöY⁄»»Hî“”åMà[€X›[K⁄]»^\›[ô»–ÀYõ‹õ][]Y€[öXÿ[X]\öX[KHŸŸŸY⁄]\»[XöY›Z]HõYŸŸYò]\à[à\‹›[YYàãBàõ[€X›[Héàíî“”åMà
+ì‘ã“Tå»ö\‹X⁄YöX»Q HãBàú€›\òŸW€ò[YHéàî]‹»RH
+ô\‹»ô[X\ŸK€ÿôSô]‹›⁄\ôJH»ö[‘‹XŸHãBàú€›\òŸW›\õéàöŒãÀ›››Àú]‹Àò€€K‹]‹ÀXZKY[ù\úÀY€ÿò[[XŸ[ú⁄[ôÀXY‹ôY[Y[ù]⁄]X[[XXã[€ò€€ŸﬁK[€ãZú⁄€åMãXKYö\ú›Z[ãX€\‹À]õ‹ãZ\åÀXö\‹X⁄YöXÀXY»ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàò[[XXó‹ÿ◊⁄◊‹]õ‹õHãBàùX⁄õ€ŸﬁW€ò[YHéàî›Xò›][ô[›\»Y⁄P€€òŸ[ùò][€à€ÀYõ‹õ][][€à]õ‹õHÉBàKBà√BàôX[⁄YéàôÃôÿö[◊ÿŸ[ö[€ó€[›WÃåçãLÀLÃãBàú\ùô\àéàêŸ[ö[€àãBàôX[›\HéàìS’H»X]\öX[ò[úŸô\àY‹ôY[Y[ù
+€€Xõ‹ò][€äHãBàô]HéàååçãLÀLÃãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃÃBàú›[[X\ûHéàëÃë»ö[»[ôŸ[ö[€à⁄Y€ôY[àS’H[ò€Y[ô»HX]\öX[ò[úŸô\àY‹ôY[Y[ù
+UJHõ‹à	›[òKZY⁄X€€òŸ[ùò][€à[ùXõŸH–»õ‹õ][][€à]õ‹õHX⁄õ€ŸﬁH€€‹\ò][€ãâ»[ô\àHUKŸ[ö[€à⁄[ò[úŸô\à[ùXõŸH›Xú›[òŸJ H»Ãë»ö[»€»H€€\[öY\»ÿ[à]ò[X]H\XÿXö[]H»Ãë»ö[…‹»Y⁄X€€òŸ[ùò][€àZX‹õ‹\ùX€H]õ‹õH	“[õõ–ö[”ST	»
+[à^[ú⁄[€àŸàÃë»ö[…‹»^\›[ô»[õõ”ST€ôÀXX›[ô»ZX‹õ‹‹\ôH»X⁄õ€ŸﬁH[ù»ö[€Ÿ⁄X‹Àÿ[ùXõŸY\ K⁄]HöY]»»õ⁄[ùâë[ô›[ùX[€€[Y\ò⁄X[^ò][€àYàôX\⁄Xö[]H\»€€ôö\õYYà\»\»Ãë»ö[…‹»ö\ú›XõX»\ÿ€‹›\ôHŸà[õõ–ö[”ST[ôX\ö‹»]»õ‹õX[[ùûH[ù»[ùXõŸHö[€Ÿ⁄X‹Àà‹X⁄YöX»\ôŸ][€X›[J Kô\ŸX\ò⁄ÿ⁄Y[K[ô€‹›\⁄\ö[ô»\õ\»õ›\ÿ€‹ŸY»X›X[–ÀYõ‹õ][][€à€€ùô\ú⁄[€àôX\⁄Xö[]H›[»ôH€€ôö\õYYöXHõ€ãX€[öXÿ[ÿ€[öXÿ[\›[ô»\à€€\[ûH›][Y[ùàãBàõ[€X›[Héàìõ›\ÿ€‹ŸYãBàú€›\òŸW€ò[YHéàìô]‹‹[H
+:‚m;"©;ec
+N»€‹úõÿõ‹ò]YûH;'m;b+:„l;'m
+UŸ^JK:Íe:Â%:¨£;'m;bÆ:‚m;"©
+YYYÿ]Hô]‹ K:·);'m;bÆ:‚m;"©;!';&Æ:¨Ø{('
+Ÿ[›[X€€õ€ZX»Z[JK:„e:Ï%;'m;&)
+Pö[”ô]‹ K][HãBàú€›\òŸW›\õéàöŒãÀ›››Àõô]‹‹[Kò€€K€ô]‹À›öY]ÀÃåçåÃÃMãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîŸX€€ô\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄YéàôÃôÿö[◊⁄[õõÿö[€[\ãBàùX⁄õ€ŸﬁW€ò[YHéàí[õõ–ö[”STÉBàKBà√BàôX[⁄Yéàö[ﬁû[YW⁄[òﬁ]WÃåçãL»ãBàú\ùô\àéàí[òﬁ]HãBàôX[›\HéàìXŸ[ú⁄[ôÀ–€€Xõ‹ò][€àãBàô]HéàååçãLÀLåãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃåBàú›[[X\ûHéàë€ÿò[€€Xõ‹ò][€à	àXŸ[úŸHY‹ôY[Y[ù\Z[ô»SíSñëH
+íTå
+H»›Xò›][ô[›\»õ‹õ][][€ú»ŸàSê–LÃŒNK[òﬁ]I‹»ö\ú›Z[ãX€\‹»[ùK[]][ùXÿ[ô]X›[[à
+]]–SäH[€õÿ€€ò[[ùXõŸHõ‹à^Y[‹õ€Yô\ò]]ôHô[‹\€\»
+Tú Kà[òﬁ]H[€»ôXŸZ]ô\»[à‹[€à»õ€Z[ò]H\»€»Y][€ò[SíSñëH\ôŸ]Àà[ﬁû[YH»ôXŸZ]ôH[à\úõ€ù^[Y[ù
+[[›[ù[ô\ÿ€‹ŸY
+H\»]ô[‹Y[ù‹ôY›[]‹ûHZ[\›€ôH^[Y[ù»[ôõﬁX[Y\»€àô]ÿ[\»Ÿà[ûH€€[Y\ò⁄X[^ôYSíSñëKY[òXõYYYX⁄[ô\ÀàãBàõ[€X›[HéàíSê–LÃŒNHãBàú€›\òŸW€ò[YHéàîàô]‹›⁄\ôH
+[ﬁû[YJHãBàú€›\òŸW›\õéàöŒãÀ›››Àúõô]‹›⁄\ôKò€€K€ô]‹À\ô[X\Ÿ\À⁄[ﬁû[YKX[õõ›[òŸ\ÀY€ÿò[X€€Xõ‹ò][€ãX[ô[XŸ[úŸKXY‹ôY[Y[ù]⁄]Z[òﬁ]K]À\›\‹ù]KY]ô[‹Y[ù[Ÿã\›Xò›][ô[›\ÀYõ‹õ][][€úÀ[ŸãZ[òÿLÃŒNK]\⁄[ôÀZ]ÀY[ö[ûôK]X⁄õ€ŸﬁKLÃééLéÀö[ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîö[X\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàô[ö[ûôHãBàùX⁄õ€ŸﬁW€ò[YHéàëSíSñëH
+íTå
+HÉBàKBà√BàôX[⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊ÿŸ[ö[€ó⁄Ÿ^]ùYK[X\öŸ]ÃåçãLÀLMãBàú\ùô\àéàêŸ[ö[€à
+€€\][ô»ö[‹⁄[Z[\à]ô[‹\äHãBàôX[›\HéàìX\öŸ][ò[\⁄\»»€€\]]]ôH€€ù^ãBàô]HéàååçãLÀLMãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃMBàú›[[X\ûHéàïòYHô\‹»ô\‹ù»õ›ÿ[\›[ô»ö[Ÿ\\»[ôŸ[ö[€à\ôH\ú›Z[ô»–ÀX€€ùô\ùYö[‹⁄[Z[\ú»ŸàŸ^]ùYH
+[Xúõ€^ö[XXäK\ôŸ][ô»[à\›[X]Y	Lãç–àŸ^]ùYH–»X\öŸ]‹‹ù[ö]H\»HôYô\ô[òŸHõŸX›	‹»][ùõ›X›[€ú»òXŸH^\ûN»Ÿ[ö[€à\»\ú›Z[ô»\»öXH]»›€à[ãZ›\ŸHõ‹öY]\ûHX[\õ€öY\ŸH–»]õ‹õH
+Hÿ[YH[ô\õZ[ô»X⁄õ€ŸﬁH\ŸYõ‹à\ûù[XH–À–’Tà–ÀòX⁄ŸYŸ\\ò][H[ô\àX⁄õ€ŸﬁHQŸ[ö[€ó⁄\ûù[XW‹ÿ KàãBàõ[€X›[Héàî[Xúõ€^ö[XXàö[‹⁄[Z[\à
+Ÿ^]ùYJHãBàú€›\òŸW€ò[YHéàîŸ[›[X€€õ€ZX»Z[HãBàú€›\òŸW›\õéàöŒãÀŸ[ãúŸYZ[Kò€€KŸö[ò[òŸKÃåçãÃÀÃM‹ÿ[\›[ôÀXŸ[ö[€ãXô]XöYÀ[€ãLLçÀXö[[€ãZŸ^]ùYK\ÿÀ[X\öŸ]ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊‹å‹ÿ»ãBàùX⁄õ€ŸﬁW€ò[YHéàîÿ[\›[ô»ö[Ÿ\\»õ‹öY]\ûHåXò\ŸY–»€€ùô\ú⁄[€àX⁄õ€ŸﬁHÉBàKBà√BàôX[⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊⁄\‹ã[õ›ô[K\ôZôX›[€óÃåçãLÀLMãBàú\ùô\àéàìã–H
+][ù^[Z[ò][€àö[ô[ô HãBàôX[›\HéàëõY»»€‹úôX›[€à
+][ùõ‹ŸX›][€à]ô[‹Y[ù
+HãBàô]HéàååçãLÀLMãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃMBàú›[[X\ûHéàëìQ——QåçãLÀLé
+›][Ÿã]⁄[ô›»€›\òŸH\ŸY\àÿ]H€‹úôX›[€à^Ÿ\[€é»‹öY⁄[ò[ô\‹ù[ô»]YåçãLÀLM›\ôòXŸY\ö[ô»\»ù[â‹»ŸX\ò⁄õ›ô]ö[›\€HŸŸŸY
+Nà\à\õHYZ[H^€\⁄]ôHô\‹ù[ô»⁄][ô»H“T»’[ù\õò][€ò[XõXÿ][€à\»H€‹ôX[àT…‹»[ù\õò][€ò[ŸX\ò⁄ô\‹ù
+T‘äH[ô‹ö][à‹[ö[€àŸàH[ù\õò][€ò[ŸX\ò⁄[ô»]]‹ö]H
+T–JKH€»ÿ[\›[ô»ö[Ÿ\\»X[\õ€öY\ŸK\\öYöXÿ][€à][ù»[ôXYHòX⁄ŸY\ôH
+”ÃåçãÃMåéNK”ÃåçãÃMåÃ»õ›ö[YåçKLLãLåÀ[ù\õò][€ò[HXõ\⁄YåçãLÀLäHôXŸZ]ôYHô[[Z[ò\ûHôYÿ]]ôH‹[ö[€à€àõ›ô[H[ô[ùô[ù]ôH›\à”ÃåçãÃMåéNH
+ô[[›ò[Ÿàù[òÿ]YX[\õ€öY\ŸJNà€Z[\»KMLÀMãNMç»õ›[ô»X⁄»[ùô[ù]ôH›\⁄]HT–H⁄][ô»Hö[‹à[€ú»Xà][ù\»[ùX⁄\][ô»H€‹ôH€Z[\À[ôö[ô[ô»H][[[Ÿ[X⁄õ€X]Ÿ‹ò\H€Z[\»
+KM Hÿùö[›\»[àöY]»Ÿà[€ú»Xà
+»[[ŸŸ[àö[‹à\ùà”ÃåçãÃMåÃ
+ÿ\û[X»X⁄Y
+»\ö[ò][€à[\\ö]Hô[[›ò[
+Nà€Z[\»KMLHõ›[ô»X⁄»[ùô[ù]ôH›\⁄][ô»HåLàT»ö[‹à][ùõ‹àHÿ\û[XÀXX⁄YŸ\Yö[ò][€à€€Xö[ò][€à[ô[ﬁû[YHö[‹à\ùõ‹à]»X[\õ€öY\ŸH\Xÿ][€é»H€€\‹⁄][€ã[Ÿã[X]\à€Z[H
+X[\õ€öY\ŸH⁄]‘LJHÿ\»õ›[ôõ›õ›ô[Z]\ã⁄[òŸHHT–Hõ›[ôHô\›[[ô»›Xú›[òŸH[ô\›[ô›Z\⁄XõHúõ€H€õ›€àX[\õ€öY\ŸHôYÿ\ô\‹»ŸàX[ùYòX›\ö[ô»õÿŸ\‹Ààÿ[\›[ô»ö[Ÿ\\»[ô[ô\›ûH€›\òŸ\»⁄\òX›\ö^ôHõ›][ù»\»X[\õ€öY\ŸHX[ùYòX›\ö[ôÀ‹\öYöXÿ][€à
+”P H][ùÀõ›€€\‹⁄][€ã[Ÿã[X]\à‹à]õ‹õH][ùŒ»ÿ[\›[ô»ö[Ÿ\\»›]\»]\»õ»Ÿ\\ò]H–À\]õ‹õH€€[Y\ò⁄X[^ò][€à[à[ô\»õ›ö[ò[^ôYH\ôŸ]õŸX›à\»\»Hô[[Z[ò\ûHT‘ã“T–H‹[ö[€à€õKõ›Hö[ò[ôZôX›[€àH€Z[\»ÿ[à›[ôH[Y[ôY[àò][€ò[\\ŸHõ‹ŸX›][€ãà\ôX›H]X[YöY\»H€€\]]]ôK]ôX]úò[Z[ô»ŸàH[ôXYK]òX⁄ŸY“TÀY\ÿ€‹›\ôHõ›»
+ÿ[\›[ôÿö[Ÿ\\◊‹åŸ\ÿ€‹›\ôWÃåçãLÀLL H[ôX\öŸ]X[ò[\⁄\»õ›»
+ÿ[\›[ôÿö[Ÿ\\◊ÿŸ[ö[€ó⁄Ÿ^]ùYK[X\öŸ]ÃåçãLÀLM
+NàH[ô\õZ[ô»T\»›\úô[ùH€Z[YY\X\ú»ŸXZŸ\à[àHX\öŸ]ôXX›[€à
+[[ŸŸ[à⁄\ô\»ô[åçãLÀLLÀÃM
+H[\YYàãBàõ[€X›[Héàî[Xúõ€^ö[XXàö[‹⁄[Z[\à
+Ÿ^]ùYJN»ò\›^ù[XXà\ù^Xÿ[àö[‹⁄[Z[\à
+[ö\ùJHãBàú€›\òŸW€ò[YHéàî\õHYZ[H
+;'m:„l;'o:È´
+HãBàú€›\òŸW›\õéàöŒãÀ‹\õKôYZ[Kò€Àö‹ã€ô]‹À‹ôXY€ô]‹“YLŒÃÕéççMLMLåãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîŸX€€ô\ûHãBàôõYŸŸYéàùYKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊‹å‹ÿ»ãBàùX⁄õ€ŸﬁW€ò[YHéàîÿ[\›[ô»ö[Ÿ\\»õ‹öY]\ûHåXò\ŸY–»€€ùô\ú⁄[€àX⁄õ€ŸﬁHÉBàKBà√BàôX[⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊‹åŸ\ÿ€‹›\ôWÃåçãLÀLL»ãBàú\ùô\àéàìã–H
+[ù\õò[âëZ[\›€ôH»X⁄õ€ŸﬁH\ÿ€‹›\ôJHãBàôX[›\HéàîâëZ[\›€ôH»X⁄õ€ŸﬁH\ÿ€‹›\ôHãBàô]HéàååçãLÀLL»ãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃLÀBàú›[[X\ûHéàê”‘îëP’QåçãLÀLMNàö\õYY\⁄]ö[X\ûK\€›\òŸH]Z[à“T»Xõ\⁄Y€»[ù\õò][€ò[][ù\Xÿ][€ú»úõ€Hÿ[\›[ô»ö[Ÿ\\»[àX\õHù[Håçà€›ô\ö[ô»X[\õ€öY\ŸH\öYöXÿ][€ã€X[ùYòX›\ö[ôŒà”ÃåçãÃMåéNH
+Y]Ÿõ‹àô[[›ö[ô»€X]ôY›ù[òÿ]YX[\õ€öY\ŸJH[ô”ÃåçãÃMåÃ
+Y]Ÿõ‹àô[[›ö[ô»[\\ö]Y\»öXHÿ\û[X»X⁄YôX]Y[ù[ô\ö[ò][€äKàõ»‹X⁄YöX»\ôŸ]õŸX›ò[YYàõ€›⁄[ô»XõX»ô\‹ù[ô»Ÿà\»€àåçãLÀLM[[ŸŸ[à\‹›YYHÿ[YKY^HôXù][›][Y[ù\‹Ÿ\ù[ô»]»SPç\»HX]\öX[HYôô\ô[ù›Xú›[òŸHúõ€H[ûHåXò\ŸY[ûû[YH[ô]õŸX›»€€Xö[ö[ô»[Xúõ€^ö[XXà⁄]SPç
+Ÿ^]ùYH[^
+H\ôHõ›X›Y[ù[åÀ\ô›Z[ô»ö[‹⁄[Z[\à€€\]]‹ú»€›[õ›]Ÿù[H›Xú›]]HHYôô\ô[ùX[\õ€öY\ŸKà[[ŸŸ[à⁄\ô\»ô[[ùòY^H€àåçãLÀLLÀÃM€àHô]‹Ààÿ[\›[ô»ö[Ÿ\\»›]Y]\»õ›ö[ò[^ôY⁄X⁄õŸX›
+ HH\öYöXÿ][€àT⁄[ôH\YY»[ô\»õ›\ú›Z[ô»[à^\õò[]õ‹õK[XŸ[ú⁄[ô»ù\⁄[ô\‹ÀàãBàõ[€X›[Héàî[Xúõ€^ö[XXàö[‹⁄[Z[\à
+Ÿ^]ùYJN»ò\›^ù[XXà\ù^Xÿ[àö[‹⁄[Z[\à
+[ö\ùJHãBàú€›\òŸW€ò[YHéàîŸ[›[X€€õ€ZX»Z[H»“T»
+USï–”‘JHãBàú€›\òŸW›\õéàöŒãÀŸ[ãúŸYZ[Kò€€KŸö[ò[òŸKÃåçãÃÀÃLÀ‹ÿ[\›[ôÀXö[Ÿ\\ÀX‹òX⁄‹ÀZY⁄Y‹ŸK\ÿÀ]X⁄Y›X\ô[ôÀXöY»ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàîŸX€€ô\ûHãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàúÿ[\›[ôÿö[Ÿ\\◊‹å‹ÿ»ãBàùX⁄õ€ŸﬁW€ò[YHéàîÿ[\›[ô»ö[Ÿ\\»õ‹öY]\ûHåXò\ŸY–»€€ùô\ú⁄[€àX⁄õ€ŸﬁHÉBàKBà√BàôX[⁄Yéàúÿ[õŸöW‹ÿ\ò€\ÿKY\ÿŸ[òWŸôWÃåçãL»ãBàú\ùô\àéàîÿ[õŸöHãBàôX[›\HéàîôY›[]‹ûH\õ›ò[ãBàô]HéàååçãLÀLHãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃKBàú›[[X\ûHéàëëH\õ›ôY\ÿ]^[XXãZ\ôò»
+ÿ\ò€\ÿH\ÿŸ[òJHõ‹à›Xò›][ô[›\»[öôX›[€ã^[ô[ô»»[›\úô[ùH\õ›ôYUà\ÿ]^[XXà[ôXÿ][€ú»[à][\H^Y[€XKàYZ[ö\›\ôYX[ùX[H‹àöXH[à€ãXõŸH[öôX›‹ãàö\ú›[ùXÿ[òŸ\àYŸ[ù\õ›ôYöXH€ãXõŸH[öôX›‹ãàãBàõ[€X›[Héàí\ÿ]^[XXãZ\ôò»ãBàú€›\òŸW€ò[YHéàëëH»\ôŸ]Y€ò€€ŸﬁH»T–”»‹›ãBàú€›\òŸW›\õéàöŒãÀ›››ÀôôKô€›ãŸùY‹À‹ô\€›\òŸ\ÀZ[ôõ‹õX][€ãX\õ›ôYYùY‹ÀŸôKX\õ›ô\ÀZ\ÿ]^[XXãZ\ôòÀ\›Xò›][ô[›\ÀZ[öôX›[€ã[][\K[^Y[€XKZ[ôXÿ][€ú»ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàúÿ[õŸöW‹ÿ\ò€\ÿWŸ\ÿŸ[òW‹ÿ»ãBàùX⁄õ€ŸﬁW€ò[YHéàîÿ\ò€\ÿH\ÿŸ[òH
+–»\ÿ]^[XXã€ãXõŸH[öôX›‹äHÉBàKBà√BàôX[⁄Yéàúÿ[\›[ôÿö[◊ÿ\›ò^ô[ôXÿW‹ÿ\ô[◊ÃåçãL»ãBàú\ùô\àéàê\›òVô[ôXÿHãBàôX[›\HéàìX[ùYòX›\ö[ôÀ–—S»ãBàô]HéàååçãL»
+ô\‹ùYåçãLÀLäHãBàô]W‹€‹ù⁄Ÿ^HéàåçåÃãBàú›[[X\ûHéàîÿ[\›[ô»ö[€Ÿ⁄X‹»Ÿ[X›Y»õŸXŸHùY»›Xú›[òŸHõ‹à\›òVô[ôXÿI‹»ÿ\ô[»
+[öYúõ€[XXäH›Xò›][ô[›\»[öôX›[€àõ‹àﬁ\›[ZX»\\»\û][X]‹›\ÀàŸX€€ô€õ›€à–ÀYõ‹õ][][€à—S»⁄[àõ‹àÿ[\›[ô»ö[€Ÿ⁄X‹»Yù\àâíâ‹»ûXúô]ò[ù–Ààÿ\ô[»–»õ‹õ][][€à]Ÿ[à[ôXYHëK—UH\õ›ôY
+Ÿ[ãXYZ[ö\›ò][€àôKYö[Y[ãÿ]]⁄[öôX›‹äN»\»X[€›ô\ú»ùYÀ\›Xú›[òŸHX[ùYòX›\ö[ô»öXHÀRP€€ãà‹X⁄YöX»õ€[YK›\õ\»õ›\ÿ€‹ŸYàãBàõ[€X›[Héàê[öYúõ€[XXà
+ÿ\ô[ HãBàú€›\òŸW€ò[YHéàîŸ[›[X€€õ€ZX»Z[HãBàú€›\òŸW›\õéàöŒãÀŸ[ãúŸYZ[Kò€€KŸö[ò[òŸKÃåçãÃÀÃã‹ÿ[\›[ôÀXö[€Ÿ⁄X‹À]⁄[úÀ\›Xò›][ô[›\ÀYùYÀYX[ÀY^Y\À[ô]»ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàúÿ[\›[ôÿö[◊‹ÀZX€€àãBàùX⁄õ€ŸﬁW€ò[YHéàîÀRP€€à
+—S»Y⁄X€€òŸ[ùò][€àõ‹õ][][€à]ô[‹Y[ù]õ‹õJHÉBàKBà√BàôX[⁄Yéàö\ÿWÿúõ€XŸ[úŸWÃåçãLàãBàú\ùô\àéàí\ÿHXõ‹ò]‹öY\»ãBàôX[›\HéàìXŸ[ú⁄[ô»
+€ÿò[
+HãBàô]HéàååçãLãLLàãBàô]W‹€‹ù⁄Ÿ^HéàåçååLãBàú›[[X\ûHéàë€ÿò[XŸ[ú⁄[ô»€€Xõ‹ò][€à‹ò[ù[ô»\ÿHXÿŸ\‹»»îì	‹»õ‹öY]\ûHY⁄X€€òŸ[ùò][€à–»ö[€Ÿ⁄X‹»[]ô\ûH]õ‹õHõ‹àPXàõŸX›»[à€ò€€ŸﬁH[ô[ôõ[[X]‹ûH\ŸX\ŸKàãBàõ[€X›[Héàï[ô\ÿ€‹ŸY
+][\HPXà\ôŸ] HãBàú€›\òŸW€ò[YHéàêö[‘‹X›ù[H[ôXH»YYXÿ[X[Ÿ›Y\»»⁄[\ÿõ€⁄»ãBàú€›\òŸW›\õéàöŒãÀ›››Àòö[‹‹X›ù[Z[ôXKò€€K€ô]‹ÀŒMKÃçŒMLã⁄\ÿK[XúÀX[õõ›[òŸ\ÀY€ÿò[[XŸ[ú⁄[ôÀX€€Xõ‹ò][€ã]⁄]Xö[Z\À\ô\ŸX\ò⁄[Xõ‹ò]‹ûKYõ‹ã[[€õÿ€€ò[X[ùXõŸY\Àö[ãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàòúõ⁄◊‹ÿ◊‹]õ‹õHãBàùX⁄õ€ŸﬁW€ò[YHéàêîìY⁄X€€òŸ[ùò][€à–»ö[€Ÿ⁄X‹»]õ‹õHÉBàKBà√BàôX[⁄Yéàò⁄[ôŸW€õ\KX\õ›ò[ÃåçãLàãBàú\ùô\àéàììTHãBàôX[›\HéàîôY›[]‹ûH\õ›ò[ãBàô]HéàååçãLãLLãBàô]W‹€‹ù⁄Ÿ^HéàåçååLBàú›[[X\ûHéàê⁄[òI‹»ö\ú›å	H›Xò›][ô[›\»[[][õŸ€ÿù[[à
+–“Q HõŸX›\õ›ôYûHìTKàãBàõ[€X›[Héàìã–H
+[[][õŸ€ÿù[[ãõ›PXäHãBàú€›\òŸW€ò[YHéàëX\›[€ô^H
+⁄[ô\ŸHö[ò[ò⁄X[ô\‹ HãBàú€›\òŸW›\õéàöŒãÀÿÿZYùZ[ÀôX\›[€ô^Kò€€K€ô]‹ÀÃåçååLNLÕÃÃÕŒLçãBàúô[]ò[òŸHéàì›»ãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàò⁄[ôŸW‹õ€ô‹⁄[ô◊›X[ù[ó›ŸZX[àãBàùX⁄õ€ŸﬁW€ò[YHéàïX[ù[àŸZX[à
+å	H›Xò›][ô[›\»[[][õŸ€ÿù[[àH–“Q HÉBàKBà√BàôX[⁄Yéàò[[ŸŸ[ó‹ÿ[õŸöWÃåçãLàãBàú\ùô\àéàîÿ[õŸöHãBàôX[›\Héàìõ€ãY^€\⁄]ôHXŸ[úŸH
+ôX€€ôö\õYY
+HãBàô]HéàååNH
+‹öY⁄[ò[
+N»ôX€€ôö\õYYåçãLàãBàô]W‹€‹ù⁄Ÿ^HéàåçååKBàú›[[X\ûHéàìõ€ãY^€\⁄]ôHXŸ[úŸH
+‹öY⁄[ò[H⁄Y€ôYåNJHõ‹àY⁄Y‹ŸH–»õ‹õ][][€àŸà\[[XXà
+\^[ù
+K]ô[‹Y[ùôX€€ôö\õYY\»€ô€⁄[ôÀàãBàõ[€X›[Héàë\[[XXà
+\^[ù
+HãBàú€›\òŸW€ò[YHéàîX\òŸHTãBàú€›\òŸW›\õéàöŒãÀ›››ÀúX\òŸZ\õ]ÀÃåçãÃãÃN‹ÿ[õŸöKX[[ŸŸ[ãX€€ôö\õKY]ô[‹Y[ù[Ÿã\›Xò›][ô[›\ÀY\[[XXã»ãBàúô[]ò[òŸHéàíY⁄ãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄Yéàò[Xç⁄Xúõﬁû[YHãBàùX⁄õ€ŸﬁW€ò[YHéàêSPç»Xúõﬁû[YH
+ô\òZX[\õ€öY\ŸH[òJHÉBàKBà√BàôX[⁄YéàôŸ[ô[ùX⁄€[ú›[Z[◊ÃåçãLàãBàú\ùô\àéàëëH
+ôY›[]‹ûJHãBàôX[›\HéàîôY›[]‹ûHö[[ô»ãBàô]HéàååçãLãLHãBàô]W‹€‹ù⁄Ÿ^HéàåçååKBàú›[[X\ûHéàú–ìHXÿŸ\Yõ‹à[ú›[Z[»ëS»
+–»[‹›[ô]^ù[XXäH
+»€]ûH€€Xö[ò][€ãã‘à\ôŸHãXŸ[[\€XKàëHX⁄\⁄[€à^X›YëôXàåçÀàãBàõ[€X›[Héàì[‹›[ô]^ù[XXàãBàú€›\òŸW€ò[YHéàëŸ[ô[ùX⁄ô\‹»ô[X\Ÿ\»ãBàú€›\òŸW›\õéàöŒãÀ›››ÀôŸ[ôKò€€K€YYXK‹ô\‹À\ô[X\Ÿ\ÀÃMLLMÀÃåçãLãLMÀŸôKXXÿŸ\À\›\[Y[ù[Xö[€Ÿ⁄X‹À[XŸ[àãBàúô[]ò[òŸHéàìYY][HãBàò€€ôöY[òŸHéàìõ›\‹Ÿ\‹ŸYãBàôõYŸŸYéàò[ŸKBàõô]◊⁄[óŸYŸ\›éàò[ŸKBàùX⁄õ€ŸﬁW⁄YéàôŸ[ô[ùX⁄›[òúò[ôY‹ÿ»ãBàùX⁄õ€ŸﬁW€ò[YHéàîõ‹öY]\ûH–»ôYõ‹õ][][€ú»
+[òúò[ôY
+HÉBàCBàCBüCB

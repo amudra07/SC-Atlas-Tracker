@@ -1,0 +1,183 @@
+{
+  "run_date": "2026-08-28",
+  "window": {
+    "from": "2026-08-27T14:26:38+09:00",
+    "to": "2026-08-28T14:26:38+09:00",
+    "tz": "Asia/Seoul"
+  },
+  "queries_run": [
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Halozyme ENHANZE Hypercon subcutaneous August 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Alteogen ALT-B4 Hybrozyme license August 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Xeris XeriJect | Lindy Microglassification | Nanoform | Crystalomics | InventageLab | Prestige IDC224 subcutaneous August 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "할로자임 인핸즈 인헨즈 하이퍼콘 히알루로니다제 PH20 고농도 2026년 8월"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "알테오젠 ALT-B4 기술수출 공시 2026년 8월 27일 OR 28일"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "삼성바이오에피스 셀트리온 SC 제형 고농도 2026년 8월 27일 OR 28일"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration subcutaneous injection\" August 27 2026 OR August 28 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"ultra-concentrated antibody formulation\" August 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration injection\" biologic subcutaneous August 27 2026 OR August 28 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration suspension injection technology\" August 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "subcutaneous biologics delivery platform deal | hyaluronidase SC formulation deal August 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "ko",
+      "query": "고농도 주사 기술 | 고농축 현탁 주사 기술 2026년 8월 27일 OR 28일"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "Dupixent dupilumab subcutaneous high concentration | 듀피젠트 피하주사 고농도 August 2026"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "FDA.gov | ClinicalTrials.gov tracked subcutaneous high-concentration technologies August 2026"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "DART 알테오젠 셀트리온 삼성바이오에피스 삼성바이오로직스 기술이전 공시 2026.08.27 OR 2026.08.28"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "식약처 고농도 피하주사 허가 | 특허청 히알루로니다제 고농도 제형 2026년 8월"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "국산 고농도 항체 제형 기술수출 2026년 8월 27일 OR 28일"
+    }
+  ],
+  "candidates": [
+    {
+      "raw_title": "셀트리온 램시마SC·짐펜트라, 상반기 4,562억원 매출 기록",
+      "published": "2026-08-27T00:00:00+09:00",
+      "lang": "ko",
+      "gate_a": "reject",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "Commercial uptake alone does not establish a new concentration, injected-volume, formulation, device, or platform capability.",
+      "verdict": "reject",
+      "reject_reason": "Gate A: product-sales update with no delivery-technology or concentration/volume development.",
+      "event_key": "celltrion_remsima_sc_zymfentra_h1_sales_2026-08-27",
+      "canonical": true,
+      "corroborating_urls": [
+        "https://www.celltrion.com/ko-kr/company/media-center/press-release/4898"
+      ]
+    },
+    {
+      "raw_title": "LEQEMBI IQLIK autoinjector for initiation therapy now available in the U.S.",
+      "published": "2026-08-24T00:00:00-04:00",
+      "lang": "en",
+      "gate_a": "pass",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "The launch operationalizes a 200 mg/mL at-home SC antibody presentation, directly relevant to dose-in-volume benchmarking.",
+      "verdict": "reject",
+      "reject_reason": "Outside the run window and already present as eisai_biogen_leqembiiqlik_launch_2026-08-24.",
+      "event_key": "eisai_biogen_leqembi_iqlik_us_launch_2026-08-24",
+      "canonical": true,
+      "corroborating_urls": [
+        "https://www.globenewswire.com/news-release/2026/08/24/3349698/0/en/leqembi-iqlik-lecanemab-irmb-autoinjector-for-initiation-of-therapy-now-available-in-the-u-s-for-early-alzheimer-s-disease.html"
+      ]
+    },
+    {
+      "raw_title": "Alteogen signs exclusive ALT-B4 license with an undisclosed global pharmaceutical company",
+      "published": "2026-08-05T00:00:00+09:00",
+      "lang": "ko",
+      "gate_a": "pass",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "The license expands deployment of a large-volume SC-enabling hyaluronidase platform.",
+      "verdict": "reject",
+      "reject_reason": "Outside the run window and already present as alteogen_undisclosed-pharma_2026-08.",
+      "event_key": "alteogen_undisclosed_global_pharma_alt_b4_license_2026-08-05",
+      "canonical": true,
+      "corroborating_urls": [
+        "https://www.alteogen.com/kr/sub/ir/news.php?bid=1&idx=338&mode=view"
+      ]
+    },
+    {
+      "raw_title": "High Concentration Protein Formulation Patents: Leaders & Trends 2026",
+      "published": "2026-08-24T00:00:00+00:00",
+      "lang": "en",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "unverified",
+      "gate_d": "new",
+      "gate_e": "The topic is aligned, but the article does not report a discrete, verifiable platform event.",
+      "verdict": "reject",
+      "reject_reason": "Gate B/C: out-of-window trend/aggregator article rather than a discrete primary event.",
+      "event_key": "patsnap_high_concentration_patent_trends_2026-08-24",
+      "canonical": true,
+      "corroborating_urls": [
+        "https://www.patsnap.com/resources/blog/rd-blog/high-concentration-protein-formulation-patent-data/"
+      ]
+    },
+    {
+      "raw_title": "High-concentration biologic formulations: challenges, strategies, and emerging technologies for subcutaneous delivery",
+      "published": null,
+      "lang": "en",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "The review maps relevant formulation approaches but does not itself constitute a dated competitive event.",
+      "verdict": "context",
+      "reject_reason": "Gate B: review article with no confirmed in-window publication event.",
+      "event_key": "ejpb_high_concentration_sc_review_2026",
+      "canonical": true,
+      "corroborating_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S0939641126001992"
+      ]
+    }
+  ],
+  "findings": []
+}
