@@ -1,0 +1,204 @@
+{
+  "run_date": "2026-08-31",
+  "window": {
+    "from": "2026-08-28T14:26:38+09:00",
+    "to": "2026-08-31T11:56:44.424+09:00",
+    "tz": "Asia/Seoul"
+  },
+  "queries_run": [
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Halozyme ENHANZE Hypercon subcutaneous August 28–31 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Alteogen ALT-B4 Hybrozyme license August 28–31 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Xeris XeriJect | Lindy Microglassification | Nanoform | Crystalomics | InventageLab | Prestige IDC224 subcutaneous August 28–31 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "할로자임 인핸즈 인헨즈 하이퍼콘 히알루로니다제 PH20 고농도 2026년 8월 28일~31일"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "알테오젠 ALT-B4 하이브로자임 기술수출 2026년 8월 28일~31일"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "삼성바이오에피스 삼성바이오로직스 셀트리온 SC 제형 고농도 2026년 8월 28일~31일"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration subcutaneous injection\" August 28–31 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"ultra-concentrated antibody formulation\" August 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration injection\" biologic subcutaneous August 28–31 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration suspension injection technology\" August 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "subcutaneous biologics delivery platform deal | hyaluronidase SC formulation deal August 28–31 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "ko",
+      "query": "고농도 주사 기술 | 고농축 현탁 주사 기술 2026년 8월 28일~31일"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "Dupixent dupilumab subcutaneous high concentration | 듀피젠트 피하주사 고농도 August 28–31 2026"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "FDA.gov | ClinicalTrials.gov tracked subcutaneous high-concentration technologies August 28–31 2026"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "DART 알테오젠 셀트리온 삼성바이오에피스 삼성바이오로직스 기술이전 공시 2026.08.28~2026.08.31"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "식약처 고농도 피하주사 허가 | 특허청 히알루로니다제 고농도 제형 2026년 8월 28일~31일"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "국산 고농도 항체 제형 기술수출 2026년 8월 28일~31일"
+    }
+  ],
+  "candidates": [
+    {
+      "raw_title": "알테오젠(ALTEOGEN Inc., 196170.KQ) 뉴스 및 매크로 분석 리포트",
+      "published": "2026-08-29T00:00:00+09:00",
+      "lang": "ko",
+      "query": "알테오젠 ALT-B4 하이브로자임 기술수출 2026년 8월 28일~31일",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "unverified",
+      "gate_d": "new",
+      "gate_e": "ALT-B4 licensing expectations relate to large-volume SC enablement, but the page reports market commentary rather than a completed platform event.",
+      "verdict": "reject",
+      "reject_reason": "Gate B/C: AI-generated stock-analysis page repeating expectations and older reports, with no discrete primary event.",
+      "event_key": "analystai_alteogen_market_commentary_2026-08-29",
+      "canonical": true,
+      "source_url": "https://analyst.ai.kr/report/b7fa23b8-5a02-4bee-a212-a1d6b906a080",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "DUPIXENT solution for injection 300 mg/2 mL — Hong Kong drug database update",
+      "published": "2026-08-28T00:00:00+08:00",
+      "lang": "en",
+      "query": "Dupixent dupilumab subcutaneous high concentration | 듀피젠트 피하주사 고농도 August 28–31 2026",
+      "gate_a": "reject",
+      "gate_b": "reject",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "A database refresh of the existing 2018 presentation does not change the reference product's concentration, volume, formulation, or device.",
+      "verdict": "reject",
+      "reject_reason": "Gate A/B: administrative database refresh for an existing presentation, not a new delivery-technology event.",
+      "event_key": "hongkong_dupixent_database_refresh_2026-08-28",
+      "canonical": true,
+      "source_url": "https://www.drugoffice.gov.hk/eps/drug/productDetail/en/consumer/129305",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "Samsung Bioepis initiates Phase 1 clinical trial for SB35, a Taltz biosimilar candidate",
+      "published": "2026-08-28T00:00:00+09:00",
+      "lang": "en",
+      "query": "삼성바이오에피스 삼성바이오로직스 셀트리온 SC 제형 고농도 2026년 8월 28일~31일",
+      "gate_a": "reject",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "The trial announcement does not identify a new concentration, injected volume, formulation platform, or enabling device.",
+      "verdict": "reject",
+      "reject_reason": "Gate A: general biosimilar trial news without a high-concentration or large-volume SC delivery angle.",
+      "event_key": "samsung_bioepis_sb35_phase1_2026-08-28",
+      "canonical": true,
+      "source_url": "https://www.samsungepisholdings.com/en/newsroom/newsroomList.do",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "Samsung Biologics announces KRW 3 trillion rights offering",
+      "published": "2026-08-28T00:00:00+09:00",
+      "lang": "en",
+      "query": "삼성바이오에피스 삼성바이오로직스 셀트리온 SC 제형 고농도 2026년 8월 28일~31일",
+      "gate_a": "reject",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "Corporate financing does not establish a new high-concentration SC formulation or delivery capability.",
+      "verdict": "reject",
+      "reject_reason": "Gate A: financing/capacity news without an SC delivery-technology development.",
+      "event_key": "samsung_biologics_rights_offering_2026-08-28",
+      "canonical": true,
+      "source_url": "https://samsungbiologics.com/media/newsroom",
+      "corroborating_urls": [
+        "https://samsungbiologics.com/ir/resource/notice?tab=5"
+      ]
+    },
+    {
+      "raw_title": "Alphamab Oncology reports 2026 interim results and business highlights",
+      "published": "2026-08-28T09:17:00+08:00",
+      "lang": "en",
+      "query": "Alphamab subcutaneous high concentration co-formulation August 28–31 2026",
+      "gate_a": "pass",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "The update confirms ongoing JSKN016 SC studies and JSKN033 high-concentration SC development, directly informing dose-in-volume competition.",
+      "verdict": "context",
+      "reject_reason": "Published at 10:17 KST, before the previous run ended at 14:26 KST; the SC milestones recap events already represented in the tracker.",
+      "event_key": "alphamab_interim_results_sc_update_2026-08-28",
+      "canonical": true,
+      "source_url": "https://www.alphamabonc.com/en/html/news/2834.html",
+      "corroborating_urls": [
+        "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0827/2026082700564.pdf"
+      ]
+    },
+    {
+      "raw_title": "Halozyme Q2 2026 earnings transcript page refreshed with market data",
+      "published": "2026-08-28T16:00:00-04:00",
+      "lang": "en",
+      "query": "Halozyme ENHANZE Hypercon subcutaneous August 28–31 2026",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "unverified",
+      "gate_d": "new",
+      "gate_e": "ENHANZE and Hypercon are central to the benchmark, but the page only republishes the August 6 earnings discussion.",
+      "verdict": "reject",
+      "reject_reason": "Gate B/C: dynamic stock/transcript aggregator refresh with no new dated platform event in the run window.",
+      "event_key": "stockanalysis_halozyme_transcript_refresh_2026-08-28",
+      "canonical": true,
+      "source_url": "https://stockanalysis.com/stocks/halo/transcripts/",
+      "corroborating_urls": []
+    }
+  ],
+  "findings": []
+}
