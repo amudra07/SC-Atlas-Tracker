@@ -1,0 +1,170 @@
+{
+  "run_date": "2026-09-01",
+  "window": {
+    "from": "2026-08-31T11:56:44.424+09:00",
+    "to": "2026-09-01T09:01:26.114+09:00",
+    "tz": "Asia/Seoul"
+  },
+  "queries_run": [
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Halozyme ENHANZE Hypercon subcutaneous August 31–September 1 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Alteogen ALT-B4 Hybrozyme license August 31–September 1 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Xeris XeriJect | Lindy Microglassification | Nanoform | Crystalomics | InventageLab | Prestige IDC224 subcutaneous August 31–September 1 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "할로자임 인핸즈 인헨즈 하이퍼콘 히알루로니다제 PH20 고농도 2026년 8월 31일~9월 1일"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "알테오젠 ALT-B4 하이브로자임 기술수출 2026년 8월 31일~9월 1일"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "삼성바이오에피스 삼성바이오로직스 셀트리온 SC 제형 고농도 2026년 8월 31일~9월 1일"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration subcutaneous injection\" August 31–September 1 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"ultra-concentrated antibody formulation\" August–September 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration injection\" biologic subcutaneous August 31–September 1 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration suspension injection technology\" August–September 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "subcutaneous biologics delivery platform deal | hyaluronidase SC formulation deal August 31–September 1 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "ko",
+      "query": "고농도 주사 기술 | 고농축 현탁 주사 기술 2026년 8월 31일~9월 1일"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "Dupixent dupilumab subcutaneous high concentration | 듀피젠트 피하주사 고농도 August 31–September 1 2026"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "FDA.gov | ClinicalTrials.gov tracked subcutaneous high-concentration technologies August 31–September 1 2026"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "DART 알테오젠 셀트리온 삼성바이오에피스 삼성바이오로직스 기술이전 공시 2026.08.31~2026.09.01"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "식약처 고농도 피하주사 허가 | 특허청 히알루로니다제 고농도 제형 2026년 8월 31일~9월 1일"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "국산 고농도 항체 제형 기술수출 2026년 8월 31일~9월 1일"
+    }
+  ],
+  "candidates": [
+    {
+      "raw_title": "알테오젠 주가, 급등세 이어가며 54만원대…시총 29조원 돌파",
+      "published": "2026-08-31T18:00:00+09:00",
+      "lang": "ko",
+      "query": "알테오젠 ALT-B4 하이브로자임 기술수출 2026년 8월 31일~9월 1일",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "unverified",
+      "gate_d": "new",
+      "gate_e": "ALT-B4 is a tracked high-volume SC enabler, but this page is a market dashboard rather than a platform development.",
+      "verdict": "reject",
+      "reject_reason": "Gate B/C: stock and financial-data aggregator content based on older disclosures, with no discrete dated delivery-technology event.",
+      "event_key": "hedgenaru_alteogen_market_page_2026-08-31",
+      "canonical": true,
+      "source_url": "https://hedgenaru.com/stocks/196170",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "Samsung Biologics publishes prospectus for PolyPeptide public tender offer",
+      "published": "2026-08-31T00:00:00+09:00",
+      "lang": "en",
+      "query": "삼성바이오에피스 삼성바이오로직스 셀트리온 SC 제형 고농도 2026년 8월 31일~9월 1일",
+      "gate_a": "reject",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new",
+      "gate_e": "The acquisition could broaden modality capabilities but states no high-concentration or SC-volume delivery claim.",
+      "verdict": "reject",
+      "reject_reason": "Gate A: acquisition-process prospectus without a high-concentration or large-volume SC delivery claim.",
+      "event_key": "samsung_biologics_polypeptide_tender_prospectus_2026-08-31",
+      "canonical": true,
+      "source_url": "https://samsungbiologics.com/media/newsroom",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "Samsung Biologics Announces KRW 3 Trillion Rights Offering to Fund Its Next-Phase Expansion — follow-up coverage",
+      "published": "2026-08-31T00:00:00+09:00",
+      "lang": "ko",
+      "query": "삼성바이오에피스 삼성바이오로직스 셀트리온 SC 제형 고농도 2026년 8월 31일~9월 1일",
+      "gate_a": "reject",
+      "gate_b": "pass",
+      "gate_c": "secondary",
+      "gate_d": "duplicate",
+      "gate_e": "The financing may fund capacity but contains no specific high-concentration or SC-volume platform development.",
+      "verdict": "reject",
+      "reject_reason": "Gate A and duplicate: follow-up coverage of the August 28 financing event already audited, without an SC delivery-technology claim.",
+      "event_key": "samsung_biologics_rights_offering_2026-08-28",
+      "canonical": false,
+      "source_url": "https://web.insight.co.kr/news/571118",
+      "corroborating_urls": [
+        "https://samsungbiologics.com/media/newsroom"
+      ]
+    },
+    {
+      "raw_title": "Halozyme Therapeutics, Inc. (HALO) Q2 2026 Earnings Call Transcript",
+      "published": "2026-08-06T00:00:00-07:00",
+      "lang": "en",
+      "query": "Halozyme ENHANZE Hypercon subcutaneous August 31–September 1 2026",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "unverified",
+      "gate_d": "duplicate",
+      "gate_e": "The transcript discusses ENHANZE and Hypercon, but it predates the window and adds no new discrete event.",
+      "verdict": "context",
+      "reject_reason": "Outside window and duplicate context: a dynamically indexed transcript aggregator for the August 6 earnings call, with no new in-window event.",
+      "event_key": "halozyme_q2_earnings_transcript_2026-08-06",
+      "canonical": false,
+      "source_url": "https://earningscalls.dev/transcripts/halozyme-therapeutics-inc_halo_earnings_call_transcript_2026-08-06",
+      "corroborating_urls": [
+        "https://ir.halozyme.com/events-and-presentations/"
+      ]
+    }
+  ],
+  "findings": []
+}
