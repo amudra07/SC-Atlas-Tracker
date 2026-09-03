@@ -1,0 +1,254 @@
+{
+  "run_date": "2026-09-03",
+  "window": {
+    "from": "2026-09-01T09:01:26.114+09:00",
+    "to": "2026-09-03T09:08:10.113+09:00",
+    "tz": "Asia/Seoul",
+    "extended": true,
+    "extension_reason": "Missed 2026-09-02 run; extended to the last completed audit timestamp."
+  },
+  "queries_run": [
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Halozyme ENHANZE Hypercon subcutaneous September 1–3 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Alteogen ALT-B4 Hybrozyme license September 1–3 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "en",
+      "query": "Xeris XeriJect | Lindy Microglassification | Nanoform | Crystalomics | InventageLab | Prestige IDC224 subcutaneous September 1–3 2026"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "할로자임 인핸즈 인헨즈 하이퍼콘 히알루로니다제 PH20 고농도 2026년 9월 1일~3일"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "알테오젠 ALT-B4 하이브로자임 기술수출 2026년 9월 1일~3일"
+    },
+    {
+      "tier": 1,
+      "lang": "ko",
+      "query": "삼성바이오에피스 삼성바이오로직스 셀트리온 SC 제형 고농도 2026년 9월 1일~3일"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration subcutaneous injection\" September 1–3 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"ultra-concentrated antibody formulation\" September 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration injection\" biologic subcutaneous September 1–3 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "\"high concentration suspension injection technology\" September 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "en",
+      "query": "subcutaneous biologics delivery platform deal | hyaluronidase SC formulation deal September 1–3 2026"
+    },
+    {
+      "tier": 2,
+      "lang": "ko",
+      "query": "고농도 주사 기술 | 고농축 현탁 주사 기술 2026년 9월 1일~3일"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "Dupixent dupilumab subcutaneous high concentration | 듀피젠트 피하주사 고농도 September 1–3 2026"
+    },
+    {
+      "tier": 3,
+      "lang": "en",
+      "query": "FDA.gov | ClinicalTrials.gov tracked subcutaneous high-concentration technologies September 1–3 2026"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "DART 알테오젠 셀트리온 삼성바이오에피스 삼성바이오로직스 기술이전 공시 2026.09.01~2026.09.03"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "식약처 고농도 피하주사 허가 | 특허청 히알루로니다제 고농도 제형 2026년 9월 1일~3일"
+    },
+    {
+      "tier": 4,
+      "lang": "ko",
+      "query": "국산 고농도 항체 제형 기술수출 2026년 9월 1일~3일"
+    }
+  ],
+  "candidates": [
+    {
+      "raw_title": "Alteogen Enters Option and License Agreement with Novartis for Development and Commercialization of Hybrozyme-enabled Subcutaneous Products",
+      "published": "2026-09-02T20:00:00+09:00",
+      "lang": "en",
+      "query": "Alteogen ALT-B4 Hybrozyme license September 1–3 2026",
+      "gate_a": "pass",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new_with_numeric_conflict",
+      "gate_e": "The agreement applies ALT-B4 to multiple undisclosed Novartis biologics to enable subcutaneous delivery.",
+      "verdict": "log",
+      "reject_reason": null,
+      "event_key": "alteogen_novartis_altb4_option_license_2026-09-02",
+      "canonical": true,
+      "source_url": "https://www.prnewswire.com/news-releases/alteogen-enters-option-and-license-agreement-with-novartis-for-development-and-commercialization-of-hybrozyme-enabled-subcutaneous-products-302867513.html",
+      "corroborating_urls": [
+        "https://alteogen.com/kr/sub/ir/news.php?bid=1&idx=358&mode=view",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902900182",
+        "https://www.mt.co.kr/thebio/2026/09/02/2026090213363188770",
+        "https://cbcglobe.com/en/articles/2026/09/02/breaking-alteogen-signs-exclusive-option-and-license-deal-wi-d223eb5a"
+      ]
+    },
+    {
+      "raw_title": "[바이오人사이드]인벤티지랩 대표 “IVL-바이오플루이딕, 다수 MTA…500mg/mL 구현”",
+      "published": "2026-09-02T11:47:00+09:00",
+      "lang": "ko",
+      "query": "Xeris XeriJect | Lindy Microglassification | Nanoform | Crystalomics | InventageLab | Prestige IDC224 subcutaneous September 1–3 2026",
+      "gate_a": "pass",
+      "gate_b": "pass",
+      "gate_c": "secondary_on_record",
+      "gate_d": "correction",
+      "gate_e": "The statement validates current partner testing and corrects the achievable antibody concentration that determines dose per SC volume.",
+      "verdict": "log",
+      "reject_reason": null,
+      "event_key": "inventagelab_ivl_biofluidic_mta_validation_2026-09-02",
+      "canonical": true,
+      "source_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03647366645576184",
+      "corroborating_urls": [
+        "https://en.edaily.co.kr/news/eda202609025359/"
+      ]
+    },
+    {
+      "raw_title": "휴온스랩, 히알루로니다제 'HyDIFFUZE' 항체 특허·PCT 출원",
+      "published": "2026-08-31T09:00:00+09:00",
+      "lang": "ko",
+      "query": "식약처 고농도 피하주사 허가 | 특허청 히알루로니다제 고농도 제형 2026년 9월 1일~3일",
+      "gate_a": "pass",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new_outside_window",
+      "gate_e": "The patents concern a recombinant hyaluronidase intended to enable large-volume SC biologic dosing.",
+      "verdict": "context",
+      "reject_reason": "Outside window: the primary company release is dated 2026-08-31, before the prior completed run's cutoff.",
+      "event_key": "huonslab_hydiffuze_antibody_patent_pct_2026-08-31",
+      "canonical": true,
+      "source_url": "https://www.huonsglobal.com/m/home.php?field=&go=Cmenu_06&go_pds=pds_text_listA&item_num=&mode=&num=3562&pds_num=50&s_que=&start=0",
+      "corroborating_urls": [
+        "https://www.yna.co.kr/amp/view/AKR20260831035100017",
+        "https://www.mt.co.kr/thebio/2026/08/31/2026083108564041969"
+      ]
+    },
+    {
+      "raw_title": "Drug Development & Delivery — September 2026 Formulation Forum",
+      "published": "2026-09-01T00:00:00-04:00",
+      "lang": "en",
+      "query": "\"high concentration subcutaneous injection\" September 1–3 2026",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "secondary",
+      "gate_d": "new_context",
+      "gate_e": "The issue discusses formulation constraints relevant to concentrated injectable biologics but reports no qualifying tracked event.",
+      "verdict": "context",
+      "reject_reason": "Gate B: general formulation discussion without a discrete deal, regulatory event, patent, trial result, or new platform disclosure.",
+      "event_key": "ddd_formulation_forum_2026-09",
+      "canonical": true,
+      "source_url": "https://drug-dev.com/issues/september-2026/",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "Alteogen (196170) Stock Overview",
+      "published": "2026-09-02T00:00:00+09:00",
+      "lang": "en",
+      "query": "Alteogen ALT-B4 Hybrozyme license September 1–3 2026",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "unverified",
+      "gate_d": "duplicate",
+      "gate_e": "ALT-B4 is in scope, but the page is an undated stock dashboard rather than a technology event.",
+      "verdict": "reject",
+      "reject_reason": "Gate B/C: financial-data aggregator without an independently dated delivery-technology event.",
+      "event_key": "brudash_alteogen_stock_page_2026-09-02",
+      "canonical": false,
+      "source_url": "https://brudash.com/stock/196170",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "ALT-B4 Keytruda Qlex sales milestone disclosure",
+      "published": "2026-08-31T11:28:00+09:00",
+      "lang": "ko",
+      "query": "DART 알테오젠 셀트리온 삼성바이오에피스 삼성바이오로직스 기술이전 공시 2026.09.01~2026.09.03",
+      "gate_a": "pass",
+      "gate_b": "pass",
+      "gate_c": "primary",
+      "gate_d": "new_outside_window",
+      "gate_e": "The milestone concerns commercial uptake of an ALT-B4-enabled SC antibody product.",
+      "verdict": "context",
+      "reject_reason": "Outside window: DART disclosure predates the prior completed run's cutoff.",
+      "event_key": "alteogen_msd_keytruda_qlex_sales_milestone_2026-08-31",
+      "canonical": true,
+      "source_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831900176",
+      "corroborating_urls": []
+    },
+    {
+      "raw_title": "알테오젠, 노바티스 계약에 목표가 상향",
+      "published": "2026-09-03T07:59:39+09:00",
+      "lang": "ko",
+      "query": "알테오젠 ALT-B4 하이브로자임 기술수출 2026년 9월 1일~3일",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "secondary",
+      "gate_d": "duplicate",
+      "gate_e": "The article repeats the Novartis ALT-B4 agreement but adds only analyst valuation commentary.",
+      "verdict": "reject",
+      "reject_reason": "Gate B and duplicate: market commentary that adds no separate delivery-technology event.",
+      "event_key": "alteogen_novartis_altb4_option_license_2026-09-02",
+      "canonical": false,
+      "source_url": "https://www2.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02719126645576512",
+      "corroborating_urls": [
+        "https://alteogen.com/kr/sub/ir/news.php?bid=1&idx=358&mode=view"
+      ]
+    },
+    {
+      "raw_title": "In Brief: Subcutaneous Lecanemab (Leqembi Iqlik) for Initial Treatment of Alzheimer's Disease",
+      "published": "2026-09-02T00:00:00-04:00",
+      "lang": "en",
+      "query": "FDA.gov | ClinicalTrials.gov tracked subcutaneous high-concentration technologies September 1–3 2026",
+      "gate_a": "pass",
+      "gate_b": "reject",
+      "gate_c": "peer_reviewed_secondary",
+      "gate_d": "duplicate",
+      "gate_e": "The article summarizes a commercial 200 mg/mL SC antibody benchmark already represented in the tracker.",
+      "verdict": "context",
+      "reject_reason": "Duplicate context: an in-window clinical summary of the July 13 approval and August 24 launch already tracked, with no new event or dataset.",
+      "event_key": "leqembi_iqlik_initiation_clinical_summary_2026-09-02",
+      "canonical": true,
+      "source_url": "https://secure.medicalletter.org/TML-article-1763c",
+      "corroborating_urls": [
+        "https://media-us.eisai.com/2026-07-13-FDA-Approves-LEQEMBI-IQLIK-R-lecanemab-irmb-Subcutaneous-Injection-as-an-Initiation-Dose-for-Early-Alzheimers-Disease",
+        "https://media-us.eisai.com/pressreleases?category=772&l=50"
+      ]
+    }
+  ],
+  "findings": [
+    "alteogen_novartis_altb4_option_license_2026-09-02",
+    "inventagelab_ivl_biofluidic_mta_validation_2026-09-02"
+  ]
+}
